@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "incremental": true, // https://nextjs.org/docs/basic-features/typescript#incremental-type-checking
+    "baseUrl": "./",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/services/*": ["./src/services/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/mocks/*": ["./__mocks__/*"],
+      "@/tests/*": ["./.jest/*"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
