@@ -2,16 +2,19 @@ import '@/styles/globals.css';
 
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
+import "@/styles/tailwind.css";
+import "../styles/index.css";
+import "../styles/font.css";
 import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
 export const metadata: Metadata = {
-  title: 'Home page | Nextjs boilerplate',
+  title: 'Inicio | Ministerio Acacia',
   description:
-    '🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, React Testing Library, PostCSS, Tailwind CSS, Storybook, Plop, GH actions.',
+    '',
 };
 
 interface RootLayoutProps {
@@ -21,6 +24,13 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang='en'>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
         <main>{children}</main>
       </body>
