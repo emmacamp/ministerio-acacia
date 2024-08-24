@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 type ButtonProps = Omit<
   React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>,
-  "onClick"
+  'onClick'
 > &
   Partial<{
     className: string;
@@ -12,7 +12,7 @@ type ButtonProps = Omit<
   }>;
 const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
   children,
-  className = "",
+  className = '',
   leftIcon,
   rightIcon,
 
@@ -28,7 +28,6 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
 };
 
 export { Button };
-
 
 // import React, { ButtonHTMLAttributes } from 'react';
 

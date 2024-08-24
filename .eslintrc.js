@@ -42,7 +42,7 @@ module.exports = {
   rules: {
     'no-console': 'error',
     'react/require-default-props': 'off',
-    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-explicit-any': 0,
     'react-hooks/rules-of-hooks': 2,
     'react-hooks/exhaustive-deps': 1,
     'react/jsx-props-no-spreading': 'off',

@@ -1,77 +1,77 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/DMSansRegular.ttf");
-  font-family: "DM Sans";
+  src: url('/fonts/DMSansRegular.ttf');
+  font-family: 'DM Sans';
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/DMSansBold.ttf");
-  font-family: "DM Sans";
+  src: url('/fonts/DMSansBold.ttf');
+  font-family: 'DM Sans';
   font-weight: 700;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/InterBold.ttf");
-  font-family: "Inter";
+  src: url('/fonts/InterBold.ttf');
+  font-family: 'Inter';
   font-weight: 700;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/InterSemiBold.ttf");
-  font-family: "Inter";
+  src: url('/fonts/InterSemiBold.ttf');
+  font-family: 'Inter';
   font-weight: 600;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/InterRegular.ttf");
-  font-family: "Inter";
+  src: url('/fonts/InterRegular.ttf');
+  font-family: 'Inter';
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/InterSemiBoldItalic.ttf");
-  font-family: "Inter";
+  src: url('/fonts/InterSemiBoldItalic.ttf');
+  font-family: 'Inter';
   font-weight: 600;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/PlusJakartaSansRegular.ttf");
-  font-family: "Plus Jakarta Sans";
+  src: url('/fonts/PlusJakartaSansRegular.ttf');
+  font-family: 'Plus Jakarta Sans';
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/PlusJakartaSansSemiBold.ttf");
-  font-family: "Plus Jakarta Sans";
+  src: url('/fonts/PlusJakartaSansSemiBold.ttf');
+  font-family: 'Plus Jakarta Sans';
   font-weight: 600;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/WorkSansSemiBold.ttf");
-  font-family: "Work Sans";
+  src: url('/fonts/WorkSansSemiBold.ttf');
+  font-family: 'Work Sans';
   font-weight: 600;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/WorkSansRomanRegular.ttf");
-  font-family: "Work Sans";
+  src: url('/fonts/WorkSansRomanRegular.ttf');
+  font-family: 'Work Sans';
   font-weight: 400;
 }
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/WorkSansRomanMedium.ttf");
-  font-family: "Work Sans";
+  src: url('/fonts/WorkSansRomanMedium.ttf');
+  font-family: 'Work Sans';
   font-weight: 500;
 }

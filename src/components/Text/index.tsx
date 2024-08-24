@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const sizes = {
-  textxs: "text-[15px] font-normal not-italic",
-  texts: "text-[18px] font-normal not-italic",
+  textxs: 'text-[15px] font-normal not-italic',
+  texts: 'text-[18px] font-normal not-italic',
 };
 
 export type TextProps = Partial<{
@@ -14,12 +14,12 @@ export type TextProps = Partial<{
 
 const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   children,
-  className = "",
+  className = '',
   as,
-  size = "texts",
+  size = 'texts',
   ...restProps
 }) => {
-  const Component = as || "p";
+  const Component = as || 'p';
 
   return (
     <Component className={`text-gray-900 font-dmsans ${className} ${sizes[size]}`} {...restProps}>

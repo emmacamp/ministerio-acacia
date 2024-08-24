@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 
-type InputProps = Omit<React.ComponentPropsWithoutRef<"input">, "prefix" | "size"> &
+type InputProps = Omit<React.ComponentPropsWithoutRef<'input'>, 'prefix' | 'size'> &
   Partial<{
     label: string;
     prefix: React.ReactNode;
@@ -11,28 +11,37 @@ type InputProps = Omit<React.ComponentPropsWithoutRef<"input">, "prefix" | "size
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
-      className = "",
-      name = "",
-      placeholder = "",
-      type = "text",
-      label = "",
+      className = '',
+      name = '',
+      placeholder = '',
+      type = 'text',
+      label = '',
       prefix,
       suffix,
       onChange,
 
       ...restProps
     },
-    ref,
+    ref
   ) => {
     return (
       <label className={`${className} undefined   `}>
         {!!label && label}
         {!!prefix && prefix}
-        <input ref={ref} type={type} name={name} placeholder={placeholder} onChange={onChange} {...restProps} />
+        <input
+          ref={ref}
+          type={type}
+          name={name}
+          placeholder={placeholder}
+          onChange={onChange}
+          {...restProps}
+        />
         {!!suffix && suffix}
       </label>
     );
-  },
+  }
 );
+
+Input.displayName = 'Input';
 
 export { Input };

@@ -1,10 +1,14 @@
-"use client";
-import React from "react";
-import Image from "next/image";
+'use client';
 
-const BASE_URL = process.env.BASE_PATH || "/images/";
+import Image from 'next/image';
+import React from 'react';
 
-type ImgProps = React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> &
+const BASE_URL = process.env.BASE_PATH || '/images/';
+
+type ImgProps = React.DetailedHTMLProps<
+  React.ImgHTMLAttributes<HTMLImageElement>,
+  HTMLImageElement
+> &
   Partial<{
     className: string;
     src: string;
@@ -16,8 +20,8 @@ type ImgProps = React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement
 
 const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
   className,
-  src = "defaultNoData.png",
-  alt = "testImg",
+  src = 'defaultNoData.png',
+  alt = 'testImg',
   isStatic = false,
   width,
   height,
@@ -38,7 +42,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
       height={height}
       {...restProps}
       onError={() => {
-        setImgSrc("defaultNoData.png");
+        setImgSrc('defaultNoData.png');
       }}
     />
   );

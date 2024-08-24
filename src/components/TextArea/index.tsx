@@ -1,28 +1,28 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 
 type TextAreaProps = Omit<
   React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement>,
-  "size" | "prefix" | "type" | "onChange"
+  'size' | 'prefix' | 'type' | 'onChange'
 > &
   Partial<{
     className: string;
     name: string;
     placeholder: string;
-    onChange: Function;
+    onChange: (event: unknown) => unknown;
   }>;
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   (
     {
-      className = "",
-      name = "",
-      placeholder = "",
+      className = '',
+      name = '',
+      placeholder = '',
 
       onChange,
       ...restProps
     },
-    ref,
+    ref
   ) => {
     const handleChange: React.ChangeEventHandler<HTMLTextAreaElement> = (e) => {
       if (onChange) onChange(e?.target?.value);
@@ -38,7 +38,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         {...restProps}
       />
     );
-  },
+  }
 );
-
+TextArea.displayName = 'TextArea';
 export { TextArea };
