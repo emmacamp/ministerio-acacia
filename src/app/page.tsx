@@ -1,6 +1,6 @@
 'use client';
 
-import { Footer, Header } from '@/components/index';
+import { Footer, Header } from '@/components';
 
 import {
   SectionInicioFour,
@@ -9,7 +9,7 @@ import {
   SectionInicioSix,
   SectionInicioOne,
   SectionInicioTwo,
-} from '@/sections/index';
+} from '@/sections';
 
 const HomePage = () => {
   return (

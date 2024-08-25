@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Footer, Header, Heading, Img, Text } from '@/components/index';
+import { Button, Footer, Header, Heading, Img, Text } from '@/components';
 
 const BlogDetails = () => {
   return (

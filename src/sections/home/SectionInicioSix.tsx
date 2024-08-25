@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Heading, Img, Input, TextArea, Text } from '@/components/index';
+import { Button, Heading, Img, Input, TextArea, Text } from '@/components';
 import Link from 'next/link';
 
 export const SectionInicioSix = () => {

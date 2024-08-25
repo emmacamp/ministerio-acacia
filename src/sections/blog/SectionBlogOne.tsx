@@ -1,4 +1,4 @@
-import { Button, Heading, UserProfile } from '@/components/index';
+import { Button, Heading, UserProfile } from '@/components';
 import React, { Suspense } from 'react';
 
 const data = [

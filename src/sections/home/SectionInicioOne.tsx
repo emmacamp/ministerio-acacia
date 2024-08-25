@@ -1,4 +1,4 @@
-import { Button, Heading } from '@/components/index';
+import { Button, Heading } from '@/components';
 
 export const SectionInicioOne = () => {
   return (

@@ -1,4 +1,4 @@
-import { Heading, Img, Text } from '@/components/index';
+import { Heading, Img, Text } from '@/components';
 
 export const SectionInicioTwo = () => {
   return (

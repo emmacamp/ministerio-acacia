@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "incremental": true, // https://nextjs.org/docs/basic-features/typescript#incremental-type-checking
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@/components/*": ["./src/components/*"],
       "@/app/*": ["./src/app/*"],
       "@/lib/*": ["./src/lib/*"],
@@ -26,7 +27,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -36,6 +37,13 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "./src/**/*.ts",
+    "src"
+  ],
   "exclude": ["node_modules"]
 }

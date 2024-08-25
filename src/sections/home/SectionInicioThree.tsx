@@ -1,4 +1,4 @@
-import { Button, EventDetails, Heading, Img } from '@/components/index';
+import { Button, EventDetails, Heading, Img } from '@/components';
 
 export const SectionInicioThree = () => {
   return (

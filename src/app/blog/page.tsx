@@ -1,7 +1,7 @@
 'use client';
 
-import { Footer, Header } from '@/components/index';
-import { SectionBlogOne, SectionBlogTwo } from '@/sections/index';
+import { Footer, Header } from '@/components';
+import { SectionBlogOne, SectionBlogTwo } from '@/sections';
 
 const HomePage = () => {
   return (

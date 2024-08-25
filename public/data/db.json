@@ -1,0 +1,67 @@
+{
+  "blogs":[
+{
+    "userImage": "img_image_15.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test1"
+  },
+  {
+    "userImage": "img_image_10.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test2"
+  },
+  {
+    "userImage": "img_image_13.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test3"
+  },
+  {
+    "userImage": "img_image_16.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test4"
+  },
+  {
+    "userImage": "img_image_14.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test5"
+  },
+  {
+    "userImage": "img_image_15.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test6"
+  },
+  {
+    "userImage": "img_image_15.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test7"
+  },
+  {
+    "userImage": "img_image_10.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test8"
+  },
+  {
+    "userImage": "img_image_18.png",
+    "buttonLabel": "Adoración",
+    "titleText": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "dateText": "August 20, 2022",
+    "url": "test9"
+  }
+  ]
+}

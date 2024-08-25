@@ -1,7 +1,7 @@
 'use client';
 
-import { Footer, Header } from '@/components/index';
-import { SectionEventsOne, SectionEventsTwo } from '@/sections/index';
+import { Footer, Header } from '@/components';
+import { SectionEventsOne, SectionEventsTwo } from '@/sections';
 
 const EventsPage = () => {
   return (
