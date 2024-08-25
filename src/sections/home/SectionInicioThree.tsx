@@ -1,12 +1,11 @@
-import { Button, Img, Heading } from '../../components';
-import EventDetails from '../../components/EventDetails';
+import { Button, EventDetails, Heading, Img } from '@/components/index';
 
-export default function ModuloinicioRowFive() {
+export const SectionInicioThree = () => {
   return (
     <div className='flex justify-center'>
       <div className='container-xs flex justify-center md:px-5'>
         <div className='flex w-full flex-col items-center justify-center gap-[50px] bg-white-a700 py-[68px] md:py-5'>
-          <Heading size='headingmd' as='h2' className='!text-gray-900'>
+          <Heading size='heading4' as='h2' className='!text-gray-900'>
             Eventos y Actividades
           </Heading>
           <div className='flex gap-[60px] self-stretch md:flex-col'>
@@ -31,4 +30,4 @@ export default function ModuloinicioRowFive() {
       </div>
     </div>
   );
-}
+};

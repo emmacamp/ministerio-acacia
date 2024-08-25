@@ -8,7 +8,7 @@ interface Props {
   className?: string;
 }
 
-export default function Header({ ...props }: Props) {
+export const Header = ({ ...props }: Props) => {
   return (
     <header
       {...props}
@@ -24,56 +24,56 @@ export default function Header({ ...props }: Props) {
         />
         <ul className='flex flex-wrap gap-8'>
           <li>
-            <Link href='#'>
+            <Link href='/'>
               <Text as='p' className='!text-black-900'>
                 Inicio
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/sobre-nosotros'>
               <Text as='p' className='!text-black-900'>
                 Sobre Nosotros
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/servicios'>
               <Text as='p' className='!text-black-900'>
                 Servicios
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/eventos'>
               <Text as='p' className='!text-black-900'>
                 Eventos
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/blog'>
               <Text as='p' className='!text-black-900'>
                 Blog
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/galeria'>
               <Text as='p' className='!text-black-900'>
-                Galeria
+                Galería
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/contacto'>
               <Text as='p' className='!text-black-900'>
                 Contacto
               </Text>
             </Link>
           </li>
           <li>
-            <Link href='#'>
+            <Link href='/productos'>
               <Text as='p' className='!text-black-900'>
                 Productos
               </Text>
@@ -97,4 +97,4 @@ export default function Header({ ...props }: Props) {
       </div>
     </header>
   );
-}
+};

@@ -47,23 +47,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 1,
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 0,
-    'import-helpers/order-imports': [
-      2,
-      {
-        newlinesBetween: 'always',
-        groups: [
-          ['/^next/', 'module'],
-          '/^@/styles/',
-          '/^@/components/',
-          '/^@/lib/',
-          ['parent', 'sibling', 'index'],
-        ],
-        alphabetize: {
-          order: 'asc',
-          ignoreCase: true,
-        },
-      },
-    ],
     '@typescript-eslint/no-unused-vars': [
       2,
       {

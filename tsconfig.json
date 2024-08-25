@@ -13,6 +13,7 @@
       "@/services/*": ["./src/services/*"],
       "@/types/*": ["./src/types/*"],
       "@/constants/*": ["./src/constants/*"],
+      "@/sections/*": ["./src/sections/*"],
       "@/mocks/*": ["./__mocks__/*"],
       "@/tests/*": ["./.jest/*"]
     },

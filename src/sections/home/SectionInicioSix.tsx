@@ -1,10 +1,9 @@
 'use client';
 
+import { Button, Heading, Img, Input, TextArea, Text } from '@/components/index';
 import Link from 'next/link';
 
-import { Button, TextArea, Input, Text, Heading, Img } from '../../components';
-
-export default function ModuloinicioRowTen() {
+export const SectionInicioSix = () => {
   return (
     <div>
       <div className='bg-white-a700'>
@@ -20,7 +19,7 @@ export default function ModuloinicioRowTen() {
             <div className='flex justify-center bg-blue_gray-700 py-[58px] md:py-5'>
               <div className='container-xs mb-[34px] flex items-start justify-center gap-[30px] px-14 md:flex-col md:px-5'>
                 <div className='flex w-[24%] flex-col items-start gap-2 md:w-full'>
-                  <Heading size='headinglg' as='h2' className='!text-[22px] !font-bold'>
+                  <Heading size='heading5' as='h2' className='!text-[22px] !font-bold'>
                     Visit Us
                   </Heading>
                   <Text as='p' className='leading-[30px] !text-white-a700'>
@@ -33,7 +32,7 @@ export default function ModuloinicioRowTen() {
                 </div>
                 <div className='flex w-[68%] flex-col items-start gap-2.5 self-center md:w-full'>
                   <Link href='#'>
-                    <Heading size='headinglg' as='h3' className='!text-[22px] !font-bold'>
+                    <Heading size='heading5' as='h3' className='!text-[22px] !font-bold'>
                       Contact Us
                     </Heading>
                   </Link>
@@ -54,7 +53,7 @@ export default function ModuloinicioRowTen() {
           </div>
           <div className='absolute bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5'>
             <Heading
-              size='headingxl'
+              size='heading6'
               as='h4'
               className='!text-[24px] !text-gray-900 md:!text-[22px]'
             >
@@ -90,4 +89,4 @@ export default function ModuloinicioRowTen() {
       </div>
     </div>
   );
-}
+};

@@ -1,6 +1,6 @@
-import { Button, Heading } from '../../components';
+import { Button, Heading } from '@/components/index';
 
-export default function ModuloinicioRowOne() {
+export const SectionInicioOne = () => {
   return (
     <div>
       <div className='flex h-[830px] items-center justify-center bg-indigo-900 bg-[url(/images/img_frame_3.png)] bg-cover bg-no-repeat py-[254px] md:h-auto md:py-5'>
@@ -8,7 +8,7 @@ export default function ModuloinicioRowOne() {
           <div className='flex w-[78%] flex-col items-center gap-12 md:w-full'>
             <div className='flex flex-col gap-6 self-stretch'>
               <Heading
-                size='headingxl'
+                size='heading6'
                 as='h1'
                 className='text-center leading-[72px] tracking-[-2.40px]'
               >
@@ -27,4 +27,4 @@ export default function ModuloinicioRowOne() {
       </div>
     </div>
   );
-}
+};

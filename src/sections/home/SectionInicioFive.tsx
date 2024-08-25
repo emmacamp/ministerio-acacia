@@ -1,13 +1,13 @@
 import { Button, Img, Text, Heading } from '../../components';
 
-export default function ModuloinicioRowEight() {
+export const SectionInicioFive = () => {
   return (
     <div>
       <div className='bg-white-a700'>
         <div className='flex flex-col items-center bg-white-a700 py-14 md:py-5'>
           <div className='container-xs flex flex-col items-center gap-[50px] md:px-5'>
             <div className='ml-72 mr-[292px] flex flex-col items-center gap-2 self-stretch md:mx-0'>
-              <Heading size='heading2xl' as='h2' className='!text-blue_gray-600'>
+              <Heading size='heading2' as='h2' className='!text-blue_gray-600'>
                 <span className='text-black-900'>Síguenos</span>
                 <span className='text-blue_gray-600'>&nbsp;</span>
                 <span className='text-black-900'>en nuestras Redes Sociales</span>
@@ -67,4 +67,4 @@ export default function ModuloinicioRowEight() {
       </div>
     </div>
   );
-}
+};

@@ -3,8 +3,6 @@ import { Heading } from '../Heading';
 import { Img } from '../Img';
 import { Text } from '../Text';
 
-// import com from '@/components'
-
 interface Props {
   className?: string;
   activitySubtitle?: React.ReactNode;
@@ -16,11 +14,11 @@ interface Props {
   eventDate?: React.ReactNode;
 }
 
-export default function EventDetails({
+export const EventDetails = ({
   activitySubtitle = 'Actividad',
   eventTitle = (
     <>
-      Pinta caritas <br />y Algodon
+      Pinta caritas <br />y Algodón
     </>
   ),
   locationSubtitle = 'Los Alcarrizos, Santo Domingo',
@@ -35,7 +33,7 @@ export default function EventDetails({
     </>
   ),
   ...props
-}: Props) {
+}: Props) => {
   return (
     <div
       {...props}
@@ -48,7 +46,7 @@ export default function EventDetails({
         >
           {activitySubtitle}
         </Text>
-        <Heading size='headingmd' as='h1' className='mt-2.5 leading-[50px] sm:text-[37px]'>
+        <Heading size='heading4' as='h1' className='mt-2.5 leading-[50px] sm:text-[37px]'>
           {eventTitle}
         </Heading>
         <div className='mt-3.5 flex items-center self-stretch'>
@@ -99,4 +97,4 @@ export default function EventDetails({
       </div>
     </div>
   );
-}
+};

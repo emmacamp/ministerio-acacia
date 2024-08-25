@@ -12,7 +12,7 @@ interface Props {
   className?: string;
 }
 
-export default function Footer({ ...props }: Props) {
+export const Footer = ({ ...props }: Props) => {
   return (
     <footer
       {...props}
@@ -54,7 +54,7 @@ export default function Footer({ ...props }: Props) {
               <div className='flex w-[24%] items-start justify-between gap-5 md:w-full'>
                 <div className='flex w-[66%] flex-col items-start gap-[22px] self-center'>
                   <Heading
-                    size='headings'
+                    size='heading3'
                     as='h6'
                     className='!font-plusjakartasans !text-[18px] !text-gray-900'
                   >
@@ -114,7 +114,7 @@ export default function Footer({ ...props }: Props) {
                 </div>
                 <div className='flex flex-col items-center gap-[22px]'>
                   <Heading
-                    size='headings'
+                    size='heading3'
                     as='h6'
                     className='!font-plusjakartasans !text-[18px] !text-gray-900'
                   >
@@ -147,7 +147,7 @@ export default function Footer({ ...props }: Props) {
               </div>
               <div className='w-[32%] self-start rounded-[12px] bg-gray-900 p-8 md:w-full md:self-auto sm:p-5'>
                 <div className='flex flex-col items-center justify-center gap-2'>
-                  <Heading size='headingmd' as='h5' className='!font-worksans !text-[20px]'>
+                  <Heading size='heading4' as='h5' className='!font-worksans !text-[20px]'>
                     Unete a la Iglesia Virtual
                   </Heading>
                   <Text
@@ -211,4 +211,4 @@ export default function Footer({ ...props }: Props) {
       </div>
     </footer>
   );
-}
+};

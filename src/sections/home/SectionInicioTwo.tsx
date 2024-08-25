@@ -1,6 +1,6 @@
-import { Text, Heading, Img } from '../../components';
+import { Heading, Img, Text } from '@/components/index';
 
-export default function ModuloinicioRowFour() {
+export const SectionInicioTwo = () => {
   return (
     <div>
       <div className='flex justify-center bg-blue_gray-700 py-14 md:py-5'>
@@ -15,7 +15,7 @@ export default function ModuloinicioRowFour() {
             />
             <div className='flex flex-1 flex-col items-center gap-6 md:self-stretch'>
               <Heading
-                size='headinglg'
+                size='heading5'
                 as='h2'
                 className='w-[98%] leading-[72px] tracking-[-2.00px] !text-gray-900 md:w-full'
               >
@@ -53,4 +53,4 @@ export default function ModuloinicioRowFour() {
       </div>
     </div>
   );
-}
+};
