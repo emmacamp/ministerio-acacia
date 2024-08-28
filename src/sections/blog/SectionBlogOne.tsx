@@ -1,79 +1,15 @@
 import { Button, Heading, UserProfile } from '@/components';
 import React, { Suspense } from 'react';
-
-const data = [
-  {
-    userImage: 'img_image_15.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_10.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_13.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_16.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_14.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_15.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_15.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_10.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-  {
-    userImage: 'img_image_18.png',
-    buttonLabel: 'Adoración',
-    titleText: 'The Impact of Technology on the Workplace: How Technology is Changing',
-    dateText: 'August 20, 2022',
-    url: 'test',
-  },
-];
+import { dbStore } from '@/store';
 
 export const SectionBlogOne = () => {
+  const { blogs } = dbStore();
   return (
     <div className='mb-[26px] flex flex-col items-center'>
       <div className='container-xs flex flex-col items-center gap-8 md:px-5'>
         <div className='grid grid-cols-3 justify-center gap-5 self-stretch md:grid-cols-2 sm:grid-cols-1'>
           <Suspense fallback={<div>Loading feed...</div>}>
-            {data.map((d, index) => (
+            {blogs.map((d, index) => (
               <UserProfile {...d} key={'content' + index} />
             ))}
           </Suspense>

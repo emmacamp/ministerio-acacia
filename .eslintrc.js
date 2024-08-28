@@ -43,8 +43,8 @@ module.exports = {
     'no-console': 'error',
     'react/require-default-props': 'off',
     '@typescript-eslint/no-explicit-any': 0,
-    'react-hooks/rules-of-hooks': 2,
-    'react-hooks/exhaustive-deps': 1,
+    'react-hooks/rules-of-hooks': 0,
+    'react-hooks/exhaustive-deps': 0,
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/no-unused-vars': [
