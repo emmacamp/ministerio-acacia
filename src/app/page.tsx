@@ -1,10 +1,8 @@
-'use client';
-
 import { Footer, Header } from '@/components';
 
 import {
   SectionInicioFour,
-  SectionInicioFive,
+  RedesSection,
   SectionInicioThree,
   SectionInicioSix,
   SectionInicioOne,
@@ -20,7 +18,7 @@ const HomePage = () => {
         <SectionInicioTwo />
         <SectionInicioThree />
         <SectionInicioFour />
-        <SectionInicioFive />
+        <RedesSection />
         <SectionInicioSix />
       </div>
       <Footer />

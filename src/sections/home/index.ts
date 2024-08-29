@@ -1,5 +1,5 @@
 export * from './SectionInicioFour';
-export * from './SectionInicioFive';
+export * from './RedesSection';
 export * from './SectionInicioThree';
 export * from './SectionInicioTwo';
 export * from './SectionInicioOne';
