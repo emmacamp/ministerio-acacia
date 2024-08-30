@@ -9,6 +9,7 @@ import '@/styles/tailwind.css';
 import '../styles/index.css';
 import '../styles/font.css';
 import { cn } from '@/lib/utils';
+import { Footer, Header } from '@/components';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
@@ -33,7 +34,19 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       </head>
       <AOSInit />
       <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
-        <main>{children}</main>
+        <div className='w-full bg-white-a700'>
+          <Header />
+          <div className='flex flex-col gap-11 bg-white-a700'>
+            <main>{children}</main>
+          </div>
+          <div className='mt-24'>
+            <div className='flex justify-center bg-white-a700'>
+              <div className='container-xs mb-2.5 flex justify-center md:px-5'>
+                <Footer />
+              </div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-import { Footer, Header } from '@/components';
-
 import {
   SectionInicioFour,
   RedesSection,
@@ -12,7 +10,6 @@ import {
 const HomePage = () => {
   return (
     <div className='w-full bg-white-a700'>
-      <Header />
       <div>
         <SectionInicioOne />
         <SectionInicioTwo />
@@ -21,7 +18,6 @@ const HomePage = () => {
         <RedesSection />
         <SectionInicioSix />
       </div>
-      <Footer />
     </div>
   );
 };

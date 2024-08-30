@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { Button, Footer, Header, Heading, Img, Text } from '@/components';
+import { Button, Heading, Img, Text } from '@/components';
 import { dbStore } from '@/store';
 
 const BlogDetails = () => {
@@ -10,9 +10,6 @@ const BlogDetails = () => {
 
   return (
     <div className='flex w-full flex-col items-center bg-white-a700'>
-      <div className='self-stretch'>
-        <Header />
-      </div>
       <div className='container-xs md:px-5'>
         <div className='flex flex-col items-center bg-white-a700 px-14 md:px-5'>
           <div className='mb-8 flex w-[72%] flex-col gap-7 md:w-full'>
@@ -73,7 +70,6 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

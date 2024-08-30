@@ -9,6 +9,12 @@ const sizes = {
   heading5: 'text-[50px] font-semibold md:text-[46px] sm:text-[40px]',
   heading6: 'text-[60px] font-bold md:text-[52px] sm:text-[46px]',
   heading7: 'text-[80px] font-bold md:text-[48px]',
+  headingxs: 'text-[24px] font-bold md:text-[22px]',
+  headings: 'text-[80px] font-bold md:text-[48px]',
+  headingmd: 'text-[20px] font-semibold',
+  headinglg: 'text-[22px] font-bold',
+  headingxl: 'text-[36px] font-bold md:text-[34px] sm:text-[32px]',
+  heading2xl: 'text-[60px] font-semibold md:text-[52px] sm:text-[46px]',
 };
 const colors = {
   dark: 'text-gray-900',
