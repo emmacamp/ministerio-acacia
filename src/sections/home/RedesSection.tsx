@@ -1,6 +1,6 @@
 'use server';
 import Link from 'next/link';
-import { Img, Text, Heading } from '../../components';
+import { Text, Heading } from '../../components';
 
 import axios from 'axios';
 
@@ -15,7 +15,7 @@ const getInstagramPosts = async () => {
   try {
     const response = await axios.get(url);
     return response.data;
-  } catch (error: any ) {
+  } catch (error: any) {
     // console.error(error?.response.data);
     return [];
   }

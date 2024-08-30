@@ -22,6 +22,7 @@
     "node": ">=18.20.2"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@t3-oss/env-nextjs": "0.11.0",
     "@tailwindcss/forms": "^0.5.7",
     "axios": "^1.7.3",
