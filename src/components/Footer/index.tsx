@@ -43,11 +43,11 @@ export const Footer = ({ ...props }: Props) => {
                 <div className='flex flex-col items-start gap-1'>
                   <Heading as='h6' className='!font-plusjakartasans !text-[16px] !text-gray-900'>
                     <span>Email :&nbsp;</span>
-                    <span className='font-normal'>info@jstemplate.net</span>
+                    <span className='font-normal'>acaciateam7@gmail.com</span>
                   </Heading>
                   <Heading as='h6' className='!font-plusjakartasans !text-[16px] !text-gray-900'>
-                    <span>Phone :&nbsp;</span>
-                    <span className='font-normal'>880 123 456 789</span>
+                    <span>Telefono:&nbsp;</span>
+                    <span className='font-normal'>(829) 856 - 4016</span>
                   </Heading>
                 </div>
               </div>

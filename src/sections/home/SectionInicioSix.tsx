@@ -1,6 +1,6 @@
 'use server';
 
-import { Button, Heading, Img, Input, TextArea, Text } from '@/components';
+import { Heading, Img, Text } from '@/components';
 import { ContactForm } from '@/components/ContacForm';
 import Link from 'next/link';
 
@@ -19,7 +19,10 @@ export const SectionInicioSix = () => {
             />
             <div className='flex justify-center bg-blue_gray-700 py-[58px] md:py-5'>
               <div className='container-xs mb-[34px] flex items-start justify-center gap-[30px] px-14 md:flex-col md:px-5'>
-                <div className='flex w-[24%] flex-col items-start gap-2 md:w-full'>
+                <div
+                  data-aos='fade-up'
+                  className='flex w-[24%] flex-col items-start gap-2 md:w-full'
+                >
                   <Heading size='heading5' as='h2' className='!text-[22px] !font-bold'>
                     Visitanos
                   </Heading>
@@ -31,7 +34,10 @@ export const SectionInicioSix = () => {
                     </>
                   </Text>
                 </div>
-                <div className='flex w-[68%] flex-col items-start gap-2.5 self-center md:w-full'>
+                <div
+                  data-aos='fade-up'
+                  className='flex w-[68%] flex-col items-start gap-2.5 self-center md:w-full'
+                >
                   <Link href='#'>
                     <Heading size='heading5' as='h3' className='!text-[22px] !font-bold'>
                       Contactanos
@@ -53,7 +59,6 @@ export const SectionInicioSix = () => {
             </div>
           </div>
           <ContactForm />
-         
         </div>
       </div>
     </div>

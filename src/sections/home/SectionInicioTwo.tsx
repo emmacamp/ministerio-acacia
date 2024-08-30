@@ -2,7 +2,7 @@ import { Heading, Img, Text } from '@/components';
 
 export const SectionInicioTwo = () => {
   return (
-    <div>
+    <div data-aos='fade-up'>
       <div className='flex justify-center bg-blue_gray-700 py-14 md:py-5'>
         <div className='container-xs flex justify-center md:px-5'>
           <div className='flex w-full items-center gap-[30px] rounded-[40px] bg-white-a700 px-[42px] py-[46px] md:flex-col md:p-5'>

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useForm, ValidationError } from '@formspree/react';
 import { Heading } from '../Heading';
 import { Input } from '../Input';
@@ -9,12 +9,15 @@ import { Text } from '../Text';
 export function ContactForm() {
   const [state, handleSubmit, reset] = useForm('mvgpllqd');
   if (state.succeeded) {
-     alert('Gracias');
-    reset()
+    alert('Gracias');
+    reset();
   }
   return (
     <>
-      <div className='absolute bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5'>
+      <div
+        data-aos='fade-up'
+        className='absolute bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5'
+      >
         <Heading size='heading6' as='h4' className='!text-[24px] !text-gray-900 md:!text-[22px]'>
           Contactanos
         </Heading>

@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import React, { ReactNode } from 'react';
+import { AOSInit } from '@/lib/utils/aos';
 
 import '@/styles/tailwind.css';
 import '../styles/index.css';
@@ -30,6 +31,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <link rel='manifest' href='/manifest.json' />
         <link rel='icon' href='/favicon.ico' />
       </head>
+      <AOSInit />
       <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
         <main>{children}</main>
       </body>

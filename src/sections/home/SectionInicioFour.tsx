@@ -2,7 +2,7 @@ import { Button, Heading } from '../../components';
 
 export const SectionInicioFour = () => {
   return (
-    <div>
+    <div data-aos='fade-up'>
       <div className='bg-gray-900'>
         <div className='flex h-[450px] items-center justify-center bg-[url(/images/img_group_2.png)] bg-cover bg-no-repeat py-[78px] md:h-auto md:py-5'>
           <div className='container-xs flex justify-center px-[34px] md:px-5'>
