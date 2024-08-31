@@ -1,14 +1,17 @@
+'use client';
 import Link from 'next/link';
-
 import { Button } from '../Button';
 import { Img } from '../Img';
 import { Text } from '../Text';
+import { useRouter } from 'next/navigation';
 
 interface Props {
   className?: string;
 }
 
 export const Header = ({ ...props }: Props) => {
+  const router = useRouter();
+
   return (
     <header
       {...props}
@@ -81,6 +84,7 @@ export const Header = ({ ...props }: Props) => {
           </li>
         </ul>
         <Button
+          onClick={() => router.push('/sembrar')}
           leftIcon={
             <Img
               src='img_brote_1.png'
