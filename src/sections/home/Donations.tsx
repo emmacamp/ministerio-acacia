@@ -1,6 +1,6 @@
 import { Button, Heading } from '../../components';
 
-export const SectionInicioFour = () => {
+export const Donations = () => {
   return (
     <div data-aos='fade-up'>
       <div className='bg-gray-900'>

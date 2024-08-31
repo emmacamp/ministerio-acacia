@@ -1,6 +1,6 @@
 import { Heading, Img, Text } from '@/components';
 
-export const SectionInicioTwo = () => {
+export const MissionAndVision = () => {
   return (
     <div data-aos='fade-up'>
       <div className='flex justify-center bg-blue_gray-700 py-14 md:py-5'>

@@ -2,6 +2,7 @@ export * from './Button/index';
 export * from './ContacForm/index';
 export * from './EventDetails/index';
 export * from './Footer/index';
+export * from './Founder';
 export * from './Header/index';
 export * from './Heading/index';
 export * from './Img/index';

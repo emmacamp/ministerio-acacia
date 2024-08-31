@@ -7,12 +7,12 @@ interface Props {
   src: string;
 }
 
-export default function Founders({
+export const Founder = ({
   userName = 'John Carter',
   userDescription = 'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   src,
   ...props
-}: Props) {
+}: Props) => {
   return (
     <div {...props} className={`${props.className} flex flex-col items-center w-[32%] md:w-full`}>
       <img
@@ -33,4 +33,4 @@ export default function Founders({
       </Text>
     </div>
   );
-}
+};

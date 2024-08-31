@@ -1,22 +1,15 @@
-import {
-  SectionInicioFour,
-  RedesSection,
-  SectionInicioThree,
-  SectionInicioSix,
-  SectionInicioOne,
-  SectionInicioTwo,
-} from '@/sections';
+import { Hero, HomeEvents, Contact, MissionAndVision, RedesSection, Donations } from '@/sections';
 
 const HomePage = () => {
   return (
     <div className='w-full bg-white-a700'>
       <div>
-        <SectionInicioOne />
-        <SectionInicioTwo />
-        <SectionInicioThree />
-        <SectionInicioFour />
+        <Hero />
+        <MissionAndVision />
+        <HomeEvents />
+        <Donations />
         <RedesSection />
-        <SectionInicioSix />
+        <Contact />
       </div>
     </div>
   );

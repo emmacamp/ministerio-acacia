@@ -1,6 +1,6 @@
 import { Button, Heading } from '@/components';
 
-export const SectionInicioOne = () => {
+export const Hero = () => {
   return (
     <div>
       <div className='flex h-[830px] items-center justify-center bg-indigo-900 bg-[url(/images/img_frame_3.png)] bg-cover bg-no-repeat py-[254px] md:h-auto md:py-5'>

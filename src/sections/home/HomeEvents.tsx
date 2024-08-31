@@ -1,7 +1,7 @@
 import { EventDetails, Heading, Img } from '@/components';
 import Link from 'next/link';
 
-export const SectionInicioThree = () => {
+export const HomeEvents = () => {
   return (
     <div data-aos='fade-up' className='flex justify-center '>
       <div className='container-xs flex justify-center md:px-5'>

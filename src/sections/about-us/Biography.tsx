@@ -1,7 +1,7 @@
 import { Text, Heading } from '@/components';
 import React from 'react';
 
-export default function ModulosobrenosotrosRowOne() {
+export const Biography = () => {
   return (
     <div className='flex justify-center self-stretch'>
       <div className='container-xs flex justify-center md:px-5'>
@@ -73,4 +73,4 @@ export default function ModulosobrenosotrosRowOne() {
       </div>
     </div>
   );
-}
+};

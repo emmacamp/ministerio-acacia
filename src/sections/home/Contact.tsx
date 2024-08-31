@@ -4,7 +4,7 @@ import { Heading, Img, Text } from '@/components';
 import { ContactForm } from '@/components/ContacForm';
 import Link from 'next/link';
 
-export const SectionInicioSix = () => {
+export const Contact = () => {
   return (
     <div>
       <div className='bg-white-a700'>
