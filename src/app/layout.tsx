@@ -14,7 +14,7 @@ import { Footer, Header } from '@/components';
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
 export const metadata: Metadata = {
-  title: 'Inicio | Ministerio Acacia',
+  title: 'Ministerio Acacia',
   description: '',
 };
 
