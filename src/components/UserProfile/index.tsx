@@ -20,7 +20,7 @@ export const UserProfile = ({
   ...props
 }: Props) => {
   return (
-    <Link href={`/blog/${url}`}>
+    <Link data-aos='fade-up' href={`/blog/${url}`}>
       <div
         {...props}
         className={`${props.className} flex flex-col items-center w-full gap-4 p-4 border-gray-200 border border-solid bg-white-a700 rounded-[24px]`}

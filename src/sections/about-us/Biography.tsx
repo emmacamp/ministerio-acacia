@@ -8,6 +8,7 @@ export const Biography = () => {
         <div className='flex space-y-4 w-full flex-col items-center justify-center bg-white-a700 px-14 py-[66px] md:p-5'>
           <div className='flex px-[50px] md:px-5'>
             <Heading
+              data-aos='fade-up'
               color='dark'
               size='heading2xl'
               as='h2'
@@ -16,7 +17,7 @@ export const Biography = () => {
               Ministerio Acacia
             </Heading>
           </div>
-          <div className='p-12 text-center rounded-full bg-indigo-900'>
+          <div data-aos='fade-up' className='p-12 text-center rounded-full bg-indigo-900'>
             <Text
               size='texts'
               color='dark'
@@ -35,6 +36,7 @@ export const Biography = () => {
           </div>
           <Text
             as='p'
+            data-aos='fade-up'
             className='mt-[76px] w-[66%] text-justify !font-inter leading-9 tracking-[3.06px] md:w-full'
           >
             <span>Desde su fundación el 7 de marzo de 2019, el&nbsp;</span>
@@ -53,11 +55,15 @@ export const Biography = () => {
               &nbsp;mensaje de Dios a sus hogares, comunidades y más allá.
             </span>
           </Text>
-          <blockquote className='py-14 w-[66%] text-center !font-inter leading-8 tracking-[4.08px] md:w-full font-bold'>
+          <blockquote
+            data-aos='fade-up'
+            className='py-14 w-[66%] text-center !font-inter leading-8 tracking-[4.08px] md:w-full font-bold'
+          >
             “Transformando vidas y edificando una comunidad de fe sólida, donde cada persona
             encuentra propósito y fortaleza en Cristo.”
           </blockquote>
           <Text
+            data-aos='fade-up'
             as='p'
             className='mb-1.5 mt-[54px] w-[66%] text-justify !font-inter leading-9 tracking-[3.06px] md:w-full'
           >

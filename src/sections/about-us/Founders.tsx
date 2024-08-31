@@ -25,7 +25,13 @@ export const Founders = () => {
   return (
     <div className='bg-white-a700 py-[68px] md:py-5'>
       <div className='mb-1 flex flex-col items-center gap-[54px] sm:gap-[27px]'>
-        <Heading color='dark' size='heading2xl' as='h2' className='!font-inter tracking-[-2.40px]'>
+        <Heading
+          data-aos='fade-up'
+          color='dark'
+          size='heading2xl'
+          as='h2'
+          className='!font-inter tracking-[-2.40px]'
+        >
           Fundadores
         </Heading>
         <div className='flex gap-7 self-stretch md:flex-col'>

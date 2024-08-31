@@ -14,7 +14,11 @@ export const Founder = ({
   ...props
 }: Props) => {
   return (
-    <div {...props} className={`${props.className} flex flex-col items-center w-[32%] md:w-full`}>
+    <div
+      data-aos='fade-up'
+      {...props}
+      className={`${props.className} flex flex-col items-center w-[32%] md:w-full`}
+    >
       <img
         src={src}
         // width={400}

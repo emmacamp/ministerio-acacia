@@ -45,6 +45,7 @@ export const Testimonials = () => {
       <div className='flex flex-col items-center gap-[34px]'>
         <div className='flex px-14 md:px-5'>
           <Heading
+            data-aos='fade-up'
             color='dark'
             size='heading2xl'
             as='h2'
@@ -53,7 +54,10 @@ export const Testimonials = () => {
             Testimonios
           </Heading>
         </div>
-        <div className='flex items-center justify-center self-stretch md:flex-col'>
+        <div
+          data-aos='fade-up'
+          className='flex items-center justify-center self-stretch md:flex-col'
+        >
           <Button
             onClick={() => {
               sliderRef?.current?.slidePrev();
