@@ -1,2 +1,1 @@
-export * from './SectionBlogOne';
-export * from './SectionBlogTwo';
+export * from './BlogsContainer';

@@ -2,7 +2,7 @@ import { Button, Heading, UserProfile } from '@/components';
 import React, { Suspense } from 'react';
 import { dbStore } from '@/store';
 
-export const SectionBlogOne = () => {
+export const BlogsContainer = () => {
   const { blogs } = dbStore();
   return (
     <div className='mb-[26px] flex flex-col items-center'>
