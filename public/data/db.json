@@ -358,5 +358,87 @@
       "price": 55.99,
       "imgUrl": "https://via.placeholder.com/150"
     }
+  ],
+  "services": [
+    {
+      "url": "crece-con-acacia",
+      "image": "img_image_11.png",
+      "title": "Crece con Acacia",
+      "description": "Está diseñado para impulsar tu crecimiento espiritual y personal de manera integral",
+      "content": [
+        {
+          "title": "Llevando Esperanza a Cada Rincón",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Campañas Evangelísticas:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Jornadas de Oración:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Servicios Comunitarios:",
+          "paragraph": "Nos comprometemos con la mejora de las comunidades a través de actividades de servicio y apoyo práctico, reflejando el amor de Dios mediante acciones concretas."
+        },
+        {
+          "paragraph": "Cada evento y actividad de la Ruta Acacia está diseñado para dejar una huella duradera, ofreciendo esperanza y transformación a aquellos que más lo necesitan. Únete a nosotros en este viaje para llevar la luz de Cristo a cada rincón."
+        }
+      ]
+    },
+    {
+      "url": "diversion-acacia",
+      "image": "img_image_11.png",
+      "title": "Diversion Acacia",
+      "description": "Dedicados a equipar a futuros líderes y ministros con el conocimiento y las habilidades necesarias para servir con eficacia en el reino de Dios.",
+      "content":[
+        {
+          "title": "Llevando Esperanza a Cada Rincón",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Campañas Evangelísticas:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Jornadas de Oración:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Servicios Comunitarios:",
+          "paragraph": "Nos comprometemos con la mejora de las comunidades a través de actividades de servicio y apoyo práctico, reflejando el amor de Dios mediante acciones concretas."
+        },
+        {
+          "paragraph": "Cada evento y actividad de la Ruta Acacia está diseñado para dejar una huella duradera, ofreciendo esperanza y transformación a aquellos que más lo necesitan. Únete a nosotros en este viaje para llevar la luz de Cristo a cada rincón."
+        }
+      ]},
+    {
+      "url": "centro-formacion-capacitacion-ministerial",
+      "image": "img_image_22s.png",
+      "title": "Centro de Formación y Capacitación Ministerial",
+      "description": "Está diseñado para impulsar tu crecimiento espiritual y personal de manera integral",
+      "content":[
+        {
+          "title": "Llevando Esperanza a Cada Rincón",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Campañas Evangelísticas:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Jornadas de Oración:",
+          "paragraph": "Organizamos eventos de alcance donde compartimos el evangelio de manera vibrante y accesible, invitando a todos a experimentar el poder transformador de Dios."
+        },
+        {
+          "subtitle": "Servicios Comunitarios:",
+          "paragraph": "Nos comprometemos con la mejora de las comunidades a través de actividades de servicio y apoyo práctico, reflejando el amor de Dios mediante acciones concretas."
+        },
+        {
+          "paragraph": "Cada evento y actividad de la Ruta Acacia está diseñado para dejar una huella duradera, ofreciendo esperanza y transformación a aquellos que más lo necesitan. Únete a nosotros en este viaje para llevar la luz de Cristo a cada rincón."
+        }
+      ] 
+    }
   ]
 }
