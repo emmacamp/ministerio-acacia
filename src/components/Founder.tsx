@@ -1,5 +1,5 @@
 import { Heading, Text } from '@/components';
-
+import Image from 'next/image';
 interface Props {
   className?: string;
   userName?: React.ReactNode;
@@ -19,10 +19,9 @@ export const Founder = ({
       {...props}
       className={`${props.className} flex flex-col items-center w-[32%] md:w-full`}
     >
-      <img
+      <Image
         src={src}
-        // width={400}
-        // height={462}
+        alt='founder image'
         className='h-[462px] self-stretch rounded-[20px] bg-teal-100'
       />
       <Heading color='dark' size='headingxl' as='h1' className='mt-[22px]'>

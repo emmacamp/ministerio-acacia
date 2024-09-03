@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use server';
 import Link from 'next/link';
 import { Text, Heading } from '../../components';
@@ -38,49 +39,53 @@ export const RedesSection = async () => {
               ¡Sé el primero en conocer nuestros eventos y nuestras ultimas publicaciones!
             </Text>
           </div>
-          <div className='self-stretch'>
-            <div className='flex gap-7 md:flex-col'>
-              <div className='flex flex-1 flex-col gap-7 md:self-stretch'>
+
+          {posts?.length > 0 && (
+            <div className='self-stretch'>
+              <div className='flex gap-7 md:flex-col'>
+                <div className='flex flex-1 flex-col gap-7 md:self-stretch'>
+                  <img
+                    src={posts[0].media_url}
+                    width={284}
+                    height={284}
+                    alt='Imagetwentytwo'
+                    className='h-[284px] rounded-[24px] object-cover'
+                  />
+                  <img
+                    src={posts[1].media_url}
+                    width={284}
+                    height={284}
+                    alt='Imagetwentyfour'
+                    className='h-[284px] rounded-[24px] object-cover'
+                  />
+                </div>
                 <img
-                  src={posts[0].media_url}
-                  width={284}
-                  height={284}
-                  alt='Imagetwentytwo'
-                  className='h-[284px] rounded-[24px] object-cover'
-                />
-                <img
-                  src={posts[1].media_url}
-                  width={284}
-                  height={284}
-                  alt='Imagetwentyfour'
-                  className='h-[284px] rounded-[24px] object-cover'
-                />
-              </div>
-              <img
-                src={posts[2].media_url}
-                width={596}
-                height={596}
-                alt='Imagetwentyone'
-                className='h-[596px] w-[596px] rounded-[24px] object-cover md:w-full'
-              />
-              <div className='flex flex-1 flex-col gap-7 md:self-stretch'>
-                <img
-                  src={posts[3].media_url}
-                  width={284}
-                  height={284}
-                  alt='Imagetwentythre'
-                  className='h-[284px] w-[284px] rounded-[24px] object-cover'
-                />
-                <img
-                  src={posts[4].media_url}
-                  width={284}
-                  height={284}
+                  src={posts[2].media_url}
+                  width={596}
+                  height={596}
                   alt='Imagetwentyone'
-                  className='h-[284px] w-[284px] rounded-[24px] object-cover'
+                  className='h-[596px] w-[596px] rounded-[24px] object-cover md:w-full'
                 />
+
+                <div className='flex flex-1 flex-col gap-7 md:self-stretch'>
+                  <img
+                    src={posts[3].media_url}
+                    width={284}
+                    height={284}
+                    alt='Imagetwentythre'
+                    className='h-[284px] w-[284px] rounded-[24px] object-cover'
+                  />
+                  <img
+                    src={posts[4].media_url}
+                    width={284}
+                    height={284}
+                    alt='Imagetwentyone'
+                    className='h-[284px] w-[284px] rounded-[24px] object-cover'
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          )}
           <Link
             href='https://linktr.ee/discauri'
             target='_blanck'

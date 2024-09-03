@@ -1,5 +1,5 @@
 import { Text, Heading, SeedCard } from '@/components';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 
 const data = [
   { userStatus: 'Sembrar', userPrice: '$10' },
@@ -9,8 +9,9 @@ const data = [
 ];
 
 export default function Seed() {
+  const [selected, setSelected] = useState(0);
   return (
-    <div className='mt-[54px] flex justify-center'>
+    <div className='mt-[54px] flex justify-center' data-aos='fade-up'>
       <div className='container-xs flex justify-center md:px-5'>
         <div className='flex w-full flex-col items-center gap-6 bg-white-a700 p-10 sm:p-5'>
           <div id='seed' className='flex w-[42%] flex-col items-center gap-2 md:w-full'>
@@ -35,7 +36,12 @@ export default function Seed() {
           <div className='mb-[34px] flex w-[84%] gap-7 md:w-full md:flex-col'>
             <Suspense fallback={<div>Loading feed...</div>}>
               {data.map((d, index) => (
-                <SeedCard {...d} key={'modulosembrar' + index} />
+                <SeedCard
+                  {...d}
+                  handleSeed={() => setSelected(index)}
+                  isActive={selected === index}
+                  key={'modulosembrar' + index}
+                />
               ))}
             </Suspense>
           </div>
