@@ -15,19 +15,22 @@ export const Founder = ({
 }: Props) => {
   return (
     <div
-      data-aos='fade-up'
       {...props}
-      className={`${props.className} flex flex-col items-center w-[32%] md:w-full`}
+      className={`${props.className} flex flex-col justify-center items-center w-[32%] md:w-full`}
     >
       <Image
         src={src}
+        data-aos='fade-up'
+        width={350}
+        height={462}
         alt='founder image'
-        className='h-[462px] self-stretch rounded-[20px] bg-teal-100'
+        className='h-[462px]  rounded-[20px] object-cover self-center'
       />
-      <Heading color='dark' size='headingxl' as='h1' className='mt-[22px]'>
+      <Heading color='dark' data-aos='fade-up' size='headingxl' as='h1' className='mt-[22px]'>
         {userName}
       </Heading>
       <Text
+        data-aos='fade-up'
         size='texts'
         as='p'
         className='mt-2 self-stretch text-center !text-[18px] !font-normal leading-[30px]'

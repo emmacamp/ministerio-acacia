@@ -8,13 +8,13 @@ const founders = [
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
-    src: 'images/img_image_21.png',
+    src: '/images/img_image_21.png',
     userName: 'John Carter',
     userDescription:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
-    src: 'images/img_image_21.png',
+    src: '/images/img_image_21.png',
     userName: 'Matt Cannon',
     userDescription:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
