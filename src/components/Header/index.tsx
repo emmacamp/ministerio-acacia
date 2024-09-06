@@ -223,7 +223,7 @@ const navigation = [
   { name: 'Eventos', href: '/eventos', current: false },
   { name: 'Blog', href: '/blog', current: false },
   { name: 'Galeria', href: '/galeria', current: false },
-  { name: 'Contacto', href: '/contacto', current: false },
+  { name: 'Contacto', href: '/#contacto', current: false },
   { name: 'Productos', href: '/productos', current: false },
 ];
 

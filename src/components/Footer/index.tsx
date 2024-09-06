@@ -13,6 +13,60 @@ interface Props {
 }
 
 export const Footer = ({ ...props }: Props) => {
+  const footerMenu = [
+    {
+      menuTitle: 'Menu',
+      className: 'flex w-[66%] flex-col items-start gap-[22px] self-center',
+      menuItems: [
+        {
+          label: 'Inicio',
+          path: '/inicio',
+        },
+        {
+          label: 'Sobre Nosotros',
+          path: '/sobre-nosotros',
+        },
+        {
+          label: 'Servicios',
+          path: '/servicios',
+        },
+        {
+          label: 'Eventos',
+          path: '/eventos',
+        },
+        {
+          label: 'Blog',
+          path: '/blog',
+        },
+        {
+          label: 'Galeria',
+          path: '/galeria',
+        },
+        {
+          label: 'Productos',
+          path: '/productos',
+        },
+      ],
+    },
+    {
+      menuTitle: 'Categorias',
+      className: 'flex flex-col items-center gap-[22px]',
+      menuItems: [
+        {
+          label: 'Adoración',
+          path: '/adoracion',
+        },
+        {
+          label: 'Ayudas',
+          path: '/ayudas',
+        },
+        {
+          label: 'Donaciones',
+          path: '/donaciones',
+        },
+      ],
+    },
+  ];
   return (
     <footer
       {...props}
@@ -52,7 +106,34 @@ export const Footer = ({ ...props }: Props) => {
                 </div>
               </div>
               <div className='flex w-[24%] items-start justify-between gap-5 md:w-full'>
-                <div className='flex w-[66%] flex-col items-start gap-[22px] self-center'>
+                {footerMenu.map((menu) => (
+                  <div key={menu.menuTitle} className={menu.className}>
+                    <Heading
+                      size='heading3'
+                      as='h6'
+                      className='!font-plusjakartasans !text-[18px] !text-gray-900'
+                    >
+                      {menu.menuTitle}
+                    </Heading>
+                    <ul className='flex flex-col items-start gap-2'>
+                      {menu.menuItems.map((item) => (
+                        <li key={item.label}>
+                          <Link href={item.path} target='_blank' rel='noreferrer'>
+                            <Text
+                              size='textxs'
+                              as='p'
+                              className='!font-plusjakartasans !text-[16px]'
+                            >
+                              {item.label}
+                            </Text>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                {/* <div className='flex w-[66%] flex-col items-start gap-[22px] self-center'>
                   <Heading
                     size='heading3'
                     as='h6'
@@ -143,7 +224,7 @@ export const Footer = ({ ...props }: Props) => {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div className='w-[32%] self-start rounded-[12px] bg-gray-900 p-8 md:w-full md:self-auto sm:p-5'>
                 <div className='flex flex-col items-center justify-center gap-2'>
