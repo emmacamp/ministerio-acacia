@@ -1,9 +1,23 @@
+'use client';
+import Link from 'next/link';
 import { Heading, Button, Img, Text } from '../../components';
 import React, { Suspense } from 'react';
+import { dbStore } from '@/store';
 
-const data = [{ productcardone: 'img_product_card.png' }];
+// import { useRouter } from 'next/router';
+// const products = [
+//   {
+//     id: '1',
+//     name: 'Coffee Bless',
+//     price: '300.00',
+//     src: '/images/taza-no-bg.webp',
+//   },
+// ];
 
 export default function ModuloTiendaPage() {
+  const products = dbStore().products;
+  // const router = useRouter();
+
   return (
     <div className='flex flex-col items-center'>
       <div className='relative h-[778px] self-stretch'>
@@ -60,78 +74,25 @@ export default function ModuloTiendaPage() {
                   Order it for you or for your beloved ones{' '}
                 </Heading>
               </div>
-              <div className='grid grid-cols-4 justify-center gap-[30px] self-stretch md:grid-cols-2 sm:grid-cols-1'>
+              <div className='grid grid-cols-3 justify-center gap-8 md:grid-cols-2 sm:grid-cols-1'>
                 <Suspense fallback={<div>Loading feed...</div>}>
-                  {data.map(() => (
+                  {products.map((product) => (
                     <>
-                      <div className='w-[254px] h-[230px] bg-slate-300 flex flex-col'>
-                        <Img src='img_header_logo.png' width={205} height={220} className=''></Img>
-                        <div className='footer bg-blue-200 w-full h-[20%]'></div>
-                      </div>
+                      <Link
+                        href={`/productos/${product.url_path}`}
+                        className='w-[350px] h-[400px] rounded-md bg-gray-200/50 border flex flex-col justify-center items-center hover:scale-105 transition-all '
+                      >
+                        <img alt='Product Image' src={product.imgUrl} className='w-full h-[80%]' />
+                        <div className='flex flex-col justify-between text-xl rounded-md bg-white-a700 py-4 px-2 w-full h-[20%]'>
+                          <span className='font-bold text-slate-950'>{product.title}</span>
+                          <span className='text-lg '>${product.price}</span>
+                        </div>
+                      </Link>
                     </>
                   ))}
                 </Suspense>
               </div>
             </div>
-            {/* <div className='flex w-[28%] justify-center gap-1.5 md:w-full'>
-              <Button className='flex h-[40px] min-w-[40px] flex-row items-center justify-center rounded-lg bg-teal-600 px-4 text-center font-inter text-[14px] font-medium text-white-a700'>
-                1
-              </Button>
-              <Button className='flex h-[40px] min-w-[40px] flex-row items-center justify-center rounded-lg bg-teal-600_7f px-3.5 text-center font-inter text-[14px] font-medium text-white-a700'>
-                2
-              </Button>
-              <div className='flex w-full flex-col items-center rounded-lg'>
-                <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-                  <Heading
-                    size='textxs'
-                    as='h4'
-                    className='!font-inter !text-[14px] !text-blue_gray-500'
-                  >
-                    3
-                  </Heading>
-                </div>
-              </div>
-              <div className='flex w-full flex-col items-center rounded-lg'>
-                <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-                  <Heading
-                    size='textxs'
-                    as='h5'
-                    className='mt-2 !font-inter !text-[14px] !text-blue_gray-500'
-                  >
-                    ...
-                  </Heading>
-                </div>
-              </div>
-              <div className='flex w-full flex-col items-center rounded-lg'>
-                <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-                  <Heading
-                    size='textxs'
-                    as='h6'
-                    className='!font-inter !text-[14px] !text-blue_gray-500'
-                  >
-                    8
-                  </Heading>
-                </div>
-              </div>
-              <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-                <Heading
-                  size='textxs'
-                  as='p'
-                  className='!font-inter !text-[14px] !text-blue_gray-500'
-                >
-                  9
-                </Heading>
-              </div>
-              <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-                <Heading
-                  size='textxs'
-                  as='p'
-                  className='!font-inter !text-[14px] !text-blue_gray-500'
-                >
-                  10
-                </Heading>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

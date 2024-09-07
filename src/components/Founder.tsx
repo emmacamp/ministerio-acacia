@@ -1,4 +1,4 @@
-import { Heading, Text } from '@/components';
+// import { Heading, Text } from '@/components';
 import Image from 'next/image';
 interface Props {
   className?: string;
@@ -8,8 +8,8 @@ interface Props {
 }
 
 export const Founder = ({
-  userName = 'John Carter',
-  userDescription = 'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
+  // userName = 'John Carter',
+  // userDescription = 'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   src,
   ...props
 }: Props) => {
@@ -26,7 +26,7 @@ export const Founder = ({
         alt='founder image'
         className='h-[462px]  rounded-[20px] object-cover self-center'
       />
-      <Heading color='dark' data-aos='fade-up' size='headingxl' as='h1' className='mt-[22px]'>
+      {/* <Heading color='dark' data-aos='fade-up' size='headingxl' as='h1' className='mt-[22px]'>
         {userName}
       </Heading>
       <Text
@@ -36,7 +36,7 @@ export const Founder = ({
         className='mt-2 self-stretch text-center !text-[18px] !font-normal leading-[30px]'
       >
         {userDescription}
-      </Text>
+      </Text> */}
     </div>
   );
 };

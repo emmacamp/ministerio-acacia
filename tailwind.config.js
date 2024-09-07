@@ -8,26 +8,25 @@ module.exports = {
   theme: {
     // screens: { md: { max: '1050px' }, sm: { max: '550px' } },
     screens: {
-      '2xl': { 'max': '1535px' },
+      '2xl': { max: '1535px' },
       // => @media (max-width: 1535px) { ... }
 
-      'xl': { 'max': '1279px' },
+      'xl': { max: '1279px' },
       // => @media (max-width: 1279px) { ... }
 
-      'lg': { 'max': '1023px' },
+      'lg': { max: '1023px' },
       // => @media (max-width: 1023px) { ... }
 
       // => @media (max-width: 767px) { ... }
 
-
       'md': { max: '1024px' },
 
-      'tablet': { 'max': '1023px' },
+      'tablet': { max: '1023px' },
       // => @media (max-width: 1023px) { ... }
 
-      'phone-md': { 'max': '767px' },
-      
-      'phone': { 'max': '639px' },
+      'phone-md': { max: '767px' },
+
+      'phone': { max: '639px' },
 
       'sm': { max: '550px' },
       // ...defaultTheme.screens

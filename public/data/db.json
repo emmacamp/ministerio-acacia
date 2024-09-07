@@ -300,63 +300,101 @@
   "products": [
     {
       "id": 1,
+      "url_path": "taza-bless-acacia",
       "title": "Product 1",
       "price": 10.99,
-      "imgUrl": "https://via.placeholder.com/150"
+      "imgUrl": "/images/taza-no-bg.webp",
+      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
+      "variants": [
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        }
+      ]  
     },
     {
       "id": 2,
+       "url_path": "taza-bless-acacia-2",
       "title": "Product 2",
       "price": 15.99,
-      "imgUrl": "https://via.placeholder.com/150"
+      "imgUrl": "/images/taza-no-bg.webp",
+      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
+      "variants": [
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        }
+      ]
     },
     {
       "id": 3,
+       "url_path": "taza-bless-acacia-3",
       "title": "Product 3",
       "price": 20.99,
-      "imgUrl": "https://via.placeholder.com/150"
+      "imgUrl": "/images/taza-no-bg.webp",
+      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
+      "variants": [
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        }
+      ]
+
     },
     {
       "id": 4,
+       "url_path": "taza-bless-acacia-4",
       "title": "Product 4",
       "price": 25.99,
-      "imgUrl": "https://via.placeholder.com/150"
+      "imgUrl": "/images/taza-no-bg.webp",
+      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
+      "variants": [
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        }
+      ]
+
     },
     {
       "id": 5,
+       "url_path": "taza-bless-acacia-5",
       "title": "Product 5",
       "price": 30.99,
-      "imgUrl": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 6,
-      "title": "Product 6",
-      "price": 35.99,
-      "imgUrl": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 7,
-      "title": "Product 7",
-      "price": 40.99,
-      "imgUrl": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 8,
-      "title": "Product 8",
-      "price": 45.99,
-      "imgUrl": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 9,
-      "title": "Product 9",
-      "price": 50.99,
-      "imgUrl": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 10,
-      "title": "Product 10",
-      "price": 55.99,
-      "imgUrl": "https://via.placeholder.com/150"
+      "imgUrl": "/images/taza-no-bg.webp",
+      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
+      "variants": [
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        },
+        {
+          "variant_img": "/images/taza-no-bg.webp"
+        }
+      ]
+
     }
   ],
   "services": [

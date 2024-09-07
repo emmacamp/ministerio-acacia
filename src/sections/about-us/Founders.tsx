@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Founder, Heading } from '@/components';
+import { Founder, Heading, Text } from '@/components';
 const founders = [
   {
     src: '/images/img_image_16.png',
@@ -34,12 +34,25 @@ export const Founders = () => {
         >
           Fundadores
         </Heading>
-        <div className='flex gap-7 self-stretch md:flex-col'>
+        <div className='flex gap-2 self-stretch md:flex-col'>
           <Suspense fallback={<div>Loading feed...</div>}>
             {founders.map((d, index) => (
               <Founder {...d} key={`listcontainer-${index}`} />
             ))}
           </Suspense>
+        </div>
+        <div className='text-center'>
+          <Heading data-aos='fade-up' color='dark' size='headingxl' as='h1' className='mt-[22px]'>
+            Discauri Cruz
+          </Heading>
+          <Text
+            data-aos='fade-up'
+            size='texts'
+            as='p'
+            className='self-stretch text-center !text-[18px] !font-normal '
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.
+          </Text>
         </div>
       </div>
     </div>
