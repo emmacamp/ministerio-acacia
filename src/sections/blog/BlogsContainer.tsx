@@ -1,4 +1,4 @@
-import { Button, Heading, UserProfile } from '@/components';
+import { UserProfile } from '@/components';
 import React, { Suspense } from 'react';
 import { dbStore } from '@/store';
 
@@ -13,31 +13,6 @@ export const BlogsContainer = () => {
               <UserProfile {...d} key={'content' + index} />
             ))}
           </Suspense>
-        </div>
-        <div className='flex w-[26%] justify-center gap-1.5 md:w-full'>
-          <Button className='flex h-[40px] min-w-[40px] flex-row items-center justify-center rounded-lg bg-gray-900 px-4 text-center font-inter text-[14px] font-medium text-white-a700'>
-            1
-          </Button>
-          <Button className='flex h-[40px] min-w-[40px] flex-row items-center justify-center rounded-lg bg-blue_gray-700 px-3.5 text-center font-inter text-[14px] font-medium text-white-a700'>
-            2
-          </Button>
-          <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-            <Heading as='h2'>3</Heading>
-          </div>
-          <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-            <Heading as='h3' className='mt-2'>
-              ...
-            </Heading>
-          </div>
-          <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-            <Heading as='h4'>8</Heading>
-          </div>
-          <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-            <Heading as='h5'>9</Heading>
-          </div>
-          <div className='flex w-[40px] flex-col items-center justify-center rounded-lg'>
-            <Heading as='h6'>10</Heading>
-          </div>
         </div>
       </div>
     </div>

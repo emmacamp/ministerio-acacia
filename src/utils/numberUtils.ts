@@ -66,4 +66,7 @@ export class NumberUtils {
     if (numbers.length === 0) throw new Error('Array is empty');
     return Math.min(...numbers);
   }
+  static getOnlyNumbers(str: string) {
+    return str.replace(/[^0-9]/g, '');
+  }
 }

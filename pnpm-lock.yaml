@@ -16,9 +16,6 @@ importers:
       '@heroicons/react':
         specifier: ^2.1.5
         version: 2.1.5(react@18.3.1)
-      '@paypal/react-paypal-js':
-        specifier: ^8.6.0
-        version: 8.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@t3-oss/env-nextjs':
         specifier: 0.11.0
         version: 0.11.0(typescript@5.5.4)(zod@3.23.8)
@@ -827,27 +824,6 @@ packages:
         integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==,
       }
     engines: { node: '>= 8' }
-
-  '@paypal/paypal-js@8.1.1':
-    resolution:
-      {
-        integrity: sha512-9VJ2I0Ui10fD4u7DF8eT524mT7NC0Z6zm/4l4nFuSyNGUxNfIi3BI+LB/cmgifl5aBs2HdIeJssQ08NZz7TFBg==,
-      }
-
-  '@paypal/react-paypal-js@8.6.0':
-    resolution:
-      {
-        integrity: sha512-qT91oKl8q+B6IpS1QG4TeYKPbhwahKJK6QeBmAklci0oQ1r2etEfaP3lVQ9yf9UQRyIF+meTG8sHUOqtzy6TTg==,
-      }
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@paypal/sdk-constants@1.0.149':
-    resolution:
-      {
-        integrity: sha512-oHdaRg2fP9LINMDJ8fMTtRvvW2QJVifoEoq7YPOP5Sk50edWX6tyATZTfgSnJmLHHq3OE6OF1aKa7hz09frVxw==,
-      }
 
   '@pkgjs/parseargs@0.11.0':
     resolution:
@@ -2891,12 +2867,6 @@ packages:
       }
     engines: { node: '>= 0.4' }
 
-  hi-base32@0.5.1:
-    resolution:
-      {
-        integrity: sha512-EmBBpvdYh/4XxsnUybsPag6VikPYnN30td+vQk+GI3qpahVEG9+gTkG0aXVxTjBqQ5T6ijbWIu77O+C5WFWsnA==,
-      }
-
   html-encoding-sniffer@3.0.0:
     resolution:
       {
@@ -4346,12 +4316,6 @@ packages:
         integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==,
       }
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
-
-  promise-polyfill@8.3.0:
-    resolution:
-      {
-        integrity: sha512-H5oELycFml5yto/atYqmjyigJoAo3+OXwolYiH7OfQuYlAqhxNvTfiNMbV9hsC6Yp83yE5r2KTVmtrG6R9i6Pg==,
-      }
 
   prompts@2.4.2:
     resolution:
@@ -5911,21 +5875,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@paypal/paypal-js@8.1.1':
-    dependencies:
-      promise-polyfill: 8.3.0
-
-  '@paypal/react-paypal-js@8.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@paypal/paypal-js': 8.1.1
-      '@paypal/sdk-constants': 1.0.149
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@paypal/sdk-constants@1.0.149':
-    dependencies:
-      hi-base32: 0.5.1
-
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
@@ -7397,8 +7346,6 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hi-base32@0.5.1: {}
-
   html-encoding-sniffer@3.0.0:
     dependencies:
       whatwg-encoding: 2.0.0
@@ -8387,8 +8334,6 @@ snapshots:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.3.1
-
-  promise-polyfill@8.3.0: {}
 
   prompts@2.4.2:
     dependencies:
