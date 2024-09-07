@@ -7,14 +7,14 @@ export const MissionAndVision = () => {
         <div className='container-xs flex justify-center md:px-5'>
           <div
             data-aos='fade-up'
-            className='flex w-full items-center gap-[30px] rounded-[40px] bg-white-a700 px-[42px] py-[46px] md:flex-col md:p-5'
+            className='flex w-full items-center gap-5 rounded-[40px] bg-white-a700 px-[42px] py-[46px] md:flex-col md:p-5'
           >
             <Img
               src='img_image_7.png'
               width={536}
               height={670}
               alt='Imageseven'
-              className='h-[670px] w-[48%] rounded-[40px] object-contain md:w-full'
+              className='tablet:hidden tablet:h-[170px] tablet:w-32  h-[670px] w-[48%] rounded-[40px] object-contain md:w-full '
             />
             <div className='flex flex-1 flex-col items-center gap-6 md:self-stretch'>
               <Heading

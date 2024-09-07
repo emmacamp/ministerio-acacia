@@ -301,7 +301,26 @@ function NavBar() {
               {item.name}
             </DisclosureButton>
           ))}
-          <Button
+          <DisclosureButton
+            as={Link}
+            href={'/sembrar'}
+            // aria-current={item.current ? 'page' : undefined}
+            // className={clsx(
+            //   item.current ? '' : '',
+            //   'block rounded-md px-3 py-2 text-base font-medium tablet:w-full tablet:text-center tablet:hover:bg-slate-100'
+            // )}
+            className='hidden  tablet:w-full tablet:flex h-[58px] min-w-[152px] flex-row items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 text-center text-[18px] font-bold text-white-a700 sm:px-5'
+          >
+            <Img
+              src='img_brote_1.png'
+              width={22}
+              height={22}
+              alt='Brote 1'
+              className='my-0.5 h-[22px] w-[22px] object-cover'
+            />
+            Sembrar
+          </DisclosureButton>
+          {/* <Button
             onClick={() => router.push('/sembrar')}
             leftIcon={
               <Img
@@ -315,7 +334,7 @@ function NavBar() {
             className='hidden  tablet:w-full tablet:flex h-[58px] min-w-[152px] flex-row items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 text-center text-[18px] font-bold text-white-a700 sm:px-5'
           >
             Sembrar
-          </Button>
+          </Button> */}
         </div>
       </DisclosurePanel>
     </Disclosure>
