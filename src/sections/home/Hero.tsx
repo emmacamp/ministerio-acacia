@@ -1,4 +1,5 @@
-import { Button, Heading } from '@/components';
+import { Heading } from '@/components';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
@@ -19,12 +20,13 @@ export const Hero = () => {
                 fe y la esperanza.
               </Heading>
             </div>
-            <Button
+            <Link
+              href='/sembrar'
               data-aos='fade-up'
               className='flex h-[54px] min-w-[226px] flex-row items-center justify-center rounded-lg bg-white-a700 px-6 text-center text-[16px] font-bold text-gray-900 sm:px-5'
             >
               Únete a Nuestra Misión
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

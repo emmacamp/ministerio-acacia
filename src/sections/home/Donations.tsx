@@ -1,4 +1,5 @@
-import { Button, Heading } from '../../components';
+import { Heading } from '../../components';
+import Link from 'next/link';
 
 export const Donations = () => {
   return (
@@ -19,9 +20,12 @@ export const Donations = () => {
                 quienes más lo necesitan. Juntos, podemos hacer una diferencia real. ¡Únete a
                 nuestra misión hoy!
               </Heading>
-              <Button className='flex h-[54px] min-w-[226px] flex-row items-center justify-center rounded-lg bg-white-a700 px-6 text-center text-[16px] font-bold text-gray-900 sm:px-5'>
+              <Link
+                href='/sembrar'
+                className='flex h-[54px] min-w-[226px] flex-row items-center justify-center rounded-lg bg-white-a700 px-6 text-center text-[16px] font-bold text-gray-900 sm:px-5'
+              >
                 Únete a Nuestra Misión
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

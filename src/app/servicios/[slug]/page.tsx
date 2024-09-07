@@ -13,6 +13,7 @@ export default function ServiceDetails() {
       <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/img_banner.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
         <div className='container-xs flex justify-center px-14 md:px-5'>
           <Heading
+            data-aos='fade-up'
             as='h1'
             size='heading2xl'
             className='!font-inter text-center tracking-[-3.20px] !text-white-a700'
@@ -29,15 +30,21 @@ export default function ServiceDetails() {
             className='w-[66%] text-justify !font-inter leading-9 tracking-[3.06px]'
           >
             {service?.content.map((des) => (
-              <>
-                <Heading color='dark' size='headinglg' as='h1' className='!font-dmsans'>
+              <div data-aos='fade-up' key={des.title}>
+                <Heading
+                  color='dark'
+                  size='headinglg'
+                  as='h1'
+                  className='!font-dmsans'
+                  data-aos='fade-up'
+                >
                   {des?.title}
                 </Heading>
                 <br />
                 <span className='font-bold'>{des?.subtitle}</span>
-                <p>{des?.paragraph}</p>
+                <p className='ms-5'>{des?.paragraph}</p>
                 <br />
-              </>
+              </div>
             ))}
           </Text>
         </div>
