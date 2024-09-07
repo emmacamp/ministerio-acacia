@@ -1,4 +1,4 @@
-import { Button, Heading } from '@/components';
+import { Heading } from '@/components';
 import { ImageGallery } from '@/components';
 
 export default function GalleryPage() {
@@ -82,9 +82,9 @@ export default function GalleryPage() {
             <ImageGallery grids={grids} />
             <ImageGallery grids={grids} />
           </div>
-          <Button className='flex h-[60px] min-w-[250px] flex-row items-center justify-center rounded-lg bg-gray-900 px-[34px] text-center font-dmsans text-[16px] font-bold text-white-a700 sm:px-5'>
+          {/* <Button className='flex h-[60px] min-w-[250px] flex-row items-center justify-center rounded-lg bg-gray-900 px-[34px] text-center font-dmsans text-[16px] font-bold text-white-a700 sm:px-5'>
             Ver más
-          </Button>
+          </Button> */}
         </div>
       </div>
     </>

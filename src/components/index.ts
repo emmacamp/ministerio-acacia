@@ -14,4 +14,5 @@ export * from './ServiceCard/index';
 export * from './Slider/index';
 export * from './Text/index';
 export * from './TextArea/index';
+export * from './SeedContainer/index';
 export * from './UserProfile/index';

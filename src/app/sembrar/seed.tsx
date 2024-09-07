@@ -1,15 +1,8 @@
-import { Text, Heading, SeedCard } from '@/components';
-import { Suspense, useState } from 'react';
-
-const data = [
-  { userStatus: 'Sembrar', userPrice: '$10' },
-  { userStatus: 'Sembrar', userPrice: '$15' },
-  { userStatus: 'Sembrar', userPrice: '$20' },
-  { userStatus: 'Personalizar', userPrice: '$0.00' },
-];
+import { Text, Heading } from '@/components';
+import { SeedContainer } from '../../components/SeedContainer/index';
 
 export default function Seed() {
-  const [selected, setSelected] = useState(0);
+  const email = process.env.BUSINESS_EMAIL ?? '';
   return (
     <div className='mt-[54px] flex justify-center' data-aos='fade-up'>
       <div className='container-xs flex justify-center md:px-5'>
@@ -33,18 +26,7 @@ export default function Seed() {
               Con tu generosidad, podemos continuar extendiendo el amor y la salvación de Cristo.
             </Text>
           </div>
-          <div className='mb-[34px] flex w-[84%] gap-7 md:w-full md:flex-col'>
-            <Suspense fallback={<div>Loading feed...</div>}>
-              {data.map((d, index) => (
-                <SeedCard
-                  {...d}
-                  handleSeed={() => setSelected(index)}
-                  isActive={selected === index}
-                  key={'modulosembrar' + index}
-                />
-              ))}
-            </Suspense>
-          </div>
+          <SeedContainer email={email} />
         </div>
       </div>
     </div>

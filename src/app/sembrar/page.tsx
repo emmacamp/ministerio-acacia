@@ -1,9 +1,6 @@
-'use client';
 import { Heading, Img } from '@/components';
 import Seed from './seed';
 import Link from 'next/link';
-
-import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 export default function SembrarPage() {
   return (
@@ -66,36 +63,6 @@ export default function SembrarPage() {
         </div>
       </div>
       <Seed />
-      <div className='flex justify-center w-full h-8'>
-        <PayPalScriptProvider
-          options={{
-            clientId:
-              'ARUwYAtQ-Gt9KGWzDHOGWHcTZZRrUl2CzKlUA9xxCf_G5Zx2r-xzKQhxdEuGIgm7lJq0OA3R_t6l5LyZ',
-          }}
-        >
-          <PayPalButtons
-            className='flex justify-center'
-            createOrder={(data, actions) => {
-              return actions.order.create({
-                purchase_units: [
-                  {
-                    amount: {
-                      currency_code: 'USD',
-                      value: '1.00',
-                    },
-                  },
-                ],
-                intent: 'CAPTURE',
-              });
-            }}
-            style={{
-              height: 50,
-              color: 'blue',
-              layout: 'horizontal',
-            }}
-          />
-        </PayPalScriptProvider>
-      </div>
     </>
   );
 }
