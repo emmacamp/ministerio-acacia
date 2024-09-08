@@ -6,7 +6,7 @@ import { TextArea } from '../TextArea';
 import { Button } from '../Button';
 import { Text } from '../Text';
 
-export function ContactForm() {
+export function ContactForm({ className }: { className?: string }) {
   const [state, handleSubmit, reset] = useForm('mvgpllqd');
   if (state.succeeded) {
     alert('Gracias');
@@ -16,7 +16,7 @@ export function ContactForm() {
     <>
       <div
         data-aos='fade-up'
-        className='absolute bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5'
+        className={`absolute bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5 ${className}`}
       >
         <Heading size='heading6' as='h4' className='!text-[24px] !text-gray-900 md:!text-[22px]'>
           Contactanos

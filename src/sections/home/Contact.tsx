@@ -7,15 +7,15 @@ import Link from 'next/link';
 export const Contact = () => {
   return (
     <div className='relative h-[750px] content-center bg-white-a700 md:h-auto'>
-      <div className='mx-auto flex-1' id='contacto'>
+      <div id='contacto' className='mx-auto  flex-1'>
         <Img
           src='img_image_21_464x1440.png'
           width={1440}
           height={464}
           alt='Imagetwentyone'
-          className='h-[464px] w-full object-cover md:h-auto'
+          className='h-[464px] w-full object-cover md:h-auto tablet:hidden'
         />
-        <div className='flex justify-center bg-blue_gray-700 py-[58px] md:py-5'>
+        <div className='flex tablet:hidden justify-center bg-blue_gray-700 py-[58px] md:py-5'>
           <div className='container-xs mb-[34px] flex items-start justify-center gap-[30px] px-14 md:flex-col md:px-5'>
             <div data-aos='fade-up' className='flex w-[24%] flex-col items-start gap-2 md:w-full'>
               <Heading size='heading5' as='h2' className='!text-[22px] !font-bold'>
@@ -53,7 +53,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <ContactForm className='tablet:' />
     </div>
   );
 };

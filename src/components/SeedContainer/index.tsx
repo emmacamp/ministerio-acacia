@@ -4,6 +4,7 @@ import { Suspense, useState } from 'react';
 import { SeedCard } from '../Seed';
 import { Button } from '../Button';
 import { Img } from '../Img';
+import clsx from 'clsx';
 
 type SeedCardProps = {
   email?: string;
@@ -33,7 +34,7 @@ export const SeedContainer = ({ email }: SeedCardProps) => {
 
   return (
     <>
-      <div className='mb-[34px] flex w-[84%] gap-7 md:w-full md:flex-col'>
+      <div className='mb-[34px] w-[84%] flex flex-wrap tablet:flex-col columns-4 justify-center items-center gap-3 h-auto'>
         <Suspense fallback={<div>Loading feed...</div>}>
           {data.map((d, index) => (
             <SeedCard
@@ -41,6 +42,9 @@ export const SeedContainer = ({ email }: SeedCardProps) => {
               isSelected={selected.id === d.id}
               selected={selected}
               handleSetSelected={setSelected}
+              className={clsx('', {
+                '': selected.id === d.id,
+              })}
               key={'modulosembrar' + index}
             />
           ))}
@@ -58,7 +62,7 @@ export const SeedContainer = ({ email }: SeedCardProps) => {
               className='my-0.5 h-[22px] w-[22px] object-cover'
             />
           }
-          className='tablet:hidden flex h-[58px] min-w-[152px] flex-row items-center justify-center gap-2 rounded-lg bg-gray-900 px-6 text-center text-[18px] font-bold text-white-a700 sm:px-5'
+          className='flex h-[58px] min-w-[152px] flex-row items-center justify-center gap-2 rounded-lg bg-gray-900 animate-[bounce_3s_ease-in-out_infinite] px-6 text-center text-[18px] font-bold text-white-a700 sm:px-5'
         >
           Sembrar
         </Button>
