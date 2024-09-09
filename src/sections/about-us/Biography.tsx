@@ -12,7 +12,7 @@ export const Biography = () => {
               color='dark'
               size='heading2xl'
               as='h2'
-              className='!font-inter tracking-[-2.40px]'
+              className='!font-inter tracking-[-2.40px] text-center'
             >
               Ministerio Acacia
             </Heading>

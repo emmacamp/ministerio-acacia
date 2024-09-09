@@ -5,6 +5,7 @@ interface Props {
   userName?: React.ReactNode;
   userDescription?: React.ReactNode;
   src: string;
+  phone_hidden?: boolean;
 }
 
 export const Founder = ({
@@ -24,7 +25,7 @@ export const Founder = ({
         width={350}
         height={462}
         alt='founder image'
-        className='h-[462px]  rounded-[20px] object-cover self-center'
+        className={`h-[462px]  rounded-[20px] object-cover self-center ${props.phone_hidden && 'tablet:hidden'}`}
       />
       {/* <Heading color='dark' data-aos='fade-up' size='headingxl' as='h1' className='mt-[22px]'>
         {userName}

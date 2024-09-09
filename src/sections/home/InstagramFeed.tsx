@@ -18,14 +18,14 @@ export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {
         <div className='flex gap-7 phone-md:flex-col phone-md:justify-center phone-md:items-center'>
           <div className='flex flex-1 flex-col gap-7 phone-md:w-full'>
             <img
-              src={posts[0].media_url}
+              src={posts[1].media_url}
               width={284}
               height={284}
               alt='Imagetwentytwo'
               className='h-[284px] rounded-[24px] object-cover phone-md:w-full'
             />
             <img
-              src={posts[1].media_url}
+              src={posts[2].media_url}
               width={284}
               height={284}
               alt='Imagetwentyfour'
@@ -33,7 +33,7 @@ export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {
             />
           </div>
           <img
-            src={posts[2].media_url}
+            src={posts[0].media_url}
             width={596}
             height={596}
             alt='Imagetwentyone'

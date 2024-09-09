@@ -20,7 +20,7 @@ export const MissionAndVision = () => {
               <Heading
                 size='heading5'
                 as='h2'
-                className='w-[98%] leading-[72px] tracking-[-2.00px] !text-gray-900 md:w-full'
+                className='w-[98%] phone-md:text-center leading-[72px] phone-md:leading-[50px] tracking-[-2.00px] !text-gray-900 md:w-full'
               >
                 Transformando Vidas e Impactando al Mundo
               </Heading>

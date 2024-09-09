@@ -2,12 +2,12 @@ export type Service = {
   url: string;
   image: string;
   title: string;
+  subtitle?: string | undefined;
   description: string;
   content: ServiceContent[];
 };
 
 interface ServiceContent {
-  title?: string;
   subtitle?: string;
   paragraph?: string;
 }

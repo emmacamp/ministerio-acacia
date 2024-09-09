@@ -4,18 +4,21 @@ const founders = [
   {
     src: '/images/img_image_16.png',
     userName: 'John Carter',
+    phone_hidden: true,
     userDescription:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
     src: '/images/img_image_21.png',
     userName: 'John Carter',
+    phone_hidden: false,
     userDescription:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
     src: '/images/img_image_21.png',
     userName: 'Matt Cannon',
+    phone_hidden: true,
     userDescription:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },

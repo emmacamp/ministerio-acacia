@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const Contact = () => {
   return (
-    <div className='relative h-[750px] content-center bg-white-a700 md:h-auto'>
+    <div className='relative tablet:flex tablet:justify-center tablet:items-center h-[750px] content-center bg-white-a700 md:h-auto'>
       <div id='contacto' className='mx-auto  flex-1'>
         <Img
           src='img_image_21_464x1440.png'
@@ -53,7 +53,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <ContactForm className='tablet:' />
+      <ContactForm className='tablet:me-[40px]' />
     </div>
   );
 };

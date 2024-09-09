@@ -11,7 +11,7 @@ export default function AboutUsPage() {
               data-aos='fade-up'
               as='h1'
               size='heading2xl'
-              className='!font-inter tracking-[-3.20px] !text-white-a700'
+              className='!font-inter tracking-[-3.20px] !text-white-a700 phone-md:text-center'
             >
               Conoce Quienes Somos
             </Heading>

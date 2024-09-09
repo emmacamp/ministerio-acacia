@@ -29,23 +29,34 @@ export default function ServiceDetails() {
             as='p'
             className='w-[66%] text-justify !font-inter leading-9 tracking-[3.06px]'
           >
-            {service?.content.map((des) => (
-              <div data-aos='fade-up' key={des.title}>
-                <Heading
-                  color='dark'
-                  size='headinglg'
-                  as='h1'
-                  className='!font-dmsans'
-                  data-aos='fade-up'
-                >
-                  {des?.title}
-                </Heading>
-                <br />
-                <span className='font-bold'>{des?.subtitle}</span>
-                <p className='ms-5'>{des?.paragraph}</p>
-                <br />
-              </div>
-            ))}
+            <Heading
+              color='dark'
+              size='headinglg'
+              as='h1'
+              className='!font-dmsans mb-3 '
+              data-aos='fade-up'
+            >
+              {service?.subtitle}
+            </Heading>
+            <p className='mb-10 '>{service?.description}</p>
+            <ul
+              data-aos='fade-up'
+              // key={des.subtitle}
+              className='flex flex-col gap-3 list-disc'
+            >
+              {service?.content.map((des) => (
+                <>
+                  {des?.subtitle && (
+                    <li data-aos='fade-up' className='flex flex-col gap-5 my-5 list-disc'>
+                      <Heading color='dark' size='headinglg' as='h1' className='!font-dmsans'>
+                        &gt; {des?.subtitle}
+                      </Heading>
+                      <p className='ms-5'>{des?.paragraph}</p>
+                    </li>
+                  )}
+                </>
+              ))}
+            </ul>
           </Text>
         </div>
       </div>

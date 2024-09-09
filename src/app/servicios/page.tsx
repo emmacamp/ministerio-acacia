@@ -12,7 +12,7 @@ export default function ServicePage() {
               data-aos='fade-up'
               size='heading2xl'
               as='h1'
-              className='!font-inter tracking-[-3.20px] !text-white-a700'
+              className='!font-inter tracking-[-3.20px] !text-white-a700 text-center'
             >
               Conoce Nuestros Servicios
             </Heading>

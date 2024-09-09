@@ -7,6 +7,9 @@ interface Props extends Service {
 }
 
 export const ServiceCard = ({ slug, title, description, image }: Props) => {
+  const maxLength = 144;
+  const shortenedDescription =
+    description.length > maxLength ? description.substring(0, maxLength) + '...' : description;
   return (
     <Link
       href={`/servicios/${slug}`}
@@ -22,15 +25,15 @@ export const ServiceCard = ({ slug, title, description, image }: Props) => {
           className='mx-auto h-[462px] w-full flex-1 rounded-[20px] object-cover'
         />
         <div className='absolute bottom-[31%] left-0 right-0 m-auto flex flex-1 flex-col items-center gap-2 px-8 sm:px-5'>
-          <Heading size='headinglg' as='h1' className='!font-dmsans !text-white-a700'>
+          <Heading size='heading3' as='h1' className='!font-dmsans !text-white-a700 text-center'>
             {title}
           </Heading>
           <Text
             size='texts'
             as='p'
-            className='self-stretch text-center !font-dmsans leading-[30px] !text-white-a700'
+            className='self-stretch text-center !font-dmsans leading-[30px] !text-white-a700 '
           >
-            {description}
+            {shortenedDescription}
           </Text>
         </div>
       </div>

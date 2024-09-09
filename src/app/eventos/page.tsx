@@ -5,6 +5,20 @@ import { EventComponent } from '@/sections/events/Event';
 
 const EventsPage = () => {
   const { events } = dbStore();
+
+  //   interface Props {
+  //   className?: string;
+  //   activitySubtitle?: React.ReactNode;
+  //   eventTitle?: React.ReactNode;
+  //   locationSubtitle?: React.ReactNode;
+  //   whatToDoSubtitle?: React.ReactNode;
+  //   eventDescription?: React.ReactNode;
+  //   eventButton?: string;
+  //   eventDate?: React.ReactNode;
+  // }
+
+  // export const EventDetails = ({
+
   return (
     <>
       <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/img_banner.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
