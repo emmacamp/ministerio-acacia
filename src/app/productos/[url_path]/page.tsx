@@ -11,12 +11,12 @@ export default function ProductDetails({ params }: { params: { url_path: string 
   const product: Product =
     db.products.find((prod) => prod.url_path == params?.url_path) || ({} as Product);
 
-  const number = '8297721111';
+  const number = '8298564016';
   const textMessage = 'Saludos, Me intereza el producto:';
 
   return (
     <div className='container-xs box-border md:px-5 flex flex-col '>
-      <span className='my-7 text-slate-500 flex gap-3 text-md'>
+      <span data-aos='fade-up' className='my-7 text-slate-500 flex gap-3 text-md'>
         <Link href='/' className='hover:underline'>
           Acacia
         </Link>{' '}
@@ -28,12 +28,13 @@ export default function ProductDetails({ params }: { params: { url_path: string 
       </span>
       <div className='flex w-full gap-4 '>
         <div className='w-[60%] box-border gap-3 rounded-md   flex flex-col justify-center items-center'>
-          <div className='bg-gray-200/50 rounded-md'>
+          <div data-aos='fade-up' className='bg-gray-200/50 rounded-md'>
             <img src={product?.imgUrl} alt='product image' className='w-full' />
           </div>
           <div className='flex box-border gap-3 '>
             {product.variants.map((variant, i) => (
               <div
+                data-aos='fade-up'
                 key={i}
                 className='bg-gray-200/50 box-border rounded-md  flex justify-center items-center w-1/3'
               >
@@ -43,14 +44,17 @@ export default function ProductDetails({ params }: { params: { url_path: string 
           </div>{' '}
         </div>{' '}
         <div className='w-[40%] flex flex-col gap-5'>
-          <div className=''>
+          <div className='' data-aos='fade-up'>
             <Heading size='headingxl' color='dark'>
               {product?.title}
             </Heading>
             <span className='text-2xl text-slate-600'>${product.price}</span>
           </div>
-          <p className='text-slate-600 mb-3'>{product.description}</p>
+          <p data-aos='fade-up' className='text-slate-600 mb-3'>
+            {product.description}
+          </p>
           <Link
+            data-aos='fade-up'
             target='_blank'
             href={`https://wa.me/${number}?text=${textMessage} ${product.title}. http://localhost:3000/productos/${product.url_path}`}
             className='bg-gray-900 text-center text-white-a700 rounded-full p-2'

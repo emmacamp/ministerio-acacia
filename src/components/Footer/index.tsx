@@ -2,10 +2,8 @@
 
 import Link from 'next/link';
 
-import { Button } from '../Button';
 import { Heading } from '../Heading';
 import { Img } from '../Img';
-import { Input } from '../Input';
 import { Text } from '../Text';
 
 interface Props {
@@ -75,7 +73,7 @@ export const Footer = ({ ...props }: Props) => {
       <div className='container-xs mb-2.5 flex justify-center md:px-5'>
         <div className='w-full bg-white-a700 py-3.5'>
           <div className='mt-8 flex flex-col gap-[38px]'>
-            <div className='flex items-center justify-between gap-5 md:flex-col'>
+            <div className='flex items-center justify-between gap-5 tablet:flex-col'>
               <div className='flex w-[24%] flex-col gap-6 md:w-full'>
                 <div className='mr-2 flex flex-col gap-3 md:mr-0'>
                   <Img
@@ -226,36 +224,26 @@ export const Footer = ({ ...props }: Props) => {
                   </ul>
                 </div> */}
               </div>
-              <div className='w-[32%] self-start rounded-[12px] bg-gray-900 p-8 md:w-full md:self-auto sm:p-5'>
-                <div className='flex flex-col items-center justify-center gap-2'>
-                  <Heading size='heading4' as='h5' className='!font-worksans !text-[20px]'>
+              <div className='w-[32%] h-[160px] self-start rounded-[12px] bg-gray-900 p-8 md:w-full md:self-auto sm:p-5'>
+                <div className='flex flex-col items-center justify-center gap-2 mb-6'>
+                  <Heading size='heading3' as='h3' className='!font-worksans '>
                     Unete a la Iglesia Virtual
                   </Heading>
-                  <Text
+                  {/* <Text
                     size='textxs'
                     as='p'
                     className='!font-worksans !text-[16px] !text-white-a700'
                   >
-                    Recibe siempre nuestras actualizaciones
-                  </Text>
+                    Mantente al nuestros cultos{' '}
+                  </Text> */}
                 </div>
-                <Input
-                  name='email'
-                  placeholder={`Your Email`}
-                  suffix={
-                    <Img
-                      src='img_mail.svg'
-                      width={20}
-                      height={20}
-                      alt='Mail'
-                      className='h-[20px] w-[20px]'
-                    />
-                  }
-                  className='mt-[30px] flex h-[48px] items-center justify-center gap-4 rounded-lg bg-white-a700 px-3.5 font-worksans text-[16px] text-blue_gray-700'
-                />
-                <Button className='mt-2 flex h-[48px] flex-row items-center justify-center self-stretch rounded-md bg-blue_gray-700 px-[34px] text-center font-worksans text-[16px] font-medium text-white-a700 sm:px-5'>
-                  Subscribe
-                </Button>
+
+                <Link
+                  href=''
+                  className='mt-2 flex animate-[bounce_3s_ease-in-out_infinite] h-[48px] flex-row items-center justify-center self-stretch rounded-md bg-white-a700 text-blue-950 px-[34px] text-center font-worksans text-[16px] font-medium  sm:px-5'
+                >
+                  Llenar formulario de membresía
+                </Link>
               </div>
             </div>
             <div className='flex flex-col gap-[26px]'>

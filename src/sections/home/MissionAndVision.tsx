@@ -3,7 +3,7 @@ import { Heading, Img, Text } from '@/components';
 export const MissionAndVision = () => {
   return (
     <div>
-      <div className='flex justify-center bg-blue_gray-700 py-14 md:py-5'>
+      <div className='flex justify-center bg-blue_gray-700 py-14 md:py-5 px-4'>
         <div className='container-xs flex justify-center md:px-5'>
           <div
             data-aos='fade-up'
@@ -20,9 +20,9 @@ export const MissionAndVision = () => {
               <Heading
                 size='heading5'
                 as='h2'
-                className='w-[98%] phone-md:text-center leading-[72px] phone-md:leading-[50px] tracking-[-2.00px] !text-gray-900 md:w-full'
+                className='w-[98%] phone-md:text-center phone-md:leading-[50px] tracking-[-2.00px] !text-gray-900 md:w-full'
               >
-                Transformando Vidas e Impactando al Mundo
+                Transformando Vidas e Impactando las Naciones
               </Heading>
               <Text size='textxs' as='p' className='w-full !font-inter leading-9 tracking-[2.55px]'>
                 <span>La&nbsp;</span>

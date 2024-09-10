@@ -10,137 +10,41 @@ export const Testimonials = () => {
     568: { items: 2 },
     1024: { items: 3 },
   };
-  const items = [
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
-    <div
-      key={Math.random()}
-      className='item flex flex-col justify-center items-center  me-2 rounded-lg'
-      data-value='1'
-    >
-      <video
-        autoPlay
-        muted
-        playsInline
-        controls
-        className='rounded-lg'
-        src='/videos/vid_example.mov'
-      ></video>
-      <h1 className='font-semibold text-xl'>Discaury Cruz</h1>
-      <div className='text-slate-500'> Fundadora</div>
-    </div>,
+
+  const testimonials = [
+    {
+      src: '/videos/testimonios/Testimonio-ruta-acacia-kids.mp4',
+      person: 'Ramona Rosario',
+      role: 'Líder Iglesia Fuente de Amor',
+    },
+    {
+      src: '/videos/testimonios/Testimonio-campamento-2024.mp4',
+      person: 'Loida Wilson',
+      role: 'Líder Ministerio de Niños (La Romana)',
+    },
+    {
+      src: '/videos/testimonios/Testimonio-Ezequiel-Silva.mp4',
+      person: 'Ezequiel Silva',
+      role: 'Misiterio de Jovenes',
+    },
+    {
+      src: '/videos/testimonios/Testimonio.mp4',
+      person: 'Mireya José',
+      role: 'Líder de Intercepción',
+    },
   ];
 
-  // const items = [
-  //   {
-  //     imgSrc: 'img_image_7.png',
-  //     imgAlt: 'Imageeight',
-  //     imgWidth: 50,
-  //     imgHeight: 50,
-  //     textContent: `A visual guide could be a wireframe, creative composition, or information
-  //                 architecture. A device that enables`,
-  //     headingText: 'Sophie Moore',
-  //     subText: 'Web Designer',
-  //   },
-  //   {
-  //     imgSrc: 'img_image_7.png',
-  //     imgAlt: 'Imageeight',
-  //     imgWidth: 50,
-  //     imgHeight: 50,
-  //     textContent: `A visual guide could be a wireframe, creative composition, or information
-  //                 architecture`,
-  //     headingText: 'Sophie Moore',
-  //     subText: 'Web Designer',
-  //   },
-  //   {
-  //     imgSrc: 'img_image_7.png',
-  //     imgAlt: 'Imageeight',
-  //     imgWidth: 50,
-  //     imgHeight: 50,
-  //     textContent: `A visual guide could be a wireframe, creative composition, or information
-  //                 architecture. A device that enables`,
-  //     headingText: 'Sophie Moore',
-  //     subText: 'Web Designer',
-  //   },
-  // ];
+  const items = testimonials.map((tsm) => (
+    <div
+      key={Math.random()}
+      className='item flex flex-col rounded-lg overflow-hidden justify-center items-center gap-2   w-[350px] h-[700px]'
+      data-value='1'
+    >
+      <video src={tsm.src} autoPlay muted playsInline controls className='rounded-lg' />
+      <h1 className='font-semibold text-xl'>{tsm.person}</h1>
+      <div className='text-slate-500'>{tsm.role}</div>
+    </div>
+  ));
 
   return (
     <div className='bg-white-a700 py-[66px] md:py-5 '>
@@ -156,79 +60,20 @@ export const Testimonials = () => {
             Testimonios
           </Heading>
         </div>
-        {/* <div
-          data-aos='fade-up'
-          className='flex items-center justify-center self-stretch md:flex-col'
-        >
-          <Button
-            onClick={() => {
-              sliderRef?.current?.slidePrev();
-            }}
-            className='flex h-[32px] w-[32px] items-center justify-center px-0.5'
-          >
-            <ChevronLeft />
-          </Button> */}
-        <div className='mx-auto flex w-full px-14 md:self-stretch md:px-5' data-aos='fade-up'>
-          {/* <Slider
-              autoPlay
-              autoPlayInterval={2000}
-              responsive={{ '0': { items: 1 }, '551': { items: 1 }, '1051': { items: 1 } }}
-              // disableDotsControls
-              activeIndex={sliderState}
-              onSlideChanged={(e: EventObject) => {
-                setSliderState(e?.item);
-              }}
-              ref={sliderRef}
-              items={[...Array(3)].map(() => (
-                <div key={Math.random()} className='flex  justify-center items-center text-center'>
-                  {items.map((item, index) => (
-                    <div
-                      key={index}
-                      className='flex w-[44%] flex-col justify-center items-center px-2 md:w-full'
-                    >
-                      <Img
-                        src={item.imgSrc}
-                        width={item.imgWidth}
-                        height={item.imgHeight}
-                        alt={item.imgAlt}
-                        className=' h-[50px] w-[50px] rounded-full object-cover '
-                      />
-                      <Text
-                        size='texts'
-                        as='p'
-                        className='mt-5 self-stretch text-center !text-[18px] !font-normal leading-[30px]'
-                      >
-                        {item.textContent}
-                      </Text>
-                      <Heading color='dark' size='headinglg' as='h4' className='mb-2 mt-6 md:mr-0'>
-                        {item.headingText}
-                      </Heading>
-                      <Text as='p' className='!text-[16px]'>
-                        {item.subText}
-                      </Text>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            /> */}
 
+        <div className='mx-auto flex w-full px-14 md:self-stretch md:px-5' data-aos='fade-up'>
           <AliceCarousel
             mouseTracking
             autoPlay
+            infinite
             autoPlayInterval={2000}
             items={items}
             responsive={responsive}
             controlsStrategy='alternate'
+            disableButtonsControls
+            autoPlayControls
           />
         </div>
-        {/* <Button
-            onClick={() => {
-              sliderRef?.current?.slideNext();
-            }}
-            className='flex h-[32px] w-[32px] items-center justify-center px-0.5'
-          >
-            <ChevronRight />
-          </Button> */}
       </div>
     </div>
   );

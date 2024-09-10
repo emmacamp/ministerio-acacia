@@ -231,7 +231,7 @@ function NavBar() {
   const router = useRouter();
   return (
     <Disclosure as='nav' className=''>
-      <div className='mx-auto max-w-7xl '>
+      <div className='mx-auto max-w-7xl px-4'>
         <div className='relative flex h-16  items-center'>
           <div className='absolute inset-y-0 right-0 items-center  tablet:block hidden'>
             {/* Mobile menu button*/}

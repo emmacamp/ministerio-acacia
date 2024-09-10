@@ -17,7 +17,6 @@ const getInstagramPosts = async () => {
     const response = await axios.get(url);
     return response.data;
   } catch (error: any) {
-    // console.error(error?.response.data);
     return [];
   }
 };
@@ -26,7 +25,7 @@ export const RedesSection = async () => {
   const posts = (await getInstagramPosts()).data;
 
   return (
-    <div data-aos='fade-up' className='bg-white-a700'>
+    <div data-aos='fade-up' className='bg-white-a700 px-4'>
       <div className='flex flex-col items-center bg-white-a700 py-14 md:py-5'>
         <div className='container-xs flex flex-col items-center gap-[50px] md:px-5'>
           <div className='ml-72 mr-[292px] flex flex-col items-center gap-2 self-stretch md:mx-0'>
@@ -40,11 +39,31 @@ export const RedesSection = async () => {
             </Text>
           </div>
 
-          <InstagramFeedDesktop className='tablet:hidden' posts={posts} />
-          <InstagramFeedMobile
-            className='self-stretch phone-md:mx-1 mx-16 tablet:block hidden'
-            posts={posts}
-          />
+          {posts ? (
+            <>
+              <InstagramFeedDesktop className='tablet:hidden' posts={posts} />
+              <InstagramFeedMobile
+                className='self-stretch phone-md:mx-1 mx-16 tablet:block hidden'
+                posts={posts}
+              />
+            </>
+          ) : (
+            <div className='shadow rounded-md w-full p-4 max-w-sm mx-auto'>
+              <div className='animate-pulse flex space-x-4'>
+                <div className=' bg-slate-700 h-auto w-10 rounded'></div>
+                <div className='flex-1 space-y-6 py-1'>
+                  <div className='h-[100px] bg-slate-700 rounded'></div>
+                  <div className='space-y-3'>
+                    <div className='grid grid-cols-3 gap-4'>
+                      <div className='h-[100px] bg-slate-700 rounded col-span-2'></div>
+                      <div className='h-[100px] bg-slate-700 rounded col-span-1'></div>
+                    </div>
+                    <div className='h-[100px] bg-slate-700 rounded'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           <Link
             href='https://linktr.ee/discauri'

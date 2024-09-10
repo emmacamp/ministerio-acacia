@@ -39,7 +39,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           <div className='flex flex-col gap-11 bg-white-a700'>
             <main>{children}</main>
           </div>
-          <div className='mt-24'>
+          <div className='mt-24 px-4'>
             <div className='flex justify-center bg-white-a700'>
               <div className='container-xs mb-2.5 flex justify-center md:px-5'>
                 <Footer />

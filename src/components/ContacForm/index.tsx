@@ -14,14 +14,11 @@ export function ContactForm({ className }: { className?: string }) {
   }
   return (
     <>
-      <div
-        data-aos='fade-up'
-        className={` absolute self-center tablet:w-[80%] tablet:flex justify-center tablet:relative bottom-0 tablet:right-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col tablet:items-center items-start rounded-[20px] bg-white-a700 p-[50px] md:p-5 ${className}`}
-      >
+      <div data-aos='fade-up' className={` ${className}`}>
         <Heading size='heading6' as='h4' className='!text-[24px] !text-gray-900 md:!text-[22px]'>
           Contactanos
         </Heading>
-        <Text as='p'>Nosotros queremos saber de ti</Text>
+        <Text as='p'>Queremos orar por ti</Text>
         <form
           onSubmit={handleSubmit}
           //   action='https://formspree.io/f/mvgpllqd'

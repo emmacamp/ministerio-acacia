@@ -3,11 +3,10 @@
 import { Heading, Img, Text } from '@/components';
 import { ContactForm } from '@/components/ContacForm';
 import Link from 'next/link';
-
 export const Contact = () => {
   return (
-    <div className='relative tablet:flex tablet:justify-center tablet:items-center h-[750px] content-center bg-white-a700 md:h-auto'>
-      <div id='contacto' className='mx-auto  flex-1'>
+    <div className='relative bg-white-a700 h-[750px] mt-10 tablet:h-[450px]'>
+      <div id='contacto' className='mx-auto flex-1'>
         <Img
           src='img_image_21_464x1440.png'
           width={1440}
@@ -42,9 +41,6 @@ export const Contact = () => {
                 <Text as='p' className='!text-white-a700'>
                   (829) 856 - 4016
                 </Text>
-                {/* <Text as='p' className='!text-white-a700'>
-                      (123) 456 - 789
-                    </Text> */}
                 <Text as='p' className='!text-white-a700'>
                   acaciateam7@gmail.com
                 </Text>
@@ -53,7 +49,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <ContactForm className='tablet:me-[40px]' />
+      <ContactForm className='absolute tablet:relative tablet:mx-auto tablet:top-auto tablet:right-auto tablet:my-0 bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col tablet:w-[80%] tablet:items-center items-start rounded-[20px] bg-white-a700 p-[50px] tablet:p-5 max-w-[500px] tablet:border shadow' />
     </div>
   );
 };
