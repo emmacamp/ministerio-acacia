@@ -1,6 +1,7 @@
+'use client';
 import { Heading } from '@/components';
 import Link from 'next/link';
-import { Typewriter } from './typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const Hero = () => {
   return (
@@ -20,7 +21,19 @@ export const Hero = () => {
         <div className='container-xs flex justify-center px-14 md:px-5'>
           <div className='flex w-[78%] flex-col items-center gap-12 md:w-full'>
             <div data-aos='fade-up' className='flex flex-col gap-6 self-stretch'>
-              <Typewriter />
+              <Heading
+                size='heading7'
+                id='typewriter'
+                as='h1'
+                className='text-center text-white leading-[72px] tracking-[-2.40px]'
+              >
+                <Typewriter
+                  words={['Transformando Vidas', 'Impactando las Naciones', 'Ministerio Acacia']}
+                  cursor={false}
+                  loop
+                />
+              </Heading>
+
               {/* <Heading
                 size='heading7'
                 as='h1'
