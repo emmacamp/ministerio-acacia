@@ -22,7 +22,7 @@
       }
     },
     {
-      "userImage": "img_image_10.png",
+      "userImage": "img_image_13.png",
       "buttonLabel": "Responsabilidad Social",
       "titleText": "Compromiso con el Medio Ambiente: Nuestro Ministerio Limpia las Playas de la República Dominicana",
       "dateText": "Septiembre 10, 2024",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "userImage": "img_image_10.png",
+      "userImage": "img_image_7.png",
       "buttonLabel": "Juventud y Transformación",
       "titleText": "Campamentos Juveniles: Impulsando la Transformación de los Jóvenes",
       "dateText": "Septiembre 10, 2024",
@@ -110,6 +110,94 @@
           {
             "title": "Impacto en la Comunidad",
             "text": "Los beneficios de estos talleres y cursos se reflejan en la mejora general de nuestras comunidades. Al proporcionar acceso a educación y desarrollo, ayudamos a las personas a alcanzar sus objetivos, superar obstáculos y contribuir positivamente a su entorno. Las historias de éxito y crecimiento personal que hemos recibido demuestran el impacto positivo que estas iniciativas tienen en la vida de los participantes y en la comunidad en general."
+          }
+        ]
+      }
+    },
+    {
+      "userImage": "img_image_12.png",
+      "buttonLabel": "Conéctate con Nosotros",
+      "titleText": "Bienvenido a Nuestra Iglesia Virtual: Tu Familia Espiritual en Línea",
+      "dateText": "Septiembre 11, 2024",
+      "url": "bienvenido-a-nuestra-iglesia-virtual-tu-familia-espiritual-en-linea",
+      "content": {
+        "introduction": "¡Saludos a todos! En un mundo que a menudo nos separa físicamente, la Iglesia Virtual ha sido establecida con un propósito divino: llevar el Evangelio hasta los rincones más lejanos de la tierra. Si por cualquier motivo no puedes congregarte físicamente, te extendemos una cálida invitación para que te unas a nuestra familia en línea. Aquí, en nuestra comunidad virtual, tienes un lugar especial reservado para ti. En este espacio, descubrirás un refugio de fe y esperanza, donde la distancia no es un obstáculo para experimentar la sanidad y liberación que el Señor ofrece.",
+        "subjects": [
+          {
+            "title": "Tu Espacio Espiritual en Línea",
+            "text": "La Iglesia Virtual es mucho más que una plataforma en línea; es un hogar espiritual donde personas de todas partes del mundo se reúnen para adorar, estudiar la Biblia y crecer en su fe. A través de nuestras diversas plataformas, te ofrecemos la oportunidad de recibir la Palabra, experimentar la presencia del Señor y conectar con otros creyentes, sin importar dónde te encuentres."
+          },
+          {
+            "title": "Conéctate con Nosotros",
+            "text": "Queremos que te sientas parte de nuestra familia espiritual, por eso hemos diseñado una programación especial que te permitirá ser parte activa de nuestras actividades y servicios. Aquí tienes cómo puedes participar:"
+          },
+          {
+            "title": "Lunes: Encuentro de Fe en YouTube",
+            "text": "Únete a nuestro Discipulado Semanal a las 7:00 pm (hora del Caribe) en YouTube. Estos encuentros están diseñados para fortalecer tu conocimiento bíblico y fomentar tu crecimiento espiritual."
+          },
+          {
+            "title": "Martes: Jornada de Ayuno y Oración",
+            "text": "Participa en nuestro Desayuno Espiritual a las 6:00 am. Ayunamos juntos como una comunidad virtual, buscando la dirección y la fortaleza de Dios en nuestras vidas."
+          },
+          {
+            "title": "Miércoles: Servicio de Renovación",
+            "text": "No te pierdas nuestro Servicio de Gloria en YouTube a las 7:00 pm (hora del Caribe). Es un tiempo especial para experimentar la presencia de Dios y recibir ministración y oración."
+          },
+          {
+            "title": "Primer Jueves de Cada Mes: Encuentro del Ministerio de Damas",
+            "text": "Las mujeres de nuestra comunidad se reúnen para un tiempo especial de adoración y crecimiento. Es una oportunidad para compartir y fortalecerse en la fe."
+          },
+          {
+            "title": "Segundo Jueves de Cada Mes: Encuentro del Ministerio de Caballeros",
+            "text": "Los hombres se unen para un encuentro de reflexión y compañerismo, enfocándose en el crecimiento espiritual y el liderazgo."
+          },
+          {
+            "title": "Tercer Jueves de Cada Mes: Servicio de Jóvenes",
+            "text": "Un espacio vibrante para nuestros jóvenes, donde adoran y estudian la Palabra de manera dinámica y relevante."
+          },
+          {
+            "title": "Viernes: Servicio de Gloria en Zoom",
+            "text": "Conéctate a las 7:00 pm (hora del Caribe) para una experiencia especial de adoración y comunión a través de Zoom. Es un espacio íntimo para compartir oraciones y testimonios."
+          },
+          {
+            "title": "Sábado: Acacia King IVSV",
+            "text": "A las 3:00 pm (hora del Caribe), únete a nuestro servicio especial, donde experimentamos la presencia de Dios y celebramos Su bondad."
+          }
+        ]
+      }
+    },
+    {
+      "userImage": "blog/funcacion-oasis-house.jpeg",
+      "buttonLabel": "Noticias y Actualizaciones",
+      "titleText": "Manos en Acción: Conociendo la Fundación Oasis House",
+      "dateText": "Septiembre 11, 2024",
+      "url": "manos-en-accion-conociendo-la-fundacion-oasis-house",
+      "content": {
+        "introduction": "Bienvenidos a nuestro blog, donde compartimos las últimas noticias y actualizaciones sobre el trabajo transformador que llevamos a cabo en la Fundación Oasis House. En este espacio, exploraremos nuestra misión, visión, valores y las diversas iniciativas que desarrollamos para hacer una diferencia significativa en las vidas de quienes servimos.",
+        "subjects": [
+          {
+            "title": "Nuestra Misión",
+            "text": "Nuestra misión es brindar ayuda humanitaria a personas en estado de vulnerabilidad extrema sin importar género, país, religión o cultura a la que pertenezcan, respetando su identidad y valor como persona. Nos comprometemos a ofrecer asistencia con dignidad y empatía, asegurando que cada individuo reciba el apoyo necesario para superar sus desafíos."
+          },
+          {
+            "title": "Nuestra Visión",
+            "text": "Nuestra visión es ser referente como institución sin fines de lucro, de carácter socio-cristiano, que sirve de puente entre el necesitado y la provisión necesaria para suplir necesidades de asistencia social y asesoría integral para mejorar la calidad de vida de quienes así lo requieran. Aspiramos a ser un modelo de apoyo y eficacia, conectando recursos con quienes más los necesitan para fomentar un desarrollo sostenible y significativo."
+          },
+          {
+            "title": "Nuestro Objetivo",
+            "text": "La Fundación Oasis House tiene como principal objetivo brindar asistencia integral a las personas menos favorecidas de nuestra sociedad. Esto se logra a través de la provisión de alimentos, asistencia médica, canalización de empleos, reparación de casas, y la ayuda especializada a niños, familias y pastores en situación de vulnerabilidad social y económica. Nuestro compromiso es garantizar que aquellos en mayor necesidad reciban el soporte necesario para mejorar su calidad de vida y alcanzar un mayor grado de estabilidad y bienestar."
+          },
+          {
+            "title": "Nuestros Valores",
+            "text": "Solidaridad: Nos comprometemos a estar al lado de quienes más lo necesitan, ofreciendo apoyo y comprensión.\nIntegridad: Actuamos con transparencia y honestidad en todas nuestras acciones y decisiones.\nCompasión: Trabajamos con empatía y respeto, valorando la dignidad de cada persona que servimos.\nExcelencia: Buscamos la mejora continua en nuestros programas y servicios para ofrecer la mejor asistencia posible.\nInnovación: Fomentamos la creatividad y la adaptación para enfrentar los desafíos de manera efectiva."
+          },
+          {
+            "title": "Lo Que Hacemos",
+            "text": "En la Fundación Oasis House, implementamos una variedad de programas y servicios diseñados para abordar las necesidades específicas de nuestras comunidades. Entre nuestras iniciativas destacadas se encuentran:\n\nAsistencia Humanitaria: Proporcionamos ayuda de emergencia y recursos esenciales a quienes se encuentran en situaciones críticas.\nFormación Integral: Ofrecemos programas educativos y talleres que promueven el desarrollo personal y profesional, capacitando a individuos para mejorar sus habilidades y oportunidades.\nFortalecimiento Ministerial: Apoyamos a líderes y organizaciones ministeriales en su labor, proporcionando recursos y formación para fortalecer su impacto en la comunidad.\nAsesoría Laboral: Brindamos orientación y apoyo en la búsqueda de empleo, desarrollo de habilidades y creación de oportunidades laborales.\n\nCada una de nuestras iniciativas está diseñada para ofrecer un apoyo significativo y sustentable, ayudando a construir un futuro mejor para todos. Te invitamos a seguirnos en nuestras redes sociales y a estar al tanto de nuestras actualizaciones y eventos. Juntos, podemos hacer una gran diferencia."
+          },
+          {
+            "title": "¿Deseas unirte a esta visión?",
+            "text": "Realiza tu aporte ahora. Sé parte de este movimiento y ayúdanos a ayudar a cientos de personas."
           }
         ]
       }
