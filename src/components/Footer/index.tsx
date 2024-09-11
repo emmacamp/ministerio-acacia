@@ -253,23 +253,23 @@ export const Footer = ({ ...props }: Props) => {
                   Copyright © Ministerio Acacia | Todos los derechos reservados{' '}
                 </Text>
                 <div className='flex gap-4'>
-                  <Link href='#'>
+                  <Link href='/politicas-de-autor'>
                     <Text
                       size='textxs'
                       as='p'
                       className='!font-plusjakartasans !text-[16px] !text-gray-700'
                     >
-                      Terms of Use
+                      Términos
                     </Text>
                   </Link>
                   <div className='h-[24px] w-px bg-blue_gray-900' />
-                  <Link href='#'>
+                  <Link href='/politicas-de-autor'>
                     <Text
                       size='textxs'
                       as='p'
                       className='!font-plusjakartasans !text-[16px] !text-gray-700'
                     >
-                      Privacy Policy
+                      Políticas
                     </Text>
                   </Link>
                 </div>
