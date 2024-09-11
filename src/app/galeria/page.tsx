@@ -64,14 +64,9 @@ export default function GalleryPage() {
 
   return (
     <>
-      <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/img_banner.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
+      <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/sections/gallery.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
         <div className='container-xs flex justify-center px-14 md:px-5'>
-          <Heading
-            as='h1'
-            data-aos='fade-up'
-            size='heading2xl'
-            className='!font-inter tracking-[-3.20px] !text-white-a700'
-          >
+          <Heading as='h1' data-aos='fade-up' size='heading7' className='tracking-[-3.20px]'>
             Galeria
           </Heading>
         </div>

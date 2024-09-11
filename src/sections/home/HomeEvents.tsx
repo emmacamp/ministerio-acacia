@@ -1,7 +1,11 @@
-import { EventDetails, Heading, Img } from '@/components';
+'use client';
+import { Heading, Img } from '@/components';
 import Link from 'next/link';
+import { EventComponent } from '../events/Event';
+import { dbStore } from '@/store';
 
 export const HomeEvents = () => {
+  const { events } = dbStore();
   return (
     <div data-aos='fade-up' className='flex justify-center px-4'>
       <div className='container-xs flex justify-center md:px-5'>
@@ -10,8 +14,9 @@ export const HomeEvents = () => {
             Eventos y Actividades
           </Heading>
           <div className='flex gap-[60px] self-stretch md:flex-col'>
-            <EventDetails className='bg-gray-900' />
-            <EventDetails className='bg-blue_gray-700' />
+            {events.slice(0, 2).map((event, i) => (
+              <EventComponent key={i} event={event} />
+            ))}
           </div>
           <Link
             href='/eventos'

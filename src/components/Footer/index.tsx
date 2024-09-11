@@ -239,7 +239,8 @@ export const Footer = ({ ...props }: Props) => {
                 </div>
 
                 <Link
-                  href=''
+                  target='_blank'
+                  href='https://docs.google.com/forms/d/e/1FAIpQLScxoK7vPXJj7TxFrof65Cr441HXryaFKNZus3erOuP5Sauiug/viewform'
                   className='mt-2 flex animate-[bounce_3s_ease-in-out_infinite] h-[48px] flex-row items-center justify-center self-stretch rounded-md bg-white-a700 text-blue-950 px-[34px] text-center font-worksans text-[16px] font-medium  sm:px-5'
                 >
                   Llenar formulario de membresía
