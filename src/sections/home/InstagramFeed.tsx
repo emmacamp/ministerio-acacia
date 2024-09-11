@@ -2,13 +2,11 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './instagram.css';
+import { Post } from './RedesSection';
 
 interface FeedProps {
   className: string;
-  posts: {
-    id: string;
-    media_url: string;
-  }[];
+  posts: Post[];
 }
 
 export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {

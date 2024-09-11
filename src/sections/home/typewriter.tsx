@@ -1,8 +1,8 @@
 'use client';
 import { useEffect } from 'react';
-import './typewriter.css';
 import { Heading } from '@/components';
-export const Typewriter: React.FC = () => {
+
+export const Typewriter = () => {
   useEffect(() => {
     const dataText = ['Transformando Vidas', 'Impactando las Naciones', 'Ministerio Acacia'];
 
@@ -31,7 +31,7 @@ export const Typewriter: React.FC = () => {
       } else {
         setTimeout(() => {
           startTextAnimation(0);
-        }, 12000);
+        }, 20000);
       }
     };
 
@@ -50,5 +50,3 @@ export const Typewriter: React.FC = () => {
     </div>
   );
 };
-
-export default Typewriter;

@@ -1,7 +1,6 @@
 import { Heading } from '@/components';
 import Link from 'next/link';
-import './typewriter.css';
-import Typewriter from './typewriter';
+import { Typewriter } from './typewriter';
 
 export const Hero = () => {
   return (

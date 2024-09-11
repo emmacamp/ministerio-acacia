@@ -5,24 +5,32 @@ import { Text, Heading } from '../../components';
 import axios from 'axios';
 import { InstagramFeedDesktop, InstagramFeedMobile } from './InstagramFeed';
 
+export interface Post {
+  id: number;
+  media_url: string;
+  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
+}
+
 const getInstagramPosts = async () => {
   const token = process.env.INSTAGRAM_TOKEN_KEY;
   const userId = process.env.USER_ID;
-  const fields = 'id,media_url';
-  // const fields = 'id,media_type,media_url,username,timestamp';
+  //?  API Reference: https://developers.facebook.com/docs/instagram-basic-display-api/reference/media
+  const fields = 'id,media_url,media_type';
 
   const url = `https://graph.instagram.com/v20.0/${userId}/media?fields=${fields}&access_token=${token}`;
 
   try {
     const response = await axios.get(url);
-    return response.data;
+    const getOnlyImages = response?.data?.data.filter((post: Post) => post.media_type === 'IMAGE');
+
+    return getOnlyImages;
   } catch (error: any) {
     return [];
   }
 };
 
 export const RedesSection = async () => {
-  const posts = (await getInstagramPosts()).data;
+  const posts = await getInstagramPosts();
 
   return (
     <div data-aos='fade-up' className='bg-white-a700 px-4'>
@@ -39,31 +47,7 @@ export const RedesSection = async () => {
             </Text>
           </div>
 
-          {posts ? (
-            <>
-              <InstagramFeedDesktop className='tablet:hidden' posts={posts} />
-              <InstagramFeedMobile
-                className='self-stretch phone-md:mx-1 mx-16 tablet:block hidden'
-                posts={posts}
-              />
-            </>
-          ) : (
-            <div className='shadow rounded-md w-full p-4 max-w-sm mx-auto'>
-              <div className='animate-pulse flex space-x-4'>
-                <div className=' bg-slate-700 h-auto w-10 rounded'></div>
-                <div className='flex-1 space-y-6 py-1'>
-                  <div className='h-[100px] bg-slate-700 rounded'></div>
-                  <div className='space-y-3'>
-                    <div className='grid grid-cols-3 gap-4'>
-                      <div className='h-[100px] bg-slate-700 rounded col-span-2'></div>
-                      <div className='h-[100px] bg-slate-700 rounded col-span-1'></div>
-                    </div>
-                    <div className='h-[100px] bg-slate-700 rounded'></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+          {posts ? <Feed posts={posts} /> : <IntagramFeedLoader />}
 
           <Link
             href='https://linktr.ee/discauri'
@@ -77,3 +61,33 @@ export const RedesSection = async () => {
     </div>
   );
 };
+
+const Feed = ({ posts }: { posts: Post[] }) => {
+  return (
+    <>
+      <InstagramFeedDesktop className='tablet:hidden' posts={posts} />
+      <InstagramFeedMobile
+        className='self-stretch phone-md:mx-1 mx-16 tablet:block hidden'
+        posts={posts}
+      />
+    </>
+  );
+};
+
+const IntagramFeedLoader = () => (
+  <div className='shadow rounded-md w-full p-4 max-w-sm mx-auto'>
+    <div className='animate-pulse flex space-x-4'>
+      <div className=' bg-slate-700 h-auto w-10 rounded'></div>
+      <div className='flex-1 space-y-6 py-1'>
+        <div className='h-[100px] bg-slate-700 rounded'></div>
+        <div className='space-y-3'>
+          <div className='grid grid-cols-3 gap-4'>
+            <div className='h-[100px] bg-slate-700 rounded col-span-2'></div>
+            <div className='h-[100px] bg-slate-700 rounded col-span-1'></div>
+          </div>
+          <div className='h-[100px] bg-slate-700 rounded'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+);

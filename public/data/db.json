@@ -119,44 +119,21 @@
     {
       "type": "Actividad",
       "location": "Los Alcarrizos, Santo Domingo",
-      "title": "Pinta caritas y Algodon",
+      "title": "Transferencias Espirituales",
+      "date": {
+        "from": "07",
+        "to": "10",
+        "mont": "Ag."
+      },
       "willDo": "Que haremos?",
       "description": " Estaremos llevando pinta caritas , juegos inflables , máquinas de palomitas y algodón a todos los niños de esta gran comunidad"
     },
     {
       "type": "Actividad",
       "location": "Teatro Nacional",
-      "title": "Elena Vargas y Los Pericos",
+      "title": "Tomando el territorio",
       "willDo": "¿Qué haremos?",
       "description": "Elena Vargas y Los Pericos nos traen un concierto de música linda y llena de enería"
-    },
-    {
-      "type": "Actividad",
-      "location": "Hotel InterContinental",
-      "title": "La economía mundial y sus implicaciones",
-      "willDo": "¿Qué haremos?",
-      "description": "Contamos con la participación de expertos en economía mundial para discutir los cambios que están surgiendo en el mundo y cómo afectan a nuestra sociedad"
-    },
-    {
-      "type": "Actividad",
-      "location": "Barrio La Cabaña",
-      "title": "Fiesta de San Juan ¡No te pierdas!",
-      "willDo": "¿Qué haremos?",
-      "description": "¡Ven a disfrutar de la música, comida y fiesta en el Barrio La Cabaña!"
-    },
-    {
-      "type": "Actividad",
-      "location": "Escuela de Artes Plásticas",
-      "title": "El arte en la actualidad ¡No te pierdas!",
-      "willDo": "¿Qué haremos?",
-      "description": "En este taller podrás aprender de los artistas más destacados de la escena local y nacional"
-    },
-    {
-      "type": "Actividad",
-      "location": "Plaza de la República Dominica",
-      "title": "Día de la Mujer ¡No te pierdas!",
-      "willDo": "¿Qué haremos?",
-      "description": "¡Ven a conmemorar el día de la mujer y a apoyar a la causa de las mujeres!"
     }
   ],
   "products": [
