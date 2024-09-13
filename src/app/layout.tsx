@@ -34,7 +34,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       </head>
       <AOSInit />
       <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
-        <div className='w-full bg-white-a700'>
+        <div className='w-full'>
           <Header />
           <div className='flex flex-col gap-11 bg-white-a700'>
             <main>{children}</main>

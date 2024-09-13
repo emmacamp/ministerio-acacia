@@ -24,11 +24,7 @@ export default function ServiceDetails() {
       </div>
       <div className='mt-[72px] flex justify-center'>
         <div className='container-xs flex justify-center px-14 md:px-5'>
-          <Text
-            color='dark'
-            as='p'
-            className='w-[66%] text-justify !font-inter leading-9 tracking-[3.06px]'
-          >
+          <Text color='dark' as='p' className='w-[66%]  !font-inter leading-9 tracking-[3.06px]'>
             <Heading
               color='dark'
               size='headinglg'

@@ -81,7 +81,7 @@ export const Footer = ({ ...props }: Props) => {
                     width={62}
                     height={62}
                     alt='Imageone'
-                    className='h-[62px] w-[62px] object-cover'
+                    className='h-[62px] w-[62px] object-cover filter invert brightness-[10]'
                   />
                   <Text
                     size='textxs'
