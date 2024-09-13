@@ -1,13 +1,18 @@
 'use client';
-import AliceCarousel from 'react-alice-carousel';
+import { useEffect, useState } from 'react';
+
+import dynamic from 'next/dynamic';
+const AliceCarousel = dynamic(() => import('react-alice-carousel'), { ssr: false });
+
+import Image from 'next/image';
+import { Post } from './RedesSection';
+
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './instagram.css';
-import { Post } from './RedesSection';
-import Image from 'next/image';
 
 interface FeedProps {
-  className: string;
   posts: Post[];
+  className?: string;
 }
 
 export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {
@@ -132,6 +137,12 @@ export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {
 };
 
 export const InstagramFeedMobile = ({ posts, className }: FeedProps) => {
+  const [clientLoaded, setClientLoaded] = useState(false);
+
+  useEffect(() => {
+    setClientLoaded(true);
+  }, []);
+
   const handleDragStart = (e: React.DragEvent<HTMLImageElement | HTMLVideoElement>) =>
     e.preventDefault();
 
@@ -153,7 +164,6 @@ export const InstagramFeedMobile = ({ posts, className }: FeedProps) => {
         onDragStart={handleDragStart}
         className='item'
         role='presentation'
-        // controls
       />
     ) : (
       <Image
@@ -171,17 +181,18 @@ export const InstagramFeedMobile = ({ posts, className }: FeedProps) => {
 
   return (
     <div className={`h-[auto] rounded-md overflow-hidden ${className}`}>
-      <AliceCarousel
-        autoPlay
-        mouseTracking
-        autoPlayInterval={2000}
-        responsive={responsive}
-        items={items}
-      />
+      {clientLoaded && (
+        <AliceCarousel
+          autoPlay
+          mouseTracking
+          autoPlayInterval={2000}
+          responsive={responsive}
+          items={items}
+        />
+      )}
     </div>
   );
 };
-
 // export const InstagramFeedDesktop = ({ posts, className }: FeedProps) => {
 //   return (
 //     posts?.length > 0 && (

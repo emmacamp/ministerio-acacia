@@ -6,7 +6,7 @@
       "titleText": "Transformando Vidas a Través de la Radio",
       "dateText": "Septiembre 10, 2024",
       "url": "transformando-vidas-a-traves-de-la-radio",
-      "content": { 
+      "content": {
         "introduction": "En un mundo lleno de desafíos y cambios constantes, encontrar una fuente de inspiración y esperanza puede marcar la diferencia en la vida de las personas. Nuestro programa radial, “a ritmos de sion ”, transmitido por las frecuencias de 106.9 y 102.7 FM, se ha convertido en un faro de luz para aquellos que buscan salvación, restauración y una vida plena. ofreciendo no solo palabras de aliento, sino también soluciones prácticas y espirituales para transformar vidas.",
         "subjects": [
           {
@@ -17,7 +17,6 @@
             "title": "",
             "text": " Te invitamos a sintonizar “a ritmos de sion ” en 106.9 y 102.7 FM y ser parte de esta experiencia transformadora. Nuestro objetivo es continuar impactando vidas y ofreciendo un mensaje de esperanza y transformación a nuestra comunidad. Si estás interesado en conocer más sobre nuestro ministerio o deseas compartir tu propia historia, no dudes en ponerte en contacto con nosotros."
           }
-          
         ]
       }
     },
@@ -27,7 +26,7 @@
       "titleText": "Compromiso con el Medio Ambiente: Nuestro Ministerio Limpia las Playas de la República Dominicana",
       "dateText": "Septiembre 10, 2024",
       "url": "compromiso-con-el-medio-ambiente-nuestro-ministerio-limpia-las-playas-de-la-republica-dominicana",
-      "content": { 
+      "content": {
         "introduction": "En un esfuerzo por preservar la belleza natural de nuestras costas y fomentar un entorno más limpio y saludable, nuestro ministerio se ha embarcado en una serie de iniciativas de limpieza de playas a lo largo de la República Dominicana. Estas obras comunitarias no solo buscan embellecer nuestras playas, sino también concienciar sobre la importancia de cuidar nuestro medio ambiente. A través de la dedicación y el trabajo en equipo, estamos haciendo una diferencia tangible en la conservación de nuestras valiosas playas y el bienestar de nuestras comunidades.",
         "subjects": [
           {
@@ -46,7 +45,6 @@
             "title": "Educación y Concienciación",
             "text": "Uno de los objetivos clave de nuestras iniciativas es educar a la comunidad sobre la gestión adecuada de residuos y la protección del medio ambiente. Durante los eventos de limpieza, proporcionamos información y recursos sobre prácticas sostenibles, reciclaje y la reducción de residuos. A través de talleres y charlas informativas, buscamos inspirar a las personas a adoptar hábitos que contribuyan a la preservación de nuestras playas y otros espacios naturales."
           }
-          
         ]
       }
     },
@@ -205,142 +203,147 @@
   ],
   "events": [
     {
-    "type": "Actividad Recreativa",
-    "location": "Centro Vacacional",
+      "type": "Actividad Recreativa",
+      "location": "Centro Vacacional",
       "date": {
-      "from": "15",
-      "to":"20",
-      "month": "JUL"
-    },
-    "title": "Campamento de Jóvenes",
-    "willDo": "¿Qué haremos?",
-    "description": "Campamento para jóvenes de 12 a 18 años que incluye actividades al aire libre como senderismo, talleres de liderazgo, juegos en equipo y sesiones de desarrollo personal. El objetivo es fomentar habilidades de trabajo en equipo y liderazgo en un entorno natural."
-  },
-  {
-    "type": "Congreso/Conferencia",
-    "location": "Auditorios reservados",
-    "date": {
-      "from": "05",
-      "to":"07",
-      "month": "OCT"
-    },
-    "title": "Congreso 'Levántate y Resplandece'",
-    "willDo": "¿Qué haremos?",
-    "description": "Un congreso centrado en el crecimiento. Incluye conferencias de oradores destacados, talleres interactivos y mesas redondas sobre liderazgo, motivación y emprendimiento."
-  },
-  {
-    "type": "Evento Infantil",
-    "location": "Según calendario anual",
-    "date": {
-      "from": "",
-      "to":"",
-      "month": ""
-    },
-    "title": "Ruta AcaciaKid",
-    "willDo": "¿Qué haremos?",
-    "description": "Un evento para las familias y niños de todas las edades. La ruta incluye actividades interactivas, juegos inflables, máquinas de palomitas y desafíos adaptados a los más pequeños, con el objetivo de promover el ejercicio físico y la diversión en un entorno natural."
-  }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "url_path": "taza-bless-acacia",
-      "title": "Product 1",
-      "price": 10.99,
-      "imgUrl": "/images/taza-no-bg.webp",
-      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
-      "variants": [
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        }
-      ]  
+        "from": "15",
+        "to": "20",
+        "month": "JUL"
+      },
+      "title": "Campamento de Jóvenes",
+      "willDo": "¿Qué haremos?",
+      "description": "Campamento para jóvenes de 12 a 18 años que incluye actividades al aire libre como senderismo, talleres de liderazgo, juegos en equipo y sesiones de desarrollo personal. El objetivo es fomentar habilidades de trabajo en equipo y liderazgo en un entorno natural."
     },
     {
-      "id": 2,
-       "url_path": "taza-bless-acacia-2",
-      "title": "Product 2",
-      "price": 15.99,
-      "imgUrl": "/images/taza-no-bg.webp",
-      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
-      "variants": [
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        }
-      ]
+      "type": "Congreso/Conferencia",
+      "location": "Auditorios reservados",
+      "date": {
+        "from": "05",
+        "to": "07",
+        "month": "OCT"
+      },
+      "title": "Congreso 'Levántate y Resplandece'",
+      "willDo": "¿Qué haremos?",
+      "description": "Un congreso centrado en el crecimiento. Incluye conferencias de oradores destacados, talleres interactivos y mesas redondas sobre liderazgo, motivación y emprendimiento."
     },
     {
-      "id": 3,
-       "url_path": "taza-bless-acacia-3",
-      "title": "Product 3",
-      "price": 20.99,
-      "imgUrl": "/images/taza-no-bg.webp",
-      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
-      "variants": [
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        }
-      ]
-
-    },
-    {
-      "id": 4,
-       "url_path": "taza-bless-acacia-4",
-      "title": "Product 4",
-      "price": 25.99,
-      "imgUrl": "/images/taza-no-bg.webp",
-      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
-      "variants": [
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        }
-      ]
-
-    },
-    {
-      "id": 5,
-       "url_path": "taza-bless-acacia-5",
-      "title": "Product 5",
-      "price": 30.99,
-      "imgUrl": "/images/taza-no-bg.webp",
-      "description":"XBrighten your day with this cheerful yellow bag. Its vibrant color and ample storage space make it an excellent choice for shopping or day trips. Lightweight and durable, it's designed for comfort and convenience.",
-      "variants": [
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        },
-        {
-          "variant_img": "/images/taza-no-bg.webp"
-        }
-      ]
-
+      "type": "Evento Infantil",
+      "location": "Según calendario anual",
+      "date": {
+        "from": "",
+        "to": "",
+        "month": ""
+      },
+      "title": "Ruta AcaciaKid",
+      "willDo": "¿Qué haremos?",
+      "description": "Un evento para las familias y niños de todas las edades. La ruta incluye actividades interactivas, juegos inflables, máquinas de palomitas y desafíos adaptados a los más pequeños, con el objetivo de promover el ejercicio físico y la diversión en un entorno natural."
     }
   ],
+  "products": [
+  {
+    "id": 1,
+    "url_path": "vaso-acero-inoxidable-premium",
+    "title": "Vaso de Acero Inoxidable Premium",
+    "price": 0,
+    "imgUrl": "/images/products/vaso/vaso-1.jpeg",
+    "description": {
+      "material": "Fabricado en acero inoxidable de alta calidad, garantiza durabilidad y resistencia a los impactos. Ideal para llevarlo contigo en cualquier aventura.",
+      "design": "Diseñado con una doble capa de aislamiento, este vaso mantiene tus bebidas calientes hasta por 8 horas y frías hasta por 12 horas. Equipado con una tapa a prueba de fugas que asegura que tu bebida permanezca en su lugar.",
+      "combination": "Disponible en varios colores y tamaños, con la opción de personalizar con nombre, frase o diseño.",
+      "occasion": "Perfecto para llevar en el coche, mochila o cualquier aventura."
+    },
+    "variants": [
+      { "variant_img": "/images/products/vaso/vaso-2.jpeg" },
+      { "variant_img": "/images/products/vaso/vaso-3.jpeg" },
+      { "variant_img": "/images/products/vaso/vaso-4.jpeg" }
+    ]
+  },
+  {
+    "id": 2,
+    "url_path": "sudadera-con-capucha-otonio-invierno",
+    "title": "Sudadera con Capucha / Hoodie - Otoño e Invierno",
+    "price": 0,
+    "imgUrl": "/images/products/hoodie/h1.jpeg",
+    "description": {
+      "material": "Confeccionada en una mezcla de 50% algodón y 50% poliéster. El forro polar interior proporciona una suavidad excepcional y un abrigo adicional.",
+      "design": "Moderno y casual con capucha grande y cuello de hombro caído, con manga larga y elástico ligero.",
+      "combination": "Combina fácilmente con pantalones casuales, jeans, deportivos, o shorts. También es perfecta para capas.",
+      "occasion": "Ideal para uso diario o actividades al aire libre, desde oficina hasta fiestas o deportes."
+    },
+    "variants": [
+      { "variant_img": "/images/products/hoodie/h2.jpeg" },
+      { "variant_img": "/images/products/hoodie/h3.jpeg" }
+    ]
+  },
+  {
+    "id": 3,
+    "url_path": "camiseta-algodon-manga-corta-personalizada",
+    "title": "Camiseta de Algodón de Manga Corta Personalizada",
+    "price": 0,
+    "imgUrl": "/images/products/t-shirt/t-shirt.jpeg",
+    "description": {
+      "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
+      "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
+      "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
+      "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
+    },
+    "variants": [
+      { "variant_img": "/images/products/t-shirt/t-shirt-2.jpeg" },
+      { "variant_img": "/images/products/t-shirt/t-shirt-3.jpeg" },
+      { "variant_img": "/images/products/t-shirt/t-shirt-4.jpeg" }
+    ]
+  },
+  {
+    "id": 4,
+    "url_path": "bolso-playa-compras-personalizado",
+    "title": "Bolso de Playa o Compras Personalizado",
+    "price": 0,
+    "imgUrl": "/images/products/bag/bag.jpeg",
+    "description": {
+      "material": "Confeccionado en materiales duraderos y resistentes al agua.",
+      "design": "Amplio compartimento principal con asas largas y resistentes para fácil transporte.",
+      "combination": "Perfecto para combinar con atuendos casuales, personalizable con logotipo o diseño.",
+      "occasion": "Ideal para la playa, compras o paseos. Excelente opción de regalo."
+    },
+    "variants": []
+  },
+  {
+    "id": 5,
+    "url_path": "sudadera",
+    "title": "Sudadera",
+    "price": 0,
+    "imgUrl": "/images/products/hoodie-without-cap/h1.jpeg",
+    "description": {
+      "material": "Confeccionada en una mezcla de 50% algodón y 50% poliéster. El forro polar interior proporciona una suavidad excepcional y un abrigo adicional.",
+      "design": "Moderno y casual con capucha grande y cuello de hombro caído, con manga larga y elástico ligero.",
+      "combination": "Combina fácilmente con pantalones casuales, jeans, deportivos, o shorts.",
+      "occasion": "Ideal para uso diario o actividades al aire libre, desde oficina hasta fiestas o deportes."
+    },
+    "variants": [
+      { "variant_img": "/images/products/hoodie-without-cap/h2.jpeg" },
+      { "variant_img": "/images/products/hoodie-without-cap/h3.jpeg" },
+      { "variant_img": "/images/products/hoodie-without-cap/h4.jpeg" }
+    ]
+  },
+  {
+    "id": 6,
+    "url_path": "camiseta-algodon-manga-corta-personalizada-v2",
+    "title": "Camiseta de Algodón de Manga Corta",
+    "price": 0,
+    "imgUrl": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg",
+    "description": {
+      "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
+      "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
+      "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
+      "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
+    },
+    "variants": [
+      { "variant_img": "/images/products/t-shirt-v2/t-shirt-logo-small-front.jpeg" },
+      { "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-back.jpeg" },
+      { "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg" }
+    ]
+  }
+],
   "services": [
     {
       "url": "crece-con-acacia",
@@ -348,7 +351,8 @@
       "title": "Crece con Acacia",
       "subtitle": "Llevando Esperanza a Cada Rincón",
       "description": "Dedicados a equipar a futuros líderes y ministros con el conocimiento y las habilidades necesarias para servir con eficacia en el reino de Dios.",
-      "content": [ {
+      "content": [
+        {
           "subtitle": "Talleres Transformadores",
           "paragraph": "Participa en talleres prácticos y enriquecedores que fortalecen tu fe, te equipan con habilidades espirituales y te ayudan a vivir una vida alineada con los propósitos de Dios."
         },
@@ -370,7 +374,7 @@
       "image": "img_image_11.png",
       "title": "Tours Acacia",
       "description": "La Ruta Acacia es nuestra iniciativa itinerante para llevar el mensaje de salvación, restauración y esperanza a diversas comunidades. A través de una serie de actividades y eventos, buscamos impactar positivamente cada lugar que visitamos:",
-      "content":[
+      "content": [
         {
           "title": "Llevando Esperanza a Cada Rincón",
           "paragraph": "La Ruta Acacia es nuestra iniciativa itinerante para llevar el mensaje de salvación, restauración y esperanza a diversas comunidades. A través de una serie de actividades y eventos, buscamos impactar positivamente cada lugar que visitamos:"
@@ -390,13 +394,14 @@
         {
           "paragraph": "Cada evento y actividad de la Ruta Acacia está diseñado para dejar una huella duradera, ofreciendo esperanza y transformación a aquellos que más lo necesitan. Únete a nosotros en este viaje para llevar la luz de Cristo a cada rincón."
         }
-      ]},
+      ]
+    },
     {
       "url": "centro-formacion-capacitacion-ministerial",
       "image": "img_image_22s.png",
       "title": "Centro de Formación y Capacitación Ministerial",
       "description": "Está diseñado para impulsar tu crecimiento espiritual y personal de manera integral",
-      "content":[
+      "content": [
         {
           "title": "",
           "paragraph": "En el Centro de Formación y Capacitación Ministerial Acacia, estamos dedicados a equipar a futuros líderes y ministros con el conocimiento y las habilidades necesarias para servir con eficacia en el reino de Dios. Nuestro centro ofrece:"
@@ -416,7 +421,7 @@
         {
           "paragraph": "Nuestro objetivo es formar líderes comprometidos, capacitados y apasionados por servir a Dios y a Su pueblo. Únete a nosotros y sé parte de una experiencia que transformará tu vida y tu ministerio."
         }
-      ] 
+      ]
     }
   ]
 }

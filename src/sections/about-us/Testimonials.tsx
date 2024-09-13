@@ -1,10 +1,18 @@
 'use client';
-import { Heading } from '@/components';
-import AliceCarousel from 'react-alice-carousel';
+import dynamic from 'next/dynamic';
+const AliceCarousel = dynamic(() => import('react-alice-carousel'), { ssr: false });
 
+import { Heading } from '@/components';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { useEffect, useState } from 'react';
 
 export const Testimonials = () => {
+  const [clientLoaded, setClientLoaded] = useState(false);
+
+  useEffect(() => {
+    setClientLoaded(true);
+  }, []);
+
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -62,17 +70,19 @@ export const Testimonials = () => {
         </div>
 
         <div className='mx-auto flex w-full px-14 md:self-stretch md:px-5' data-aos='fade-up'>
-          <AliceCarousel
-            mouseTracking
-            autoPlay
-            infinite
-            autoPlayInterval={2000}
-            items={items}
-            responsive={responsive}
-            controlsStrategy='alternate'
-            disableButtonsControls
-            autoPlayControls
-          />
+          {clientLoaded && (
+            <AliceCarousel
+              mouseTracking
+              autoPlay
+              infinite
+              autoPlayInterval={2000}
+              items={items}
+              responsive={responsive}
+              controlsStrategy='alternate'
+              disableButtonsControls
+              autoPlayControls
+            />
+          )}
         </div>
       </div>
     </div>

@@ -60,24 +60,23 @@ export default function ModuloTiendaPage() {
         <div className='bg-white-a700 py-16 md:py-5 rounded-xl'>
           <div className='mb-1 flex flex-col items-center gap-[62px] px-[54px] md:px-5 sm:gap-[31px]'>
             <div className='flex flex-col items-center gap-16 self-stretch sm:gap-8'>
-              <div className='flex flex-col items-center gap-0.5'>
+              <div id='productos' className='flex flex-col items-center gap-0.5'>
                 <Heading
-                  data-aos='fade-up'
+                  // data-aos='fade-up'
                   as='h2'
-                  size='headingxl'
+                  size='heading7'
                   color='dark'
                   className='!font-poppins tracking-[-0.90px] !text-blue_gray-900_01'
                 >
                   Productos
                 </Heading>
                 <Heading
-                  data-aos='fade-up'
-                  size='textxs'
+                  size='heading1'
                   color='dark'
                   as='h3'
                   className='!font-poppins tracking-[0.10px] !text-blue_gray-500_01'
                 >
-                  Order it for you or for your beloved ones{' '}
+                  Ordénalo para ti o para tus seres queridos{' '}
                 </Heading>
               </div>
               <div className='grid grid-cols-3 justify-center gap-8 tablet:grid-cols-2 phone-md:grid-cols-1'>
@@ -85,20 +84,25 @@ export default function ModuloTiendaPage() {
                   {products.map((product) => (
                     <>
                       <Link
-                        data-aos='fade-up'
+                        // data-aos='fade-up'
                         href={`/productos/${product.url_path}`}
-                        className='w-[350px] h-[400px] rounded-md bg-gray-200/50 border flex flex-col justify-center items-center hover:scale-105 transition-all '
+                        className='w-[350px] h-[400px] rounded-md  border flex flex-col overflow-hidden justify-center items-center hover:scale-105 transition-all '
                       >
-                        <Image
-                          alt='Product Image'
-                          width={400}
-                          height={500}
-                          src={product.imgUrl}
-                          className='w-full h-[80%]'
-                        />
-                        <div className='flex flex-col justify-between text-xl rounded-md bg-white-a700 py-4 px-2 w-full h-[20%]'>
-                          <span className='font-bold text-slate-950'>{product.title}</span>
-                          <span className='text-lg '>${product.price}</span>
+                        <div className='w-full h-[500px] bg-gray-200/50  overflow-hidden'>
+                          <Image
+                            alt={product.description.material}
+                            width={400}
+                            height={500}
+                            src={product.imgUrl}
+                            className='w-full h-full  object-cover'
+                          />
+                        </div>
+
+                        <div className='px-6 py-4'>
+                          <h2 className='font-bold text-xl mb-2'>{product.title}</h2>
+                          <p className='text-gray-700 text-base'>
+                            {product.description.material.substring(0, 60)}...
+                          </p>
                         </div>
                       </Link>
                     </>
