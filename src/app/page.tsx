@@ -1,3 +1,4 @@
+import BookModal from '@/components/BookModal';
 import { Hero, HomeEvents, Contact, MissionAndVision, RedesSection, Donations } from '@/sections';
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
         <RedesSection />
         <Contact />
       </div>
+      <BookModal />
     </div>
   );
 };
