@@ -183,6 +183,7 @@ export const InstagramFeedMobile = ({ posts, className }: FeedProps) => {
         <AliceCarousel
           autoPlay
           mouseTracking
+          disableButtonsControls
           autoPlayInterval={2000}
           responsive={responsive}
           items={items}
