@@ -214,19 +214,7 @@
       "willDo": "¿Qué haremos?",
       "description": "Campamento para jóvenes de 12 a 18 años que incluye actividades al aire libre como senderismo, talleres de liderazgo, juegos en equipo y sesiones de desarrollo personal. El objetivo es fomentar habilidades de trabajo en equipo y liderazgo en un entorno natural."
     },
-    {
-      "type": "Congreso/Conferencia",
-      "location": "Auditorios reservados",
-      "date": {
-        "from": "05",
-        "to": "07",
-        "month": "OCT"
-      },
-      "title": "Congreso 'Levántate y Resplandece'",
-      "willDo": "¿Qué haremos?",
-      "description": "Un congreso centrado en el crecimiento. Incluye conferencias de oradores destacados, talleres interactivos y mesas redondas sobre liderazgo, motivación y emprendimiento."
-    },
-    {
+     {
       "type": "Evento Infantil",
       "location": "Según calendario anual",
       "date": {
@@ -237,6 +225,18 @@
       "title": "Ruta AcaciaKid",
       "willDo": "¿Qué haremos?",
       "description": "Un evento para las familias y niños de todas las edades. La ruta incluye actividades interactivas, juegos inflables, máquinas de palomitas y desafíos adaptados a los más pequeños, con el objetivo de promover el ejercicio físico y la diversión en un entorno natural."
+    },
+    {
+      "type": "Congreso / Conferencia",
+      "location": "Auditorios reservados",
+      "date": {
+        "from": "05",
+        "to": "07",
+        "month": "OCT"
+      },
+      "title": "Congreso 'Levántate y Resplandece'",
+      "willDo": "¿Qué haremos?",
+      "description": "Un congreso centrado en el crecimiento. Incluye conferencias de oradores destacados, talleres interactivos y mesas redondas sobre liderazgo, motivación y emprendimiento."
     }
   ],
   "products": [

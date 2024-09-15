@@ -17,7 +17,7 @@ export default function ProductDetails({ params }: { params: { url_path: string 
 
   return (
     <div className='container-xs box-border md:px-5 flex flex-col '>
-      <span className='my-7 text-slate-500 flex gap-3 text-md'>
+      <span className='my-7 text-slate-500 flex gap-3 text-md phone-md:hidden'>
         <Link href='/' className='hover:underline'>
           Acacia
         </Link>{' '}

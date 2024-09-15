@@ -26,7 +26,7 @@ export default function ModuloTiendaPage() {
             </div>
 
             {/* Text Section */}
-            <div className='w-1/2 tablet:text-center tablet:w-full flex flex-col justify-center tablet:items-center pl-12'>
+            <div className='w-1/2 phone-md:w-auto tablet:text-center tablet:w-full flex flex-col justify-center tablet:items-center phone-md:p-0 pl-12'>
               <Heading size='heading7' className='text-[80px]  tracking-[-0.90px]'>
                 MAS QUE
                 <br />
@@ -74,19 +74,19 @@ export default function ModuloTiendaPage() {
                   size='heading1'
                   color='dark'
                   as='h3'
-                  className='!font-poppins tracking-[0.10px] !text-blue_gray-500_01'
+                  className='!font-poppins phone-md:text-center tracking-[0.10px] !text-blue_gray-500_01'
                 >
                   Ordénalo para ti o para tus seres queridos{' '}
                 </Heading>
               </div>
-              <div className='grid grid-cols-3 justify-center gap-8 tablet:grid-cols-2 phone-md:grid-cols-1'>
+              <div className='grid grid-cols-3 items-center justify-center gap-8 tablet:grid-cols-2 phone-md:grid-cols-1'>
                 <Suspense fallback={<div>Loading productos...</div>}>
                   {products.map((product) => (
                     <>
                       <Link
                         // data-aos='fade-up'
                         href={`/productos/${product.url_path}`}
-                        className='w-[350px] h-[400px] rounded-md  border flex flex-col overflow-hidden justify-center items-center hover:scale-105 transition-all '
+                        className='w-[350px] h-[400px] phone-md:w-auto rounded-md  border flex flex-col overflow-hidden justify-center items-center hover:scale-105 transition-all '
                       >
                         <div className='w-full h-[500px] bg-gray-200/50  overflow-hidden'>
                           <Image
