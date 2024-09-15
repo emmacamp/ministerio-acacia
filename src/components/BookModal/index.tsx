@@ -47,7 +47,10 @@ const BookModal = () => {
             <div className='w-[80%]  tablet:flex-col gap-4  flex  justify-between items-center text-center '>
               {/* Text Section */}
               <div className='text-start tablet:text-center '>
-                <Heading className='text-5xl !font-worksans phone-md:text-[40px] tracking-[-0.90px]'>
+                <Heading
+                  size='heading5'
+                  className='text-5xl !font-worksans phone-md:text-[40px] tracking-[-0.90px]'
+                >
                   MAS QUE <Typewriter words={['VENCEDORES']} cursor={false} loop />
                 </Heading>
                 <Text

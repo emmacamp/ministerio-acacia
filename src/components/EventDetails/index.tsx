@@ -1,4 +1,3 @@
-import { Button } from '../Button';
 import { Heading } from '../Heading';
 import { Img } from '../Img';
 import { Text } from '../Text';
@@ -10,7 +9,6 @@ interface Props {
   locationSubtitle?: React.ReactNode;
   whatToDoSubtitle?: React.ReactNode;
   eventDescription?: React.ReactNode;
-  eventButton?: string;
   eventDate?: React.ReactNode;
 }
 
@@ -24,7 +22,6 @@ export const EventDetails = ({
   locationSubtitle = 'Los Alcarrizos, Santo Domingo',
   whatToDoSubtitle = 'Que haremos?',
   eventDescription = 'Estaremos llevando pinta caritas , juegos inflables , máquinas de palomitas y algodón a todos los niños de esta gran comunidad',
-  eventButton = 'Ir al Evento',
   eventDate = (
     <>
       25
@@ -85,20 +82,6 @@ export const EventDetails = ({
           {eventDate}
         </Heading>
       </div>
-      <Button
-        rightIcon={
-          <Img
-            src='img_arrowleft.svg'
-            width={18}
-            height={18}
-            alt='Arrow Left'
-            className='my-0.5 h-[18px] w-[18px]'
-          />
-        }
-        className='w-full mt-6 flex h-[60px] min-w-[250px] flex-row items-center justify-center gap-[34px] rounded-lg bg-white-a700 pl-[34px] pr-6 text-center text-[16px] font-bold text-gray-900 sm:mr-0 sm:px-5 sm:text-[13px]'
-      >
-        {eventButton}
-      </Button>
     </div>
   );
 };
