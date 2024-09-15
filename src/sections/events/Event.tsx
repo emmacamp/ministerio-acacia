@@ -1,4 +1,4 @@
-import { Button, Heading, Img, Text } from '@/components';
+import { Heading, Img, Text } from '@/components';
 import { Event } from '@/types';
 
 interface EventProps {
@@ -54,7 +54,7 @@ export const EventComponent = ({ event }: EventProps) => {
         </div>
       </div>
 
-      <Button
+      {/* <Button
         rightIcon={
           <Img
             src='img_arrowleft.svg'
@@ -67,7 +67,7 @@ export const EventComponent = ({ event }: EventProps) => {
         className='mt-6 flex w-full h-[60px] flex-row items-center justify-center gap-[34px] self-end rounded-lg bg-white-a700 pl-[34px] pr-6 text-center font-dmsans text-[16px] font-bold text-gray-900 md:mr-0 sm:px-5'
       >
         Ir al Evento
-      </Button>
+      </Button> */}
     </div>
   );
 };
