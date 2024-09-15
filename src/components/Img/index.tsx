@@ -14,14 +14,14 @@ type ImgProps = React.DetailedHTMLProps<
     src: string;
     alt: string;
     isStatic: boolean;
-    width: number;
-    height: number;
+    width?: number;
+    height?: number;
   }>;
 
 const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
   className,
-  src = 'defaultNoData.png',
-  alt = 'testImg',
+  src = 'https://via.placeholder.com/150',
+  alt = 'Image Not Found',
   isStatic = false,
   width,
   height,
@@ -42,7 +42,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
       height={height}
       {...restProps}
       onError={() => {
-        setImgSrc('defaultNoData.png');
+        setImgSrc('https://via.placeholder.com/150');
       }}
     />
   );

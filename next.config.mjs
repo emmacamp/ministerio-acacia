@@ -4,6 +4,16 @@ import './src/lib/env/env.mjs';
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'scontent.cdninstagram.com',
+        port: '',
+        pathname: '/v/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

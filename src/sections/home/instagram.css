@@ -1,0 +1,9 @@
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none;
+}
+
+.alice-carousel__wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+}
