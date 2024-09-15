@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 const AliceCarousel = dynamic(() => import('react-alice-carousel'), { ssr: false });
 
-import Image from 'next/image';
 import { Post } from './RedesSection';
 
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -165,7 +164,7 @@ export const InstagramFeedMobile = ({ posts, className }: FeedProps) => {
         role='presentation'
       />
     ) : (
-      <Image
+      <img
         key={post.id}
         src={post.media_url}
         width={800}
