@@ -22,6 +22,7 @@ const getInstagramPosts = async () => {
 
   try {
     const response = await axios.get(url);
+
     // const getOnlyImages = response?.data?.data.filter((post: Post) => post.media_type === 'IMAGE');
     const posts = response?.data?.data;
     return posts;
@@ -48,7 +49,7 @@ export const RedesSection = async () => {
             </Text>
           </div>
 
-          {posts ? <Feed posts={posts} /> : <IntagramFeedLoader />}
+          {posts.length > 0 ? <Feed posts={posts} /> : <IntagramFeedLoader />}
 
           <Link
             href='https://linktr.ee/discauri'

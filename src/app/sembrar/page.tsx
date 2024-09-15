@@ -15,7 +15,7 @@ export default function SembrarPage() {
                     data-aos='fade-up'
                     size='headinglg'
                     as='h1'
-                    className='!font-inter !text-[56.09px] tracking-[-1.87px] !text-white-a700'
+                    className='!font-inter !text-[56.09px] tracking-[-1.87px] !text-white-a700 tablet:text-center'
                   >
                     Tu Apoyo Puede Transformar Vidas
                   </Heading>

@@ -1,6 +1,7 @@
 'use client';
 import { Heading } from '@/components';
 import Link from 'next/link';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const Hero = () => {
   return (
@@ -26,11 +27,16 @@ export const Hero = () => {
                 as='h1'
                 className='text-center text-white leading-[72px] tracking-[-2.40px]'
               >
-                {/* <Typewriter
-                  words={['Transformando Vidas', 'Impactando las Naciones', 'Ministerio Acacia']}
-                  cursor={false}
-                  loop
-                /> */}
+                {/* <div className=''></div> */}
+
+                <div className='h-[200px] tablet:h-auto phone-md:h-[120px]'>
+                  <Typewriter
+                    words={['Impactando las Naciones', 'Transformando Vidas', 'Ministerio Acacia']}
+                    cursor={false}
+                    loop
+                  />
+                  {/* <Typewriter words={['Impactando las Naciones']} cursor={false} /> */}
+                </div>
               </Heading>
 
               {/* <Heading
