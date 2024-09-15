@@ -77,11 +77,11 @@ export const Footer = ({ ...props }: Props) => {
               <div className='flex w-[24%] flex-col gap-6 md:w-full'>
                 <div className='mr-2 flex flex-col gap-3 md:mr-0'>
                   <Img
-                    src='img_image_1.png'
+                    src='img_header_logo_black.png'
                     width={62}
                     height={62}
                     alt='Imageone'
-                    className='h-[62px] w-[62px] object-cover filter invert brightness-[10]'
+                    className='h-[62px] w-[62px] object-cover'
                   />
                   <Text
                     size='textxs'
@@ -130,99 +130,6 @@ export const Footer = ({ ...props }: Props) => {
                     </ul>
                   </div>
                 ))}
-
-                {/* <div className='flex w-[66%] flex-col items-start gap-[22px] self-center'>
-                  <Heading
-                    size='heading3'
-                    as='h6'
-                    className='!font-plusjakartasans !text-[18px] !text-gray-900'
-                  >
-                    Menu
-                  </Heading>
-                  <ul className='flex flex-col items-start gap-2'>
-                    <li>
-                      <Link href='Inicio' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Inicio
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='#'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Sobre Nosotros
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Servicios' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Servicios
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Eventos' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Eventos
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Blog' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Blog
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Galeria' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Galeria
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Productos' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Productos
-                        </Text>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className='flex flex-col items-center gap-[22px]'>
-                  <Heading
-                    size='heading3'
-                    as='h6'
-                    className='!font-plusjakartasans !text-[18px] !text-gray-900'
-                  >
-                    Categorias
-                  </Heading>
-                  <ul className='!mr-1 flex flex-col items-start gap-2 md:mr-0'>
-                    <li>
-                      <Link href='#'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Adoración{' '}
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Ayudas' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Ayudas
-                        </Text>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='Donaciones' target='_blank' rel='noreferrer'>
-                        <Text size='textxs' as='p' className='!font-plusjakartasans !text-[16px]'>
-                          Donaciones
-                        </Text>
-                      </Link>
-                    </li>
-                  </ul>
-                </div> */}
               </div>
               <div className='w-[32%] h-[160px] self-start rounded-[12px] bg-gray-900 p-8 md:w-full md:self-auto sm:p-5'>
                 <div className='flex flex-col items-center justify-center gap-2 mb-6'>

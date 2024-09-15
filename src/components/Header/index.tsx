@@ -39,11 +39,11 @@ export const Header = () => {
             <div className='flex flex-1 tablet:justify-start justify-between'>
               <Link href='/'>
                 <Img
-                  src='img_header_logo.png'
+                  src='img_header_logo_black.png'
                   width={62}
                   height={62}
                   alt='Headerlogo'
-                  className={`h-[62px] w-[62px] object-contain filter invert brightness-[10] ${pathname === '/productos' ? 'filter invert !brightness-0' : ''}`}
+                  className={`h-[62px] w-[62px] object-contain filter  ${pathname === '/productos' ? 'filter invert !brightness-0' : ''}`}
                 />
               </Link>
               <div className='tablet:hidden mt-5 '>
