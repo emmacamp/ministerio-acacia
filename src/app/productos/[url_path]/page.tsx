@@ -89,7 +89,7 @@ export default function ProductDetails({ params }: { params: { url_path: string 
           </div>
           <Link
             target='_blank'
-            href={`https://wa.me/${number}?text=${textMessage} ${product.title}. http://localhost:3000/productos/${product.url_path}`}
+            href={`https://wa.me/${number}?text=${textMessage} ${product.title}. https://ministerioacacia.org/productos/${product.url_path}`}
             className='bg-gray-900 font-semibold text-xl text-center text-white-a700 rounded-md p-4'
           >
             Mas Información
