@@ -10,7 +10,12 @@ export default function ServiceDetails() {
 
   return (
     <div>
-      <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/img_banner.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
+      <div
+        style={{
+          backgroundImage: `url(/images/${service?.extended_image})`,
+        }}
+        className={`flex h-[386px] items-center justify-center bg-gray-900  bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5`}
+      >
         <div className='container-xs flex justify-center px-14 md:px-5'>
           <Heading
             data-aos='fade-up'
@@ -23,11 +28,11 @@ export default function ServiceDetails() {
         </div>
       </div>
       <div className='mt-[72px] flex justify-center'>
-        <div className='container-xs flex justify-center'>
+        <div className='container-xs flex flex-col justify-center'>
+          <Heading color='dark' size='headinglg' as='h1' className='px-5 !font-dmsans mb-3'>
+            {service?.subtitle}
+          </Heading>
           <Text color='dark' as='p' className='px-5 !font-inter leading-9 tracking-[3.06px]'>
-            <Heading color='dark' size='headinglg' as='h1' className='!font-dmsans mb-3'>
-              {service?.subtitle}
-            </Heading>
             <p className='mb-10 '>{service?.description}</p>
             <ul className='flex flex-col gap-3 list-disc'>
               {service?.content.map((des) => (

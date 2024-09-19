@@ -2,6 +2,13 @@ import React, { Suspense } from 'react';
 import { Founder, Heading, Text } from '@/components';
 const founders = [
   {
+    src: '/images/founders/founder-2.jpeg',
+    userName: 'John Carter',
+    phone_hidden: true,
+    userDescription:
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
+  },
+  {
     src: '/images/founders/founder-1.jpeg',
     userName: 'John Carter',
     phone_hidden: false,
@@ -9,14 +16,7 @@ const founders = [
       'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
-    src: '/images/img_image_21.png',
-    userName: 'John Carter',
-    phone_hidden: true,
-    userDescription:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
-  },
-  {
-    src: '/images/founders/founder-2.jpeg',
+    src: '/images/founders/founder-3.jpeg',
     userName: 'Matt Cannon',
     phone_hidden: true,
     userDescription:

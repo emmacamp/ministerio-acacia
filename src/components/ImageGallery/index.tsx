@@ -1,5 +1,3 @@
-'use client';
-
 import { Img } from '@/components';
 interface ImageProps {
   src: string;
@@ -41,55 +39,6 @@ export const ImageGallery = ({ className, grids }: Props) => {
           ))}
         </div>
       ))}
-
-      {/* <div className='flex w-full flex-col gap-[26px]'>
-        <Img
-          src='img_image_14.png'
-          width={388}
-          height={388}
-          alt='Imagefourteen'
-          className='h-[388px] rounded-[24px] object-cover'
-        />
-        <Img
-          src='img_image_17.png'
-          width={388}
-          height={388}
-          alt='Imageseventeen'
-          className='h-[388px] rounded-[24px] object-cover'
-        />
-      </div>
-      <div className='flex w-full flex-col gap-7'>
-        <Img
-          src='img_image_9.png'
-          width={388}
-          height={522}
-          alt='Imagenine'
-          className='h-[522px] rounded-[24px] object-cover'
-        />
-        <Img
-          src='img_image_10.png'
-          width={388}
-          height={254}
-          alt='Imageten'
-          className='h-[254px] rounded-[24px] object-cover'
-        />
-      </div>
-      <div className='flex w-full flex-col gap-12'>
-        <Img
-          src='img_image_15.png'
-          width={388}
-          height={254}
-          alt='Imagefifteen'
-          className='h-[254px] rounded-[24px] object-cover'
-        />
-        <Img
-          src='img_image_12.png'
-          width={388}
-          height={500}
-          alt='Imagetwelve'
-          className='h-[500px] rounded-[24px] object-cover'
-        />
-      </div> */}
     </div>
   );
 };

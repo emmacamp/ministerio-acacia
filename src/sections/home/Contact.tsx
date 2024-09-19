@@ -8,10 +8,10 @@ export const Contact = () => {
     <div className='relative bg-white-a700 h-[750px] mt-10 tablet:h-[450px]'>
       <div id='contacto' className='mx-auto flex-1'>
         <Img
-          src='img_image_21_464x1440.png'
+          src='home/contact.jpeg'
           width={1440}
           height={464}
-          alt='Imagetwentyone'
+          alt='contact image home section'
           className='h-[464px] w-full object-cover md:h-auto tablet:hidden'
         />
         <div className='flex tablet:hidden justify-center bg-blue_gray-700 py-[58px] md:py-5'>

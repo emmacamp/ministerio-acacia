@@ -13,11 +13,11 @@ export const MissionAndVision = () => {
             className='flex w-full items-center gap-5 rounded-[40px] bg-white-a700 px-[42px] py-[46px] md:flex-col md:p-5'
           >
             <Img
-              src='img_image_7.png'
+              src='home/mission-vision.jpeg'
               width={536}
               height={670}
-              alt='Imageseven'
-              className='tablet:hidden tablet:h-[170px] tablet:w-32  h-[670px] w-[48%] rounded-[40px] object-contain md:w-full '
+              alt='mission and vision image'
+              className='tablet:hidden tablet:h-[170px tablet:w-32  h-[670px] w-[48%] rounded-[40px] object-cover md:w-full '
             />
             <div className='flex flex-1 flex-col items-center gap-6 md:self-stretch'>
               <Heading
@@ -51,7 +51,7 @@ const MissionVisionText = () => {
   };
 
   return (
-    <div className='w-full'>
+    <div className='w-full text-justify'>
       {/* Primer párrafo (siempre visible) */}
       <Text size='textxs' as='p' className='w-full !font-inter leading-7 tracking-[2.55px]'>
         <span>La&nbsp;</span>

@@ -88,8 +88,8 @@ export const Footer = ({ ...props }: Props) => {
                     as='p'
                     className='!font-plusjakartasans !text-[16px] leading-6'
                   >
-                    En el Ministerio Acacia, trabajamos incansablemente para llevar esperanza, amor
-                    y transformación a las vidas de aquellos que más lo necesitan.
+                    En el Ministerio Acacia, nos dedicamos a brindar esperanza, amor y
+                    transformación a quienes más lo necesitan.
                   </Text>
                 </div>
                 <div className='flex flex-col items-start gap-1'>
