@@ -9,7 +9,7 @@ const BlogDetails = () => {
   const blog = dbStore().getBlog(slug);
 
   return (
-    <div className='flex w-full flex-col items-center bg-white-a700'>
+    <div className='flex w-full text-justify flex-col items-center bg-white-a700'>
       <div className='container-xs md:px-5'>
         <div className='flex flex-col items-center bg-white-a700 px-14 md:px-5'>
           <div className='mb-8 flex w-[72%] mt-5 flex-col gap-7 md:w-full'>

@@ -49,7 +49,7 @@
       }
     },
     {
-      "userImage": "img_image_7.png",
+      "userImage": "blog/campamentos-juveniles.jpeg",
       "buttonLabel": "Juventud y Transformación",
       "titleText": "Campamentos Juveniles: Impulsando la Transformación de los Jóvenes",
       "dateText": "Septiembre 10, 2024",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "userImage": "img_image_10.png",
+      "userImage": "blog/empoderando-comunidades.jpeg",
       "buttonLabel": "Desarrollo Comunitario",
       "titleText": "Empoderando Comunidades: Talleres y Cursos Gratuitos para el Desarrollo Espiritual y Profesional",
       "dateText": "Septiembre 10, 2024",
@@ -113,7 +113,7 @@
       }
     },
     {
-      "userImage": "img_image_12.png",
+      "userImage": "blog/iglesia-virual.jpeg",
       "buttonLabel": "Conéctate con Nosotros",
       "titleText": "Bienvenido a Nuestra Iglesia Virtual: Tu Familia Espiritual en Línea",
       "dateText": "Septiembre 11, 2024",
@@ -347,7 +347,7 @@
   "services": [
     {
       "url": "crece-con-acacia",
-      "image": "img_image_11.png",
+      "image": "services/service-crece-con-acacia.jpeg",
       "title": "Crece con Acacia",
       "subtitle": "Llevando Esperanza a Cada Rincón",
       "description": "Dedicados a equipar a futuros líderes y ministros con el conocimiento y las habilidades necesarias para servir con eficacia en el reino de Dios.",
@@ -355,10 +355,6 @@
         {
           "subtitle": "Talleres Transformadores",
           "paragraph": "Participa en talleres prácticos y enriquecedores que fortalecen tu fe, te equipan con habilidades espirituales y te ayudan a vivir una vida alineada con los propósitos de Dios."
-        },
-        {
-          "subtitle": "Estudios Bíblicos Profundos",
-          "paragraph": "Sumérgete en estudios bíblicos que te proporcionan una comprensión más profunda de las Escrituras, fomentando una relación más cercana con Dios y una mayor confianza en Su palabra.."
         },
         {
           "subtitle": "Actividades de Desarrollo Personal",
@@ -371,7 +367,7 @@
     },
     {
       "url": "tours-acacia",
-      "image": "img_image_11.png",
+      "image": "services/service-tours.jpeg",
       "title": "Tours Acacia",
       "description": "La Ruta Acacia es nuestra iniciativa itinerante para llevar el mensaje de salvación, restauración y esperanza a diversas comunidades. A través de una serie de actividades y eventos, buscamos impactar positivamente cada lugar que visitamos:",
       "content": [
@@ -398,7 +394,7 @@
     },
     {
       "url": "centro-formacion-capacitacion-ministerial",
-      "image": "img_image_22s.png",
+      "image": "services/service-centro-formacion.jpeg",
       "title": "Centro de Formación y Capacitación Ministerial",
       "description": "Está diseñado para impulsar tu crecimiento espiritual y personal de manera integral",
       "content": [

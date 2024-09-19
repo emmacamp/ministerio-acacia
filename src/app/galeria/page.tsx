@@ -7,17 +7,17 @@ export default function GalleryPage() {
       gap: 'gap-[26px]',
       images: [
         {
-          src: 'img_image_14.png',
+          src: 'gallery/g1.jpeg',
           width: 388,
           height: 388,
-          alt: 'Imagefourteen',
+          alt: 'gallery image',
           className: 'h-[388px] rounded-[24px] object-cover',
         },
         {
-          src: 'img_image_16.png',
+          src: 'gallery/g2.jpeg',
           width: 388,
           height: 388,
-          alt: 'Imageseventeen',
+          alt: 'gallery image',
           className: 'h-[388px] rounded-[24px] object-cover',
         },
       ],
@@ -26,17 +26,17 @@ export default function GalleryPage() {
       gap: 'gap-7',
       images: [
         {
-          src: 'img_image_10.png',
+          src: 'gallery/g3.jpeg',
           width: 388,
           height: 522,
-          alt: 'Imagenine',
+          alt: 'gallery image',
           className: 'h-[522px] rounded-[24px] object-cover',
         },
         {
-          src: 'img_image_12.png',
+          src: 'gallery/g4.jpeg',
           width: 388,
           height: 254,
-          alt: 'Imageten',
+          alt: 'gallery image',
           className: 'h-[254px] rounded-[24px] object-cover',
         },
       ],
@@ -45,23 +45,82 @@ export default function GalleryPage() {
       gap: 'gap-12',
       images: [
         {
-          src: 'img_image_15.png',
+          src: 'gallery/g5.jpeg',
           width: 388,
           height: 254,
-          alt: 'Imagefifteen',
+          alt: 'gallery image',
           className: 'h-[254px] rounded-[24px] object-cover',
         },
         {
-          src: 'img_image_12.png',
+          src: 'gallery/g6.jpeg',
           width: 388,
           height: 500,
-          alt: 'Imagetwelve',
+          alt: 'gallery image',
           className: 'h-[500px] rounded-[24px] object-cover',
         },
       ],
     },
   ];
 
+  // const grids2 = [
+  //   {
+  //     gap: 'gap-[26px]',
+  //     images: [
+  //       {
+  //         src: 'gallery/g7.jpeg',
+  //         width: 388,
+  //         height: 388,
+  //         alt: 'gallery image',
+  //         className: 'h-[388px] rounded-[24px] object-cover',
+  //       },
+  //       {
+  //         src: 'gallery/g8.jpeg',
+  //         width: 388,
+  //         height: 388,
+  //         alt: 'gallery image',
+  //         className: 'h-[388px] rounded-[24px] object-cover',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     gap: 'gap-7',
+  //     images: [
+  //       {
+  //         src: 'gallery/g9.jpeg',
+  //         width: 388,
+  //         height: 522,
+  //         alt: 'gallery image',
+  //         className: 'h-[522px] rounded-[24px] object-cover',
+  //       },
+  //       {
+  //         src: 'gallery/g.jpeg',
+  //         width: 388,
+  //         height: 254,
+  //         alt: 'gallery image',
+  //         className: 'h-[254px] rounded-[24px] object-cover',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     gap: 'gap-12',
+  //     images: [
+  //       {
+  //         src: 'gallery/g.jpeg',
+  //         width: 388,
+  //         height: 254,
+  //         alt: 'gallery image',
+  //         className: 'h-[254px] rounded-[24px] object-cover',
+  //       },
+  //       {
+  //         src: 'gallery/g.jpeg',
+  //         width: 388,
+  //         height: 500,
+  //         alt: 'gallery image',
+  //         className: 'h-[500px] rounded-[24px] object-cover',
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <>
       <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/sections/gallery.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
@@ -75,11 +134,7 @@ export default function GalleryPage() {
         <div className='container-xs flex flex-col items-center gap-28 md:gap-[84px] md:px-5 sm:gap-14'>
           <div className='flex flex-col gap-9 self-stretch'>
             <ImageGallery grids={grids} />
-            <ImageGallery grids={grids} />
           </div>
-          {/* <Button className='flex h-[60px] min-w-[250px] flex-row items-center justify-center rounded-lg bg-gray-900 px-[34px] text-center font-dmsans text-[16px] font-bold text-white-a700 sm:px-5'>
-            Ver más
-          </Button> */}
         </div>
       </div>
     </>
