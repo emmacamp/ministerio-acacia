@@ -3,24 +3,15 @@ import { Founder, Heading, Text } from '@/components';
 const founders = [
   {
     src: '/images/founders/founder-2.jpeg',
-    userName: 'John Carter',
     phone_hidden: true,
-    userDescription:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
     src: '/images/founders/founder-1.jpeg',
-    userName: 'John Carter',
     phone_hidden: false,
-    userDescription:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
   {
     src: '/images/founders/founder-3.jpeg',
-    userName: 'Matt Cannon',
     phone_hidden: true,
-    userDescription:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida malesu.',
   },
 ];
 
@@ -39,8 +30,8 @@ export const Founders = () => {
         </Heading>
         <div className='flex gap-2 self-stretch md:flex-col'>
           <Suspense fallback={<div>Loading feed...</div>}>
-            {founders.map((d, index) => (
-              <Founder {...d} key={`listcontainer-${index}`} />
+            {founders.map((d) => (
+              <Founder phone_hidden={d.phone_hidden} src={d.src} key={`listcontainer-${d.src}`} />
             ))}
           </Suspense>
         </div>

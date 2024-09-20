@@ -3,7 +3,7 @@
 import { Heading, Img } from '@/components';
 import { ContactForm } from '@/components/ContacForm';
 import Link from 'next/link';
-export const Contact = () => {
+export async function Contact() {
   return (
     <div className='relative bg-white-a700 h-[750px] mt-10 tablet:h-[450px]'>
       <div id='contacto' className='mx-auto flex-1'>
@@ -45,4 +45,4 @@ export const Contact = () => {
       <ContactForm className='absolute tablet:relative tablet:mx-auto tablet:top-auto tablet:right-auto tablet:my-0 bottom-0 right-[14%] top-0 my-auto flex h-max w-[32%] flex-col tablet:w-[80%] tablet:items-center items-start rounded-[20px] bg-white-a700 p-[50px] tablet:p-5 max-w-[500px] tablet:border shadow' />
     </div>
   );
-};
+}

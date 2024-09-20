@@ -12,24 +12,24 @@ interface Props {
 }
 
 export const UserProfile = ({
-  userImage = 'img_image_15.png',
-  buttonLabel = 'Adoración',
-  titleText = 'The Impact of Technology on the Workplace: How Technology is Changing',
-  dateText = 'August 20, 2022',
+  userImage,
+  buttonLabel,
+  titleText,
+  dateText,
   url,
-  ...props
+  className,
 }: Props) => {
   return (
     <Link data-aos='fade-up' href={`/blog/${url}`}>
       <div
-        {...props}
-        className={`${props.className} flex flex-col items-center w-full gap-4 p-4 border-gray-200 border border-solid bg-white-a700 rounded-[24px]`}
+        className={`${className} flex flex-col items-center w-full gap-4 p-4 border-gray-200 border border-solid bg-white-a700 rounded-[24px]`}
       >
         <Img
           src={userImage}
           width={360}
           height={240}
-          alt='Imagefifteen'
+          priority
+          alt={titleText?.toString()}
           className='h-[240px] w-full rounded-[24px] object-cover'
         />
         <div className='flex flex-col gap-5 self-stretch p-2'>

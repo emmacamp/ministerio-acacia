@@ -18,7 +18,6 @@ export const ServiceCard = ({ slug, title, description, image }: Props) => {
       className='flex flex-col items-center w-[32%] md:w-full'
     >
       <div className='relative h-[462px] content-center self-stretch rounded-[20px]'>
-        {/* Imagen con filtro de brillo */}
         <Img
           src={image}
           width={388}
@@ -26,8 +25,6 @@ export const ServiceCard = ({ slug, title, description, image }: Props) => {
           alt={title}
           className='mx-auto h-[462px] w-full flex-1 rounded-[20px] object-cover filter brightness-[0.4]'
         />
-
-        {/* Contenido del texto */}
         <div className='absolute bottom-[31%] left-0 right-0 m-auto flex flex-1 flex-col items-center gap-2 px-8 sm:px-5'>
           <Heading size='heading3' as='h1' className='!font-dmsans !text-white-a700 text-center'>
             {title}

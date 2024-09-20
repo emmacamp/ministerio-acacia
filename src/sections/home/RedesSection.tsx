@@ -31,7 +31,7 @@ const getInstagramPosts = async () => {
   }
 };
 
-export const RedesSection = async () => {
+export async function RedesSection() {
   const posts = await getInstagramPosts();
 
   return (
@@ -62,7 +62,7 @@ export const RedesSection = async () => {
       </div>
     </div>
   );
-};
+}
 
 const Feed = ({ posts }: { posts: Post[] }) => {
   return (
