@@ -1,13 +1,12 @@
 import '@/styles/globals.css';
-
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import React, { ReactNode } from 'react';
 import { AOSInit } from '@/lib/utils/aos';
 
 import '@/styles/tailwind.css';
-import '../styles/index.css';
-import '../styles/font.css';
+import '@/styles/index.css';
+import '@/styles/font.css';
 import { cn } from '@/lib/utils';
 import { Footer, Header } from '@/components';
 
@@ -15,7 +14,10 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
 export const metadata: Metadata = {
   title: 'Ministerio Acacia',
-  description: '',
+  description:
+    'Transformando vidas espirituales a través de servicios comunitarios y actividades cristianas', // Description added for SEO
+  keywords:
+    'Ministerio Acacia, servicios religiosos, actividades comunitarias, cristianismo, campamentos juveniles, eventos infantiles, desarrollo espiritual, limpieza de playas', // Added keywords for SEO
 };
 
 interface RootLayoutProps {
@@ -29,9 +31,14 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta name='theme-color' content='#000000' />
+        <meta
+          name='keywords'
+          content='Ministerio Acacia, servicios religiosos, actividades comunitarias, cristianismo, campamentos juveniles, eventos infantiles, desarrollo espiritual, limpieza de playas'
+        />
         <link rel='manifest' href='/manifest.json' />
         <link rel='icon' href='/favicon.ico' />
       </head>
+      {/* Initialize AOS (Animate On Scroll) library */}
       <AOSInit />
       <body className={cn(inter.variable, 'font-primary')} suppressHydrationWarning>
         <div className='w-full'>

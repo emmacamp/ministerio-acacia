@@ -45,8 +45,7 @@ export default function SembrarPage() {
 
                 <Link
                   href='#seed'
-                  data-aos='fade-up'
-                  className='relative mt-[-14px] flex h-[54px] min-w-[140px] flex-row items-center justify-center gap-2 rounded-lg bg-white-a700 px-6 text-center font-dmsans text-[16px] font-bold text-gray-900 sm:px-5'
+                  className='relative mt-[-14px] flex h-[54px] min-w-[140px] flex-row items-center justify-center gap-2 rounded-lg bg-white-a700 px-6 text-center font-dmsans text-[16px] font-bold text-gray-900 sm:px-5 animate-pulse'
                 >
                   Sembrar
                   <Img
@@ -54,7 +53,7 @@ export default function SembrarPage() {
                     width={18}
                     height={18}
                     alt='Arrow Left'
-                    className='my-0.5 h-[18px] w-[18px]'
+                    className='my-0.5 h-[18px] w-[18px] rotate-90'
                   />
                 </Link>
               </div>

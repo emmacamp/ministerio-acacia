@@ -18,7 +18,7 @@ export const Footer = ({ ...props }: Props) => {
       menuItems: [
         {
           label: 'Inicio',
-          path: '/inicio',
+          path: '/',
         },
         {
           label: 'Sobre Nosotros',
@@ -51,16 +51,8 @@ export const Footer = ({ ...props }: Props) => {
       className: 'flex flex-col items-center gap-[22px]',
       menuItems: [
         {
-          label: 'Adoración',
-          path: '/adoracion',
-        },
-        {
-          label: 'Ayudas',
-          path: '/ayudas',
-        },
-        {
           label: 'Donaciones',
-          path: '/donaciones',
+          path: '/sembrar',
         },
       ],
     },
@@ -116,7 +108,7 @@ export const Footer = ({ ...props }: Props) => {
                     <ul className='flex flex-col items-start gap-2'>
                       {menu.menuItems.map((item) => (
                         <li key={item.label}>
-                          <Link href={item.path} target='_blank' rel='noreferrer'>
+                          <Link href={item.path} rel='noreferrer'>
                             <Text
                               size='textxs'
                               as='p'
@@ -136,13 +128,6 @@ export const Footer = ({ ...props }: Props) => {
                   <Heading size='heading3' as='h3' className='!font-worksans '>
                     Unete a la Iglesia Virtual
                   </Heading>
-                  {/* <Text
-                    size='textxs'
-                    as='p'
-                    className='!font-worksans !text-[16px] !text-white-a700'
-                  >
-                    Mantente al nuestros cultos{' '}
-                  </Text> */}
                 </div>
 
                 <Link

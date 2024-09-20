@@ -1,6 +1,6 @@
 'use server';
 
-import { Heading, Img, Text } from '@/components';
+import { Heading, Img } from '@/components';
 import { ContactForm } from '@/components/ContacForm';
 import Link from 'next/link';
 export const Contact = () => {
@@ -18,15 +18,11 @@ export const Contact = () => {
           <div className='container-xs mb-[34px] flex items-start justify-center gap-[30px] px-14 md:flex-col md:px-5'>
             <div data-aos='fade-up' className='flex w-[24%] flex-col items-start gap-2 md:w-full'>
               <Heading size='heading5' as='h2' className='!text-[22px] !font-bold'>
-                Visitanos
+                Número Telefónico
               </Heading>
-              <Text as='p' className='leading-[30px] !text-white-a700'>
-                <>
-                  58 Middle Point Rd
-                  <br />
-                  San Francisco, 94124
-                </>
-              </Text>
+              <a href='tel:8298564016' className='!text-white-a700'>
+                (829) 856 - 4016
+              </a>
             </div>
             <div
               data-aos='fade-up'
@@ -34,16 +30,13 @@ export const Contact = () => {
             >
               <Link href='#'>
                 <Heading size='heading5' as='h3' className='!text-[22px] !font-bold'>
-                  Contactanos
+                  Correo Electrónico
                 </Heading>
               </Link>
-              <div className='flex flex-col items-start gap-1 self-stretch'>
-                <Text as='p' className='!text-white-a700'>
-                  (829) 856 - 4016
-                </Text>
-                <Text as='p' className='!text-white-a700'>
+              <div className='flex items-start gap-1 self-stretch'>
+                <a href='mailto:acaciateam7@gmail.com' className='!text-white-a700'>
                   acaciateam7@gmail.com
-                </Text>
+                </a>
               </div>
             </div>
           </div>
