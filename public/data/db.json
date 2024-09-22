@@ -304,6 +304,30 @@
       ]
     },
     {
+      "id": 3,
+      "url_path": "camiseta-algodon-manga-corta-personalizada",
+      "title": "Camiseta de Algodón de Manga Corta Personalizada",
+      "price": 0,
+      "imgUrl": "/images/products/t-shirt/t-shirt.jpeg",
+      "description": {
+        "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
+        "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
+        "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
+        "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
+      },
+      "variants": [
+        {
+          "variant_img": "/images/products/t-shirt/t-shirt-2.jpeg"
+        },
+        {
+          "variant_img": "/images/products/t-shirt/t-shirt-3.jpeg"
+        },
+        {
+          "variant_img": "/images/products/t-shirt/t-shirt-4.jpeg"
+        }
+      ]
+    },
+    {
       "id": 9,
       "url_path": "camiseta-algodon-manga-corta-virtuosa",
       "title": "Virtuosa - Camiseta de Algodón de Manga Corta",
@@ -318,6 +342,54 @@
       "variants": [
         {
           "variant_img": "/images/products/t-shirt/virtuosa/virtuosa-2.jpeg"
+        }
+      ]
+    },
+     {
+      "id": 5,
+      "url_path": "sudadera",
+      "title": "Sudadera",
+      "price": 0,
+      "imgUrl": "/images/products/hoodie-without-cap/h1.jpeg",
+      "description": {
+        "material": "Confeccionada en una mezcla de 50% algodón y 50% poliéster. El forro polar interior proporciona una suavidad excepcional y un abrigo adicional.",
+        "design": "Moderno y casual con capucha grande y cuello de hombro caído, con manga larga y elástico ligero.",
+        "combination": "Combina fácilmente con pantalones casuales, jeans, deportivos, o shorts.",
+        "occasion": "Ideal para uso diario o actividades al aire libre, desde oficina hasta fiestas o deportes."
+      },
+      "variants": [
+        {
+          "variant_img": "/images/products/hoodie-without-cap/h2.jpeg"
+        },
+        {
+          "variant_img": "/images/products/hoodie-without-cap/h3.jpeg"
+        },
+        {
+          "variant_img": "/images/products/hoodie-without-cap/h4.jpeg"
+        }
+      ]
+    },
+      {
+      "id": 6,
+      "url_path": "camiseta-algodon-manga-corta-personalizada-v2",
+      "title": "Camiseta de Algodón de Manga Corta",
+      "price": 0,
+      "imgUrl": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg",
+      "description": {
+        "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
+        "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
+        "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
+        "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
+      },
+      "variants": [
+        {
+          "variant_img": "/images/products/t-shirt-v2/t-shirt-logo-small-front.jpeg"
+        },
+        {
+          "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-back.jpeg"
+        },
+        {
+          "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg"
         }
       ]
     },
@@ -367,30 +439,6 @@
       ]
     },
     {
-      "id": 3,
-      "url_path": "camiseta-algodon-manga-corta-personalizada",
-      "title": "Camiseta de Algodón de Manga Corta Personalizada",
-      "price": 0,
-      "imgUrl": "/images/products/t-shirt/t-shirt.jpeg",
-      "description": {
-        "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
-        "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
-        "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
-        "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
-      },
-      "variants": [
-        {
-          "variant_img": "/images/products/t-shirt/t-shirt-2.jpeg"
-        },
-        {
-          "variant_img": "/images/products/t-shirt/t-shirt-3.jpeg"
-        },
-        {
-          "variant_img": "/images/products/t-shirt/t-shirt-4.jpeg"
-        }
-      ]
-    },
-    {
       "id": 4,
       "url_path": "bolso-playa-compras-personalizado",
       "title": "Bolso de Playa o Compras Personalizado",
@@ -403,54 +451,6 @@
         "occasion": "Ideal para la playa, compras o paseos. Excelente opción de regalo."
       },
       "variants": []
-    },
-    {
-      "id": 5,
-      "url_path": "sudadera",
-      "title": "Sudadera",
-      "price": 0,
-      "imgUrl": "/images/products/hoodie-without-cap/h1.jpeg",
-      "description": {
-        "material": "Confeccionada en una mezcla de 50% algodón y 50% poliéster. El forro polar interior proporciona una suavidad excepcional y un abrigo adicional.",
-        "design": "Moderno y casual con capucha grande y cuello de hombro caído, con manga larga y elástico ligero.",
-        "combination": "Combina fácilmente con pantalones casuales, jeans, deportivos, o shorts.",
-        "occasion": "Ideal para uso diario o actividades al aire libre, desde oficina hasta fiestas o deportes."
-      },
-      "variants": [
-        {
-          "variant_img": "/images/products/hoodie-without-cap/h2.jpeg"
-        },
-        {
-          "variant_img": "/images/products/hoodie-without-cap/h3.jpeg"
-        },
-        {
-          "variant_img": "/images/products/hoodie-without-cap/h4.jpeg"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "url_path": "camiseta-algodon-manga-corta-personalizada-v2",
-      "title": "Camiseta de Algodón de Manga Corta",
-      "price": 0,
-      "imgUrl": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg",
-      "description": {
-        "material": "Confeccionada en 100% algodón de alta calidad, suave, ligero y transpirable.",
-        "design": "Diseño clásico de manga corta y cuello redondo con costuras reforzadas.",
-        "combination": "Versátil para combinar con jeans, pantalones cortos, faldas o como capa.",
-        "occasion": "Perfecta para uso diario o eventos especiales, y para personalización con gráficos."
-      },
-      "variants": [
-        {
-          "variant_img": "/images/products/t-shirt-v2/t-shirt-logo-small-front.jpeg"
-        },
-        {
-          "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-back.jpeg"
-        },
-        {
-          "variant_img": "/images/products/t-shirt-v2/t-shirt-big-logo-front.jpeg"
-        }
-      ]
     }
   ],
   "services": [

@@ -10,7 +10,7 @@ export const HomeEvents = () => {
     <div data-aos='fade-up' className='flex justify-center px-4'>
       <div className='container-xs flex justify-center md:px-5'>
         <div className='flex w-full flex-col items-center justify-center gap-[50px] bg-white-a700 py-[68px] md:py-5'>
-          <Heading size='heading4' as='h2' className='!text-gray-900 text-center'>
+          <Heading size='heading2' as='h2' color='dark' className=' text-center'>
             Eventos y Actividades
           </Heading>
           <div className='flex gap-[60px] self-stretch md:flex-col'>

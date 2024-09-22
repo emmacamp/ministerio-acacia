@@ -6,7 +6,7 @@ export default function SembrarPage() {
   return (
     <>
       <div>
-        <div className='flex h-[796px] items-center justify-center bg-gray-900 bg-[url(/images/img_banner_sembrar.png)] bg-cover bg-no-repeat py-20 md:h-auto md:py-5'>
+        <div className='flex h-[796px] items-center justify-center bg-gray-900 bg-cover bg-no-repeat py-20 md:h-auto md:py-5'>
           <div className='container-xs mt-1.5 flex justify-center px-14 md:px-5'>
             <div className='flex w-[80%] justify-center md:w-full'>
               <div className='flex w-full flex-col items-center space-y-10'>

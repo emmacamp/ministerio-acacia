@@ -1,12 +1,12 @@
-'use client';
-
-import { useParams } from 'next/navigation';
+import db from '@/public/data/db.json';
 import { Button, Heading, Img, Text } from '@/components';
-import { dbStore } from '@/store';
 
-const BlogDetails = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const blog = dbStore().getBlog(slug);
+export async function generateStaticParams() {
+  return db.blogs.map((blog) => ({ slug: blog.url.toString() }));
+}
+
+export default function BlogDetails({ params }: { params: { slug: string } }) {
+  const blog = db.blogs.find((blog) => blog.url === params.slug);
 
   return (
     <div className='flex w-full text-justify flex-col items-center bg-white-a700'>
@@ -72,5 +72,4 @@ const BlogDetails = () => {
       </div>
     </div>
   );
-};
-export default BlogDetails;
+}

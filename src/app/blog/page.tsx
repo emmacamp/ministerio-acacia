@@ -1,7 +1,8 @@
+'use client';
 import { Heading } from '@/components';
 import { BlogsContainer } from '@/sections';
 
-export default async function BlogPage() {
+const HomePage = () => {
   return (
     <div className='flex flex-col gap-11 bg-white-a700'>
       <div>
@@ -21,4 +22,6 @@ export default async function BlogPage() {
       <BlogsContainer />
     </div>
   );
-}
+};
+
+export default HomePage;

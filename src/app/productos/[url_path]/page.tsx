@@ -32,7 +32,6 @@ export default function ProductDetails({ params }: { params: { url_path: string 
           <div data-aos='fade-up' className='bg-gray-200/50 rounded-md overflow-hidden'>
             <Image
               src={product.imgUrl}
-              priority
               width={800}
               height={400}
               alt={product.description.material}
