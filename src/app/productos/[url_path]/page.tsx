@@ -1,6 +1,7 @@
+import NotFound from '@/app/not-found';
 import { Heading } from '@/components';
 import db from '@/public/data/db.json';
-import { Product } from '@/types';
+import { headers } from 'next/headers';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,11 +10,17 @@ export async function generateStaticParams() {
 }
 
 export default function ProductDetails({ params }: { params: { url_path: string } }) {
-  const product: Product =
-    db.products.find((prod) => prod.url_path == params?.url_path) || ({} as Product);
+  const headersList = headers();
+  const domain_url = headersList.get('referer');
+
+  const product = db.products.find((prod) => prod.url_path == params?.url_path);
+
+  if (!product) {
+    return <NotFound />;
+  }
 
   const number = '8298564016';
-  const textMessage = 'Saludos, Me intereza el producto:';
+  const textMessage = 'Saludos, quiero más información del producto:';
 
   return (
     <div className='container-xs box-border md:px-5 flex flex-col '>
@@ -31,10 +38,10 @@ export default function ProductDetails({ params }: { params: { url_path: string 
         <div className='w-[60%] phone-md:w-full box-border gap-3 rounded-md   flex flex-col justify-center items-center'>
           <div data-aos='fade-up' className='bg-gray-200/50 rounded-md overflow-hidden'>
             <Image
-              src={product.imgUrl}
+              src={product?.imgUrl}
               width={800}
               height={400}
-              alt={product.description.material}
+              alt={product.description?.material}
             />
           </div>
           <div className='flex box-border gap-3 w-full justify-start'>
@@ -46,7 +53,7 @@ export default function ProductDetails({ params }: { params: { url_path: string 
                 <Image
                   width={300}
                   height={350}
-                  src={variant.variant_img}
+                  src={variant?.variant_img}
                   alt='variante del producto'
                   className='object-cover !h-full'
                 />
@@ -62,25 +69,25 @@ export default function ProductDetails({ params }: { params: { url_path: string 
             {/* <span className='text-2xl text-slate-600 hidden'>${product.price}</span> */}
           </div>
           <div className='flex flex-col space-y-4'>
-            {product.description.material && (
+            {product?.description?.material && (
               <>
                 <h3 className='font-bold'>Materiales</h3>
                 <p className='text-slate-600'>{product.description.material}</p>
               </>
             )}
-            {product.description.design && (
+            {product?.description?.design && (
               <>
                 <h3 className='font-bold'>Diseño</h3>
                 <p className='text-slate-600'>{product.description.design}</p>
               </>
             )}
-            {product.description.combination && (
+            {product?.description?.combination && (
               <>
                 <h3 className='font-bold'>Combinacion</h3>
                 <p className='text-slate-600'>{product.description.combination}</p>
               </>
             )}
-            {product.description.occasion && (
+            {product?.description?.occasion && (
               <>
                 <h3 className='font-bold'>Ocasion</h3>
                 <p className='text-slate-600'>{product.description.occasion}</p>
@@ -89,7 +96,7 @@ export default function ProductDetails({ params }: { params: { url_path: string 
           </div>
           <Link
             target='_blank'
-            href={`https://wa.me/${number}?text=${textMessage} ${product.title}. https://ministerioacacia.org/productos/${product.url_path}`}
+            href={`https://wa.me/${number}?text=${textMessage} ${product.title}. ${domain_url}`}
             className='bg-gray-900 font-semibold text-xl text-center text-white-a700 rounded-md p-4'
           >
             Mas Información

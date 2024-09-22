@@ -1,5 +1,6 @@
 import db from '@/public/data/db.json';
 import { Button, Heading, Img, Text } from '@/components';
+import NotFound from '@/app/not-found';
 
 export async function generateStaticParams() {
   return db.blogs.map((blog) => ({ slug: blog.url.toString() }));
@@ -7,6 +8,10 @@ export async function generateStaticParams() {
 
 export default function BlogDetails({ params }: { params: { slug: string } }) {
   const blog = db.blogs.find((blog) => blog.url === params.slug);
+
+  if (!blog) {
+    return <NotFound />;
+  }
 
   return (
     <div className='flex w-full text-justify flex-col items-center bg-white-a700'>

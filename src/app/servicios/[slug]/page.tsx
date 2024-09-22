@@ -1,5 +1,6 @@
 import db from '@/public/data/db.json';
 import { Heading } from '@/components';
+import NotFound from '@/app/not-found';
 
 export async function generateStaticParams() {
   return db.services.map((service) => ({ slug: service.url.toString() }));
@@ -8,6 +9,9 @@ export async function generateStaticParams() {
 export default function ServiceDetails({ params }: { params: { slug: string } }) {
   const service = db.services.find((service) => service.url === params.slug);
 
+  if (!service) {
+    return <NotFound />;
+  }
   return (
     <div>
       <div
