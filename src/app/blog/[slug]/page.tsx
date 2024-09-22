@@ -2,6 +2,25 @@ import db from '@/public/data/db.json';
 import { Button, Heading, Img, Text } from '@/components';
 import NotFound from '@/app/not-found';
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const blog = db.blogs.find((blog) => blog.url === params.slug);
+  if (!blog) {
+    return {
+      title: 'No encontrado',
+      description: 'Blog - La pagina solicitada no existe',
+    };
+  }
+  return {
+    title: blog.titleText,
+    description: blog.content.introduction,
+    openGraph: {
+      title: blog.titleText,
+      description: blog.content.introduction,
+      images: [blog.userImage],
+    },
+  };
+}
+
 export async function generateStaticParams() {
   return db.blogs.map((blog) => ({ slug: blog.url.toString() }));
 }

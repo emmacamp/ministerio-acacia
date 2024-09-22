@@ -13,11 +13,27 @@ import { Footer, Header } from '@/components';
 const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 
 export const metadata: Metadata = {
-  title: 'Ministerio Acacia',
-  description:
-    'Transformando vidas espirituales a través de servicios comunitarios y actividades cristianas', // Description added for SEO
-  keywords:
-    'Ministerio Acacia, servicios religiosos, actividades comunitarias, cristianismo, campamentos juveniles, eventos infantiles, desarrollo espiritual, limpieza de playas', // Added keywords for SEO
+  metadataBase: new URL('https://ministerioacacia.org'),
+  title: {
+    default: 'Ministerio Acacia',
+    template: '%s | Ministerio Acacia',
+  },
+  openGraph: {
+    description:
+      'Transformando vidas espirituales a través de servicios comunitarios y actividades cristianas',
+  },
+  keywords: [
+    'ministerio acacia',
+    'acacia',
+    'acacia resplandece',
+    'servicios religiosos',
+    'actividades comunitarias',
+    'cristianismo',
+    'campamentos juveniles',
+    'eventos infantiles',
+    'desarrollo espiritual',
+    'limpieza de playas',
+  ],
 };
 
 interface RootLayoutProps {

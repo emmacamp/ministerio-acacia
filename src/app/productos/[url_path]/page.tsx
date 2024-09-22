@@ -5,6 +5,25 @@ import { headers } from 'next/headers';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export async function generateMetadata({ params }: { params: { url_path: string } }) {
+  const product = db.products.find((prod) => prod.url_path == params?.url_path);
+  if (!product) {
+    return {
+      title: 'No encontrado',
+      description: 'Producto - La pagina solicitada no existe',
+    };
+  }
+  return {
+    title: product.title,
+    description: product.description,
+    openGraph: {
+      title: product.title,
+      description: product.description,
+      images: [product.imgUrl],
+    },
+  };
+}
+
 export async function generateStaticParams() {
   return db.products.map((prod) => ({ url_path: prod.url_path.toString() }));
 }

@@ -2,6 +2,25 @@ import db from '@/public/data/db.json';
 import { Heading } from '@/components';
 import NotFound from '@/app/not-found';
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const service = db.services.find((service) => service.url === params.slug);
+  if (!service) {
+    return {
+      title: 'No encontrado',
+      description: 'Servicio - La pagina solicitada no existe',
+    };
+  }
+  return {
+    title: service.title,
+    description: service.description,
+    openGraph: {
+      title: service.title,
+      description: service.description,
+      images: [service.image],
+    },
+  };
+}
+
 export async function generateStaticParams() {
   return db.services.map((service) => ({ slug: service.url.toString() }));
 }
