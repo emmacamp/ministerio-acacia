@@ -1,7 +1,7 @@
 import BookModal from '@/components/BookModal';
 import { Hero, HomeEvents, Contact, MissionAndVision, RedesSection, Donations } from '@/sections';
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <div className='w-full bg-white-a700'>
       <div>
@@ -15,6 +15,4 @@ const HomePage = () => {
       <BookModal />
     </div>
   );
-};
-
-export default HomePage;
+}

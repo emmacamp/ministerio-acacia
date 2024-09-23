@@ -1,13 +1,36 @@
-'use client';
+import db from '@/public/data/db.json';
+import { Heading } from '@/components';
+import NotFound from '@/app/not-found';
 
-import { Heading, Text } from '@/components';
-import { dbStore } from '@/store';
-import { useParams } from 'next/navigation';
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const service = db.services.find((service) => service.url === params.slug);
+  if (!service) {
+    return {
+      title: 'No encontrado',
+      description: 'Servicio - La pagina solicitada no existe',
+    };
+  }
+  return {
+    title: service.title,
+    description: service.description,
+    openGraph: {
+      title: service.title,
+      description: service.description,
+      images: [service.image],
+    },
+  };
+}
 
-export default function ServiceDetails() {
-  const { slug } = useParams<{ slug: string }>();
-  const service = dbStore().getService(slug);
+export async function generateStaticParams() {
+  return db.services.map((service) => ({ slug: service.url.toString() }));
+}
 
+export default function ServiceDetails({ params }: { params: { slug: string } }) {
+  const service = db.services.find((service) => service.url === params.slug);
+
+  if (!service) {
+    return <NotFound />;
+  }
   return (
     <div>
       <div
@@ -32,26 +55,28 @@ export default function ServiceDetails() {
           <Heading color='dark' size='headinglg' as='h1' className='px-5 !font-dmsans mb-3'>
             {service?.subtitle}
           </Heading>
-          <Text color='dark' as='p' className='px-5 !font-inter leading-9 tracking-[3.06px]'>
+          <div color='dark' className='px-5 !font-inter leading-9 tracking-[3.06px]'>
             <p className='mb-10 '>{service?.description}</p>
             <ul className='flex flex-col gap-3 list-disc'>
-              {service?.content.map((des) => (
-                <>
-                  {des?.subtitle && (
-                    <li className='flex flex-col gap-5 my-5 list-disc'>
+              {service?.content.map((des) => {
+                return (
+                  des?.subtitle && (
+                    <li
+                      key={des?.paragraph + des?.subtitle}
+                      className='flex flex-col gap-5 my-5 list-disc'
+                    >
                       <Heading color='dark' size='headinglg' as='h1' className='!font-dmsans'>
                         &gt; {des?.subtitle}
                       </Heading>
                       <p className='ms-5'>{des?.paragraph}</p>
                     </li>
-                  )}
-                </>
-              ))}
+                  )
+                );
+              })}
             </ul>
-          </Text>
+          </div>
         </div>
       </div>
-      <div className=''></div>
     </div>
   );
 }

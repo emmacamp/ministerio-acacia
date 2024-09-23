@@ -31,7 +31,7 @@ const getInstagramPosts = async () => {
   }
 };
 
-export const RedesSection = async () => {
+export async function RedesSection() {
   const posts = await getInstagramPosts();
 
   return (
@@ -39,10 +39,8 @@ export const RedesSection = async () => {
       <div className='flex flex-col items-center bg-white-a700 py-14 md:py-5'>
         <div className='container-xs flex flex-col items-center gap-[50px] md:px-5'>
           <div className='ml-72 mr-[292px] flex flex-col items-center gap-2 self-stretch md:mx-0'>
-            <Heading size='heading2' as='h2' className='!text-blue_gray-600 text-center'>
-              <span className='text-black-900'>Síguenos</span>
-              <span className='text-blue_gray-600'>&nbsp;</span>
-              <span className='text-black-900'>en nuestras Redes</span>
+            <Heading size='heading2' as='h2' color='dark' className=' text-center'>
+              Siguenos en nuestras Redes
             </Heading>
             <Text as='p' className='self-stretch text-center leading-[30px] !text-black-900'>
               ¡Sé el primero en conocer nuestros eventos y nuestras ultimas publicaciones!
@@ -62,7 +60,7 @@ export const RedesSection = async () => {
       </div>
     </div>
   );
-};
+}
 
 const Feed = ({ posts }: { posts: Post[] }) => {
   return (

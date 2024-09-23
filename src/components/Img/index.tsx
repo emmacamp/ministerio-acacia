@@ -13,6 +13,7 @@ type ImgProps = React.DetailedHTMLProps<
     className: string;
     src: string;
     alt: string;
+    priority?: boolean;
     isStatic: boolean;
     width?: number;
     height?: number;
@@ -23,6 +24,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
   src = 'https://via.placeholder.com/150',
   alt = 'Image Not Found',
   isStatic = false,
+  priority = false,
   width,
   height,
   ...restProps
@@ -38,6 +40,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
       className={className}
       src={isStatic ? imgSrc : BASE_URL + imgSrc}
       alt={alt}
+      priority={priority}
       width={width}
       height={height}
       {...restProps}

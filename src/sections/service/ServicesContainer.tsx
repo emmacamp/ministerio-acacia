@@ -8,8 +8,8 @@ export const ServicesContainer = () => {
 
   return (
     <Suspense fallback={<div>Loading feed...</div>}>
-      {services.map((service, index) => (
-        <ServiceCard slug={service.url} {...service} key={'content' + index} />
+      {services.map((service) => (
+        <ServiceCard slug={service.url} {...service} key={'svc-card' + service.url} />
       ))}
     </Suspense>
   );
