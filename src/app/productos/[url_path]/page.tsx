@@ -1,7 +1,7 @@
 import NotFound from '@/app/not-found';
 import { Heading } from '@/components';
+import { MoreProductInfoButton } from '@/components/MoreProductInfoButton';
 import db from '@/public/data/db.json';
-import { headers } from 'next/headers';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: { params: { url_path: string 
   }
   return {
     title: product.title,
-    description: product.description,
+    description: product.description.material,
     openGraph: {
       title: product.title,
-      description: product.description,
+      description: product.description.material,
       images: [product.imgUrl],
     },
   };
@@ -29,9 +29,6 @@ export async function generateStaticParams() {
 }
 
 export default function ProductDetails({ params }: { params: { url_path: string } }) {
-  const headersList = headers();
-  const domain_url = headersList.get('referer');
-
   const product = db.products.find((prod) => prod.url_path == params?.url_path);
 
   if (!product) {
@@ -113,13 +110,7 @@ export default function ProductDetails({ params }: { params: { url_path: string 
               </>
             )}
           </div>
-          <Link
-            target='_blank'
-            href={`https://wa.me/${number}?text=${textMessage} ${product.title}. ${domain_url}`}
-            className='bg-gray-900 font-semibold text-xl text-center text-white-a700 rounded-md p-4'
-          >
-            Mas Información
-          </Link>
+          <MoreProductInfoButton product={product} number={number} textMessage={textMessage} />
         </div>
       </div>
     </div>
