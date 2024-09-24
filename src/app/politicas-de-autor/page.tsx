@@ -1,5 +1,9 @@
 import { Heading, Text } from '@/components';
 
+export const metadata = {
+  title: 'Politicas de Autor',
+};
+
 export default function PoliticasDeAutor() {
   return (
     <div className='container-xs py-5 mx-auto'>

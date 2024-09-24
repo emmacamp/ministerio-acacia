@@ -19,12 +19,14 @@ export const metadata: Metadata = {
     template: '%s | Ministerio Acacia',
   },
   openGraph: {
+    images: ['/favicon.ico'],
     description:
       'Transformando vidas espirituales a través de servicios comunitarios y actividades cristianas',
   },
   keywords: [
     'ministerio acacia',
     'acacia',
+    'ministerio',
     'acacia resplandece',
     'servicios religiosos',
     'actividades comunitarias',

@@ -1,2 +1,2 @@
-export * from './SectionEventsOne';
-export * from './SectionEventsTwo';
+export * from './Event';
+export * from './EventsList';

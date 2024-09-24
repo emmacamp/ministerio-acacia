@@ -1,14 +1,17 @@
-'use client';
 import Link from 'next/link';
 import { Heading, Text } from '../../components';
-import React, { Suspense } from 'react';
-import { dbStore } from '@/store';
 import Image from 'next/image';
-import { Typewriter } from 'react-simple-typewriter';
+import { ProductsContainer } from '@/sections/products/ProductsContainer';
+import { TypewriterClient } from '@/sections/products/TypewriterClient';
+import { Metadata } from 'next';
+
+// meta tags
+export const metadata: Metadata = {
+  title: 'Productos',
+  description: 'Tienda de libros',
+};
 
 export default function ModuloTiendaPage() {
-  const products = dbStore().products;
-
   return (
     <div className='flex flex-col items-center'>
       <div className='self-stretch'>
@@ -31,7 +34,7 @@ export default function ModuloTiendaPage() {
                 MAS QUE
                 <br />
                 <div className='h-[100px] tablet:h-auto phone-md:h-[80px]'>
-                  <Typewriter words={['VENCEDORES']} cursor={false} loop />
+                  <TypewriterClient />
                 </div>
               </Heading>
               <Text
@@ -82,32 +85,7 @@ export default function ModuloTiendaPage() {
                 </Heading>
               </div>
               <div className='grid grid-cols-3 items-center justify-center gap-8 tablet:grid-cols-2 phone-md:grid-cols-1'>
-                <Suspense fallback={<div>Loading productos...</div>}>
-                  {products.map((product) => (
-                    <Link
-                      key={product.url_path}
-                      href={`/productos/${product.url_path}`}
-                      className='w-[350px] h-[400px] phone-md:w-auto rounded-md  border flex flex-col overflow-hidden justify-center items-center hover:scale-105 transition-all '
-                    >
-                      <div className='w-full h-[500px] bg-gray-200/50  overflow-hidden'>
-                        <Image
-                          alt={product.description.material}
-                          width={400}
-                          height={500}
-                          src={product.imgUrl}
-                          className='w-full h-full  object-cover'
-                        />
-                      </div>
-
-                      <div className='px-6 py-4'>
-                        <h2 className='font-bold text-xl mb-2'>{product.title}</h2>
-                        <p className='text-gray-700 text-base'>
-                          {product.description.material.substring(0, 60)}...
-                        </p>
-                      </div>
-                    </Link>
-                  ))}
-                </Suspense>
+                <ProductsContainer />
               </div>
             </div>
           </div>

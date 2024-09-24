@@ -1,3 +1,4 @@
+'use client';
 import { UserProfile } from '@/components';
 import React, { Suspense } from 'react';
 import { dbStore } from '@/store';

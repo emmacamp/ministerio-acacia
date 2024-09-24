@@ -49,7 +49,7 @@ export const EventDetails = ({
           </Heading>
           <div className='mt-3.5 flex items-center self-stretch'>
             <Img
-              src='img_image_5.png'
+              src='location_icon.png'
               width={22}
               height={22}
               alt='Image'
