@@ -32,9 +32,9 @@ export const EventComponent = ({ event }: EventProps) => {
         <Heading size='heading4' as='h2' className='mt-2.5 leading-[50px]'>
           <>{event.title}</>
         </Heading>
-        <div className='mt-3.5 flex items-center self-stretch'>
+        <div className='mt-3.5 flex items-center gap-1 self-stretch'>
           <Img
-            src='img_image_5.png'
+            src='location_icon.png'
             width={22}
             height={22}
             alt='Imagefive'
