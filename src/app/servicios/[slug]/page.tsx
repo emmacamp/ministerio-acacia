@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: service.title,
       description: service.description,
-      images: [service.image],
+      images: [`/images/${service.image}`],
     },
   };
 }

@@ -1,6 +1,10 @@
 import { Heading } from '@/components';
 import { Founders, Biography, Testimonials } from '@/sections';
 
+export const metadata = {
+  title: 'Sobre Nosotros',
+};
+
 export default function AboutUsPage() {
   return (
     <>

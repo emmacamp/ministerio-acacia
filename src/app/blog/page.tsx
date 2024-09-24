@@ -1,6 +1,10 @@
-'use client';
 import { Heading } from '@/components';
 import { BlogsContainer } from '@/sections';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+};
 
 const HomePage = () => {
   return (

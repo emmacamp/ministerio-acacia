@@ -1,6 +1,9 @@
 import { Heading } from '@/components';
 import { ServicesContainer } from '@/sections';
-import { Suspense } from 'react';
+
+export const metadata = {
+  title: 'Servicios',
+};
 
 export default function ServicePage() {
   return (
@@ -21,9 +24,7 @@ export default function ServicePage() {
       </div>
       <div className='container-xs mt-14 md:px-5'>
         <div className='flex gap-7 md:flex-col'>
-          <Suspense fallback={<div>Loading feed...</div>}>
-            <ServicesContainer />
-          </Suspense>
+          <ServicesContainer />
         </div>
       </div>
     </>

@@ -1,11 +1,12 @@
-'use client';
-import { dbStore } from '@/store';
+import { EventsList } from '@/sections/events/EventsList';
 import { Heading } from '../../components';
-import { EventComponent } from '@/sections/events/Event';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Eventos',
+};
 
 const EventsPage = () => {
-  const { events } = dbStore();
-
   return (
     <>
       <div className='flex h-[386px] items-center justify-center bg-gray-900 bg-[url(/images/sections/events.png)] bg-cover bg-no-repeat py-[138px] md:h-auto md:py-5'>
@@ -24,9 +25,7 @@ const EventsPage = () => {
         <div className='container-xs md:px-5'>
           <div className='flex flex-col items-center gap-[76px] md:gap-[57px] sm:gap-[38px]'>
             <div className='flex justify-between gap-5 self-stretch md:flex-col flex-wrap gap-y-[38px]'>
-              {events.map((event, i) => (
-                <EventComponent key={i} event={event} />
-              ))}
+              <EventsList />
             </div>
           </div>
         </div>

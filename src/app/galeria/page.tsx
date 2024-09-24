@@ -1,6 +1,10 @@
 import { Heading } from '@/components';
 import { ImageGallery } from '@/components';
 
+export const metadata = {
+  title: 'Galeria',
+};
+
 export default function GalleryPage() {
   const grids = [
     {
