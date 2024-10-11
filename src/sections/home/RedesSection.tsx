@@ -1,35 +1,11 @@
 'use server';
 import Link from 'next/link';
 import { Text, Heading } from '../../components';
-
-import axios from 'axios';
 import { InstagramFeedDesktop, InstagramFeedMobile } from './InstagramFeed';
+import { getInstagramPosts } from '@/utils/ig-posts';
+import { Post } from '@/types/post';
 
-export interface Post {
-  id: string;
-  media_url: string;
-  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
-}
-
-const getInstagramPosts = async () => {
-  const token = process.env.INSTAGRAM_TOKEN_KEY;
-  const userId = process.env.USER_ID;
-  //?  API Reference: https://developers.facebook.com/docs/instagram-basic-display-api/reference/media
-  const fields = 'id,media_url,media_type';
-  const limit = 5;
-
-  const url = `https://graph.instagram.com/v20.0/${userId}/media?fields=${fields}.limit(3)&access_token=${token}&limit=${limit}`;
-
-  try {
-    const response = await axios.get(url);
-
-    // const getOnlyImages = response?.data?.data.filter((post: Post) => post.media_type === 'IMAGE');
-    const posts = response?.data?.data;
-    return posts;
-  } catch (error: any) {
-    return [];
-  }
-};
+// export const revalidate = 3600;
 
 export async function RedesSection() {
   const posts = await getInstagramPosts();

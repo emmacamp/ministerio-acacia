@@ -5,10 +5,9 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 const AliceCarousel = dynamic(() => import('react-alice-carousel'), { ssr: false });
 
-import { Post } from './RedesSection';
-
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './instagram.css';
+import { Post } from '@/types/post';
 
 interface FeedProps {
   posts: Post[];
