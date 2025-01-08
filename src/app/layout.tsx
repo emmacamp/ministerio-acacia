@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import React, { ReactNode } from 'react';
 import { AOSInit } from '@/lib/utils/aos';
+import { Analytics } from '@vercel/analytics/react';
 
 import '@/styles/tailwind.css';
 import '@/styles/index.css';
@@ -72,6 +73,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             </div>
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
