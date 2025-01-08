@@ -2,6 +2,7 @@
 import { UserProfile } from '@/components';
 import React, { Suspense } from 'react';
 import { dbStore } from '@/store';
+import { Blog } from '@/types';
 
 export const BlogsContainer = () => {
   const { blogs } = dbStore();
@@ -10,7 +11,7 @@ export const BlogsContainer = () => {
       <div className='container-xs flex flex-col items-center gap-8 md:px-5'>
         <div className='grid grid-cols-3 justify-center gap-5 self-stretch md:grid-cols-2 sm:grid-cols-1'>
           <Suspense fallback={<div>Loading feed...</div>}>
-            {blogs.map((d, index) => (
+            {blogs.map((d: Blog, index: number) => (
               <UserProfile {...d} key={'content' + index} />
             ))}
           </Suspense>

@@ -3,6 +3,7 @@ import { Heading, Img } from '@/components';
 import Link from 'next/link';
 import { EventComponent } from '../events/Event';
 import { dbStore } from '@/store';
+import { Event } from '@/types';
 
 export const HomeEvents = () => {
   const { events } = dbStore();
@@ -14,7 +15,7 @@ export const HomeEvents = () => {
             Eventos y Actividades
           </Heading>
           <div className='flex gap-[60px] self-stretch md:flex-col'>
-            {events.slice(0, 2).map((event, i) => (
+            {events.slice(0, 2).map((event: Event, i: number) => (
               <EventComponent key={i} event={event} />
             ))}
           </div>
