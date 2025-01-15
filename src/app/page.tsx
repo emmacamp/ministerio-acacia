@@ -1,5 +1,5 @@
 import BookModal from '@/components/BookModal';
-import { Hero, HomeEvents, Contact, MissionAndVision, Donations } from '@/sections';
+import { Hero, HomeEvents, Contact, MissionAndVision, Donations, RedesSection } from '@/sections';
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
         <MissionAndVision />
         <HomeEvents />
         <Donations />
-        {/* <RedesSection /> */}
+        <RedesSection />
         <Contact />
       </div>
       <BookModal />

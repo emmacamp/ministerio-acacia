@@ -23,7 +23,7 @@ export async function RedesSection() {
             </Text>
           </div>
 
-          {posts.length > 0 ? <Feed posts={posts} /> : <IntagramFeedLoader />}
+          {posts && posts?.length > 0 ? <Feed posts={posts} /> : <IntagramFeedLoader />}
 
           <Link
             href='https://linktr.ee/discauri'
