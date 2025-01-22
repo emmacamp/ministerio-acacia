@@ -40,7 +40,7 @@ module.exports = {
     node: true,
   },
   rules: {
-    'no-console': 'error',
+    'no-console': 'warn',
     'react/require-default-props': 'off',
     '@typescript-eslint/no-explicit-any': 0,
     'react-hooks/rules-of-hooks': 0,

@@ -4,11 +4,13 @@ import { Text, Heading } from '../../components';
 import { InstagramFeedDesktop, InstagramFeedMobile } from './InstagramFeed';
 import { getInstagramPosts } from '@/utils/ig-posts';
 import { Post } from '@/types/post';
+import { fetchInstagramToken } from '../service/refresh-token';
 
 // export const revalidate = 3600;
 
 export async function RedesSection() {
-  const posts = await getInstagramPosts();
+  const token = await fetchInstagramToken();
+  const posts = await getInstagramPosts({ token: token.token });
 
   return (
     <div data-aos='fade-up' className='bg-white-a700 px-4'>
