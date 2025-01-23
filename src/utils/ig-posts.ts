@@ -26,6 +26,10 @@ export const getInstagramPosts = async ({ token }: { token: string }): Promise<P
   const url = `https://graph.instagram.com/v20.0/${userId}/media?fields=${fields}.limit(3)&access_token=${token}&limit=${limit}`;
 
   try {
+    if (!token) {
+      throw new Error('No token provided');
+    }
+
     const response = await fetch(url, { next: { revalidate: 3600 } });
     const data = await response.json();
 
