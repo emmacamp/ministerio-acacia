@@ -1,6 +1,8 @@
 export const fetchInstagramToken = async () => {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/refreshInstagramToken`);
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/refreshInstagramToken`
+    );
     const data = response.json();
     console.log('Updated Token:', data);
     return data;
