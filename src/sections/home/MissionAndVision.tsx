@@ -1,6 +1,7 @@
 'use client';
 import { Heading, Img, Text } from '@/components';
 import { cn } from '@/lib/utils';
+import { inter } from '@/styles/fonts';
 import { useEffect, useState } from 'react';
 
 export const MissionAndVision = () => {
@@ -53,7 +54,11 @@ const MissionVisionText = () => {
   return (
     <div className='w-full text-justify'>
       {/* Primer párrafo (siempre visible) */}
-      <Text size='textxs' as='p' className='w-full !font-inter leading-7 tracking-[2.55px]'>
+      <Text
+        size='textxs'
+        as='p'
+        className={`${inter.className} w-full leading-7 tracking-[2.55px]`}
+      >
         <span>La&nbsp;</span>
         <span className='font-bold'>misión de Acacia</span>
         <span>

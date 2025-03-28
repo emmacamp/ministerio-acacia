@@ -1,16 +1,45 @@
-'use server';
+'use client';
 import Link from 'next/link';
 import { Text, Heading } from '../../components';
 import { InstagramFeedDesktop, InstagramFeedMobile } from './InstagramFeed';
-import { getInstagramPosts } from '@/utils/ig-posts';
+
 import { Post } from '@/types/post';
-import { fetchInstagramToken } from '../service/refresh-token';
+import { useEffect, useState } from 'react';
+import { FeedPost } from '@/app/api/instagram-posts/route';
 
-// export const revalidate = 3600;
+export function RedesSection() {
+  const [posts, setPosts] = useState<FeedPost[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-export async function RedesSection() {
-  const token = await fetchInstagramToken();
-  const posts = await getInstagramPosts({ token: token.token });
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const response = await fetch('/api/instagram-posts');
+        if (!response.ok) {
+          throw new Error('Failed to fetch Instagram posts');
+        }
+        const data = await response.json();
+        setPosts(data);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching Instagram posts:', err);
+        setError('Las publicaciones de Instagram no pudieron ser cargadas.');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchPosts();
+  }, []);
+
+  if (error) {
+    return (
+      <div className='mx-auto text-center text-red-500 bg-red-100 w-fit rounded-sm p-2 my-10'>
+        {error}
+      </div>
+    );
+  }
 
   return (
     <div data-aos='fade-up' className='bg-white-a700 px-4'>
@@ -24,8 +53,7 @@ export async function RedesSection() {
               ¡Sé el primero en conocer nuestros eventos y nuestras ultimas publicaciones!
             </Text>
           </div>
-
-          {posts && posts?.length > 0 ? <Feed posts={posts} /> : <IntagramFeedLoader />}
+          {loading ? <IntagramFeedLoader /> : <Feed posts={posts} />}
 
           <Link
             href='https://linktr.ee/discauri'

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Heading, Text } from '../../components';
 import { Typewriter } from 'react-simple-typewriter';
+import { workSans } from '@/styles/fonts';
 
 const BookModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -46,16 +47,16 @@ const BookModal = () => {
 
             <div className='w-[80%]  tablet:flex-col gap-4  flex  justify-between items-center text-center '>
               {/* Text Section */}
-              <div className='text-start tablet:text-center '>
+              <div className={'text-start tablet:text-center'}>
                 <Heading
                   size='heading5'
-                  className='text-5xl !font-worksans phone-md:text-[40px] tracking-[-0.90px]'
+                  className={`${workSans.className} text-5xl  phone-md:text-[40px] tracking-[-0.90px]`}
                 >
                   MAS QUE <Typewriter words={['VENCEDORES']} cursor={false} loop />
                 </Heading>
                 <Text
                   color='white'
-                  className='text-lg  !font-worksans mb-6 uppercase font-semibold tracking-[2px]'
+                  className={`${workSans.className} text-lg  mb-6 uppercase font-semibold tracking-[2px]`}
                 >
                   Rompiendo barreras
                 </Text>

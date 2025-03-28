@@ -1,6 +1,5 @@
 import '@/styles/globals.css';
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import React, { ReactNode } from 'react';
 import { AOSInit } from '@/lib/utils/aos';
 import { Analytics } from '@vercel/analytics/react';
@@ -10,8 +9,7 @@ import '@/styles/index.css';
 import '@/styles/font.css';
 import { cn } from '@/lib/utils';
 import { Footer, Header } from '@/components';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
+import { inter } from '@/styles/fonts';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ministerioacacia.org'),
