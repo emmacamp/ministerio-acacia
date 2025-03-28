@@ -10,6 +10,7 @@ import '@/styles/font.css';
 import { cn } from '@/lib/utils';
 import { Footer, Header } from '@/components';
 import { inter } from '@/styles/fonts';
+import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ministerioacacia.org'),
@@ -71,6 +72,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             </div>
           </div>
         </div>
+        <Toaster />
         <Analytics />
       </body>
     </html>
